@@ -1,0 +1,6 @@
+scene1   rms= -25.9 dBFS peak= -11.8 dBFS
+scene2   rms= -25.8 dBFS peak= -11.0 dBFS
+scene4   rms= -25.0 dBFS peak=  -8.7 dBFS
+scene5   rms= -26.5 dBFS peak=  -9.0 dBFS
+pi-id    rms= -25.4 dBFS peak=  -9.9 dBFS
+vo-en    rms= -25.7 dBFS peak=  -8.2 dBFS
