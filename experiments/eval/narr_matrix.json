@@ -1,0 +1,322 @@
+[
+ {
+  "file": "s1_t0_v0.wav",
+  "scene": "s1",
+  "variant": 0,
+  "voice": 0,
+  "seconds": 3.75,
+  "text": "Mau pakai TTS dua bahasa, tapi ukuran modelnya gede banget?",
+  "cer": 0.3125,
+  "heard": "mupakaliteterltterduabalahhasatapiukuranmodelnyadidebanget"
+ },
+ {
+  "file": "s1_t0_v1.wav",
+  "scene": "s1",
+  "variant": 0,
+  "voice": 1,
+  "seconds": 3.66,
+  "text": "Mau pakai TTS dua bahasa, tapi ukuran modelnya gede banget?",
+  "cer": 0.25,
+  "heard": "mapaketethesduabahasatetapiuguranmodelyakidebanget"
+ },
+ {
+  "file": "s1_t1_v0.wav",
+  "scene": "s1",
+  "variant": 1,
+  "voice": 0,
+  "seconds": 3.74,
+  "text": "Mau pakai suara dua bahasa, tapi ukuran modelnya gede banget?",
+  "cer": 0.16,
+  "heard": "ngupakeisuaraduabanghasatapiuguranmodelnyegidebanget"
+ },
+ {
+  "file": "s1_t1_v1.wav",
+  "scene": "s1",
+  "variant": 1,
+  "voice": 1,
+  "seconds": 3.68,
+  "text": "Mau pakai suara dua bahasa, tapi ukuran modelnya gede banget?",
+  "cer": 0.4,
+  "heard": "mupakeishuwaraduambangahsatertetapiukuranmodelyekizelbangyet"
+ },
+ {
+  "file": "s1_t2_v0.wav",
+  "scene": "s1",
+  "variant": 2,
+  "voice": 0,
+  "seconds": 3.41,
+  "text": "Mau TTS dua bahasa, tapi ukuran modelnya gede banget?",
+  "cer": 0.3256,
+  "heard": "maritesleterduapanahasatapiukuranmodelnyedidebanget"
+ },
+ {
+  "file": "s1_t2_v1.wav",
+  "scene": "s1",
+  "variant": 2,
+  "voice": 1,
+  "seconds": 3.33,
+  "text": "Mau TTS dua bahasa, tapi ukuran modelnya gede banget?",
+  "cer": 0.3953,
+  "heard": "mobritreseduurbalangasatapiukuranmodelyekidebanget"
+ },
+ {
+  "file": "s2_t0_v0.wav",
+  "scene": "s2",
+  "variant": 0,
+  "voice": 0,
+  "seconds": 4.58,
+  "text": "Kenalin PiVo ID satu koma empat juta. Cuma lima koma enam megabita!",
+  "cer": 0.3333,
+  "heard": "penalengtifoidasatukongaempatjutadumaklimakongaenemmizetitah"
+ },
+ {
+  "file": "s2_t0_v1.wav",
+  "scene": "s2",
+  "variant": 0,
+  "voice": 1,
+  "seconds": 4.47,
+  "text": "Kenalin PiVo ID satu koma empat juta. Cuma lima koma enam megabita!",
+  "cer": 0.3889,
+  "heard": "ellalingpipoidesaukumaempatjutadumakuimakumakenamnowillabea"
+ },
+ {
+  "file": "s2_t1_v0.wav",
+  "scene": "s2",
+  "variant": 1,
+  "voice": 0,
+  "seconds": 4.93,
+  "text": "Kenalin PiVo ID. Satu koma empat juta. Cuma lima koma enam megabita!",
+  "cer": 0.4444,
+  "heard": "pennelingbeafoydesatukongaempatjutadumarimakongaenemuizurietah"
+ },
+ {
+  "file": "s2_t1_v1.wav",
+  "scene": "s2",
+  "variant": 1,
+  "voice": 1,
+  "seconds": 4.79,
+  "text": "Kenalin PiVo ID. Satu koma empat juta. Cuma lima koma enam megabita!",
+  "cer": 0.463,
+  "heard": "enlalingbipoydasatukomaempakjutadumakimakompaikenammezadleteraletter"
+ },
+ {
+  "file": "s2_t2_v0.wav",
+  "scene": "s2",
+  "variant": 2,
+  "voice": 0,
+  "seconds": 4.78,
+  "text": "Kenalin PiVo, satu koma empat juta. Cuma lima koma enam megabita!",
+  "cer": 0.2692,
+  "heard": "penalinbivosatukongaempatjutadumalimakonganenemumizudita"
+ },
+ {
+  "file": "s2_t2_v1.wav",
+  "scene": "s2",
+  "variant": 2,
+  "voice": 1,
+  "seconds": 4.72,
+  "text": "Kenalin PiVo, satu koma empat juta. Cuma lima koma enam megabita!",
+  "cer": 0.3654,
+  "heard": "enalintivosatukomaempakjutadumakimakomaenemnouminablealetter"
+ },
+ {
+  "file": "s4_t0_v0.wav",
+  "scene": "s4",
+  "variant": 0,
+  "voice": 0,
+  "seconds": 5.93,
+  "text": "Model akustik dan vocoder tersedia dalam satu paket ONNX. Ringan untuk eksperimen lokal.",
+  "cer": 0.2432,
+  "heard": "modilakusteakdenbocoderdesegiadalamsatpaketonehminganenuntukexpegimenlopal"
+ },
+ {
+  "file": "s4_t0_v1.wav",
+  "scene": "s4",
+  "variant": 0,
+  "voice": 1,
+  "seconds": 5.74,
+  "text": "Model akustik dan vocoder tersedia dalam satu paket ONNX. Ringan untuk eksperimen lokal.",
+  "cer": 0.2162,
+  "heard": "modalakusteakdenvocconderterseniedalamsatpaketomiexwinganuntukeksperimenuvotal"
+ },
+ {
+  "file": "s4_t1_v0.wav",
+  "scene": "s4",
+  "variant": 1,
+  "voice": 0,
+  "seconds": 5.32,
+  "text": "Model akustik dan vocoder dalam satu paket ONNX. Ringan untuk eksperimen lokal.",
+  "cer": 0.197,
+  "heard": "modilakusteakdenpacoderdalamsatpaketonehminganuntukexpegimenlokal"
+ },
+ {
+  "file": "s4_t1_v1.wav",
+  "scene": "s4",
+  "variant": 1,
+  "voice": 1,
+  "seconds": 5.12,
+  "text": "Model akustik dan vocoder dalam satu paket ONNX. Ringan untuk eksperimen lokal.",
+  "cer": 0.2576,
+  "heard": "modulakusteakdanfocodersdalamstpaketnonewinganuntukexpimenulopal"
+ },
+ {
+  "file": "s4_t2_v0.wav",
+  "scene": "s4",
+  "variant": 2,
+  "voice": 0,
+  "seconds": 4.9,
+  "text": "Akustik dan vocoder dalam satu paket ONNX. Ringan untuk eksperimen lokal.",
+  "cer": 0.1967,
+  "heard": "akusteakdenfocoderdalamsatpaketonyehminganuntukexpegimenlokal"
+ },
+ {
+  "file": "s4_t2_v1.wav",
+  "scene": "s4",
+  "variant": 2,
+  "voice": 1,
+  "seconds": 4.82,
+  "text": "Akustik dan vocoder dalam satu paket ONNX. Ringan untuk eksperimen lokal.",
+  "cer": 0.2459,
+  "heard": "akustekdanfocderdersdalamsatpakekoiexwinganuntukexperimenulotal"
+ },
+ {
+  "file": "s4_t3_v0.wav",
+  "scene": "s4",
+  "variant": 3,
+  "voice": 0,
+  "seconds": 4.67,
+  "text": "Model akustik dan vocoder dalam satu paket. Ringan untuk eksperimen lokal.",
+  "cer": 0.129,
+  "heard": "modilakusteakdenfocoderdalamsatpaketbenganuntukeksperimenlokal"
+ },
+ {
+  "file": "s4_t3_v1.wav",
+  "scene": "s4",
+  "variant": 3,
+  "voice": 1,
+  "seconds": 4.38,
+  "text": "Model akustik dan vocoder dalam satu paket. Ringan untuk eksperimen lokal.",
+  "cer": 0.2419,
+  "heard": "modulakusteakdanfoderderdalamsatupageminganuntukexperiminulotal"
+ },
+ {
+  "file": "s4_t4_v0.wav",
+  "scene": "s4",
+  "variant": 4,
+  "voice": 0,
+  "seconds": 4.88,
+  "text": "Model akustik dan vocoder ada dalam satu paket. Ringan untuk eksperimen lokal.",
+  "cer": 0.1846,
+  "heard": "modilakusteakdenfocodaraddadalamsaupaketbinginuntukekpegimenlokal"
+ },
+ {
+  "file": "s4_t4_v1.wav",
+  "scene": "s4",
+  "variant": 4,
+  "voice": 1,
+  "seconds": 4.66,
+  "text": "Model akustik dan vocoder ada dalam satu paket. Ringan untuk eksperimen lokal.",
+  "cer": 0.2615,
+  "heard": "modelakusteakdenpoconeradedalamsaupakeminganuntukexprimiluvotal"
+ },
+ {
+  "file": "s5_t0_v0.wav",
+  "scene": "s5",
+  "variant": 0,
+  "voice": 0,
+  "seconds": 4.58,
+  "text": "PiVo ID, bahasa Indonesia dan Inggris. Cek repositorinya di GitHub!",
+  "cer": 0.2545,
+  "heard": "bipoidebahasaindahasiadaininggriscekrebosiboynyadititu"
+ },
+ {
+  "file": "s5_t0_v1.wav",
+  "scene": "s5",
+  "variant": 0,
+  "voice": 1,
+  "seconds": 4.59,
+  "text": "PiVo ID, bahasa Indonesia dan Inggris. Cek repositorinya di GitHub!",
+  "cer": 0.2,
+  "heard": "privoidabahasaindaosiadaninggrischekreposiporiadigitu"
+ },
+ {
+  "file": "s5_t1_v0.wav",
+  "scene": "s5",
+  "variant": 1,
+  "voice": 0,
+  "seconds": 4.36,
+  "text": "PiVo ID, bahasa Indonesia dan Inggris. Cek repo-nya di GitHub!",
+  "cer": 0.2857,
+  "heard": "bipoidebahasaindahasiadaininggriscerekeolenyadigitu"
+ },
+ {
+  "file": "s5_t1_v1.wav",
+  "scene": "s5",
+  "variant": 1,
+  "voice": 1,
+  "seconds": 4.51,
+  "text": "PiVo ID, bahasa Indonesia dan Inggris. Cek repo-nya di GitHub!",
+  "cer": 0.3061,
+  "heard": "privoidabahasaindaosiadaninggriscekreiryolengiadiitu"
+ },
+ {
+  "file": "s5_t2_v0.wav",
+  "scene": "s5",
+  "variant": 2,
+  "voice": 0,
+  "seconds": 3.49,
+  "text": "PiVo ID, dua bahasa. Cek repositorinya di GitHub!",
+  "cer": 0.3333,
+  "heard": "birifoideduwabahhasacekwepositonginyadiditu"
+ },
+ {
+  "file": "s5_t2_v1.wav",
+  "scene": "s5",
+  "variant": 2,
+  "voice": 1,
+  "seconds": 3.44,
+  "text": "PiVo ID, dua bahasa. Cek repositorinya di GitHub!",
+  "cer": 0.4615,
+  "heard": "pripoydeknduwumalasacekreposiponyandidipu"
+ },
+ {
+  "file": "s5_t3_v0.wav",
+  "scene": "s5",
+  "variant": 3,
+  "voice": 0,
+  "seconds": 4.22,
+  "text": "PiVo, bahasa Indonesia dan Inggris. Cek repositorinya di GitHub!",
+  "cer": 0.1887,
+  "heard": "pivobbahasaindasiadininggriscekreposiboninyadititu"
+ },
+ {
+  "file": "s5_t3_v1.wav",
+  "scene": "s5",
+  "variant": 3,
+  "voice": 1,
+  "seconds": 4.3,
+  "text": "PiVo, bahasa Indonesia dan Inggris. Cek repositorinya di GitHub!",
+  "cer": 0.3962,
+  "heard": "bimabahasaindrahosiadaininggrischekremdipelyenigitu"
+ },
+ {
+  "file": "s5_t4_v0.wav",
+  "scene": "s5",
+  "variant": 4,
+  "voice": 0,
+  "seconds": 4.7,
+  "text": "PiVo, dua bahasa, Indonesia dan Inggris. Repositorinya ada di GitHub!",
+  "cer": 0.1429,
+  "heard": "bivoduabahasaindaasiadaninggrisreposiponinyaadadigitu"
+ },
+ {
+  "file": "s5_t4_v1.wav",
+  "scene": "s5",
+  "variant": 4,
+  "voice": 1,
+  "seconds": 4.6,
+  "text": "PiVo, dua bahasa, Indonesia dan Inggris. Repositorinya ada di GitHub!",
+  "cer": 0.2857,
+  "heard": "piwakduabahasaindasiadaninggrismegosipunyiadedigitu"
+ }
+]

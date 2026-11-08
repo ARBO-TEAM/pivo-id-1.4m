@@ -1,0 +1,32 @@
+{
+ "pi-id": {
+  "cer": 0.0,
+  "seconds": 1.42,
+  "heard": "selamatpagiapakabar"
+ },
+ "vo-en": {
+  "cer": 0.0,
+  "seconds": 2.06,
+  "heard": "hellotherereadytorunonedge"
+ },
+ "scene1": {
+  "cer": 0.16,
+  "seconds": 3.74,
+  "heard": "ngupakeisuaraduabanghasatapiuguranmodelnyegidebanget"
+ },
+ "scene2": {
+  "cer": 0.2692,
+  "seconds": 4.78,
+  "heard": "penalinbivosatukongaempatjutadumalimakonganenemumizudita"
+ },
+ "scene4": {
+  "cer": 0.129,
+  "seconds": 4.67,
+  "heard": "modilakusteakdenfocoderdalamsatpaketbenganuntukeksperimenlokal"
+ },
+ "scene5": {
+  "cer": 0.1429,
+  "seconds": 4.7,
+  "heard": "bivoduabahasaindaasiadaninggrisreposiponinyaadadigitu"
+ }
+}

@@ -34,3 +34,8 @@ docs/videoplan.md
 docs/whatsapp-status/
 hyperframes.lock.json
 experiments/eval/cer_one_out.txt
+experiments/eval/asr_assets.txt
+experiments/eval/narr_*.txt
+experiments/eval/narr_*.log
+experiments/eval/narr_current.json
+experiments/eval/listen_ab_*/
