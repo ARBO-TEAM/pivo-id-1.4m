@@ -28,3 +28,9 @@ tree.txt
 
 experiments/eval/trained_v3/
 .claude-flow/
+docs/pivo-hyperframes/
+docs/reference.webp
+docs/videoplan.md
+docs/whatsapp-status/
+hyperframes.lock.json
+experiments/eval/cer_one_out.txt
