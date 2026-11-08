@@ -1,0 +1,48 @@
+{"id": "E001", "text": "Welcome to our campus. How can I help you today?", "split": "train", "kind": "greeting"}
+{"id": "E002", "text": "The registration office opens at eight in the morning.", "split": "train", "kind": "information"}
+{"id": "E003", "text": "Please bring your identity card and a copy of your diploma.", "split": "train", "kind": "instruction"}
+{"id": "E004", "text": "Tuition for the digital business program is three million rupiah per semester.", "split": "train", "kind": "price"}
+{"id": "E005", "text": "Our business hours are Monday through Friday, from nine to five.", "split": "train", "kind": "information"}
+{"id": "E006", "text": "Would you like to speak with an advisor or leave a message?", "split": "train", "kind": "question"}
+{"id": "E007", "text": "The application deadline is the thirtieth of June.", "split": "train", "kind": "date"}
+{"id": "E008", "text": "I am sorry, that information is not available right now.", "split": "train", "kind": "apology"}
+{"id": "E009", "text": "You can check your status on our website at any time.", "split": "train", "kind": "instruction"}
+{"id": "E010", "text": "Thank you for waiting. I will transfer your call now.", "split": "train", "kind": "service"}
+{"id": "E011", "text": "Our team will reply within two working days.", "split": "train", "kind": "information"}
+{"id": "E012", "text": "Would you like me to repeat the address?", "split": "train", "kind": "question"}
+{"id": "E013", "text": "The lecture starts at half past nine in building B.", "split": "train", "kind": "schedule"}
+{"id": "E014", "text": "We offer a discount for early registration.", "split": "train", "kind": "offer"}
+{"id": "E015", "text": "Please confirm your email address and phone number.", "split": "train", "kind": "instruction"}
+{"id": "E016", "text": "The library is on the second floor, next to the student center.", "split": "train", "kind": "direction"}
+{"id": "E017", "text": "Your order has been shipped and will arrive on Thursday.", "split": "train", "kind": "status"}
+{"id": "E018", "text": "Is there anything else I can help you with?", "split": "train", "kind": "question"}
+{"id": "E019", "text": "The scholarship covers tuition and a monthly allowance.", "split": "train", "kind": "information"}
+{"id": "E020", "text": "Please hold for a moment while I check the schedule.", "split": "train", "kind": "service"}
+{"id": "E021", "text": "Classes are held in the morning and in the afternoon.", "split": "train", "kind": "schedule"}
+{"id": "E022", "text": "The total price includes tax and delivery.", "split": "train", "kind": "price"}
+{"id": "E023", "text": "I would like to book a room for next weekend.", "split": "train", "kind": "booking"}
+{"id": "E024", "text": "We are closed on public holidays.", "split": "train", "kind": "information"}
+{"id": "E025", "text": "Could you spell your last name for me, please?", "split": "train", "kind": "question"}
+{"id": "E026", "text": "The meeting has been moved to ten o'clock.", "split": "train", "kind": "schedule"}
+{"id": "E027", "text": "Your payment was received successfully.", "split": "train", "kind": "status"}
+{"id": "E028", "text": "Please fill out this form and return it to the front desk.", "split": "train", "kind": "instruction"}
+{"id": "E029", "text": "Do you have any questions about the course?", "split": "train", "kind": "question"}
+{"id": "E030", "text": "The nearest station is about ten minutes on foot.", "split": "train", "kind": "direction"}
+{"id": "E031", "text": "Thank you for visiting, and have a pleasant day.", "split": "train", "kind": "closing"}
+{"id": "E032", "text": "The digital business program combines marketing, data, and entrepreneurship.", "split": "train", "kind": "information"}
+{"id": "E033", "text": "Students must attend at least eighty percent of the sessions.", "split": "train", "kind": "rule"}
+{"id": "E034", "text": "We will send the invoice by email tomorrow morning.", "split": "train", "kind": "status"}
+{"id": "E035", "text": "The price for the large size is thirty five thousand rupiah.", "split": "train", "kind": "price"}
+{"id": "E036", "text": "May I have your name and student number, please?", "split": "train", "kind": "question"}
+{"id": "E037", "text": "The laboratory is open until eight in the evening.", "split": "train", "kind": "information"}
+{"id": "E038", "text": "Please wait while I connect you to the right department.", "split": "train", "kind": "service"}
+{"id": "E039", "text": "Our advisor will explain the requirements in detail.", "split": "train", "kind": "information"}
+{"id": "E040", "text": "I hope this answers your question. Goodbye.", "split": "train", "kind": "closing"}
+{"id": "E041", "text": "The quick brown fox jumps over the lazy dog.", "split": "val", "kind": "general"}
+{"id": "E042", "text": "Could you repeat that a little more slowly?", "split": "val", "kind": "question"}
+{"id": "E043", "text": "The total comes to five thousand rupiah.", "split": "val", "kind": "price"}
+{"id": "E044", "text": "Our office is closed on public holidays.", "split": "val", "kind": "information"}
+{"id": "E045", "text": "Please confirm your order before the end of the day.", "split": "val", "kind": "instruction"}
+{"id": "E046", "text": "The meeting is scheduled for next Tuesday at nine in the morning.", "split": "val", "kind": "schedule"}
+{"id": "E047", "text": "I would like to know the price of the large size.", "split": "val", "kind": "price"}
+{"id": "E048", "text": "Thank you for calling, have a nice day.", "split": "val", "kind": "closing"}

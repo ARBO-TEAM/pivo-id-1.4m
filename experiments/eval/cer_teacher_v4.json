@@ -1,0 +1,96 @@
+{
+  "summary": {
+    "checkpoint": "PiVo-1.4M\\checkpoints\\acoustic.pt",
+    "step": "teacher",
+    "rows": 12,
+    "mean_cer": 0.1557,
+    "mean_cer_voice_0": 0.1587,
+    "mean_cer_voice_1": 0.1528
+  },
+  "rows": [
+    {
+      "id": "F1_L596_s0",
+      "voice": 0,
+      "text": "Untuk biaya kuliah saya belum punya angkanya. Boleh dicek di unikma.ac.id, atau saya arahkan ke prodi ya.",
+      "heard": "untukbiayakuliahsayabelumpunyaangkanyabolehdicekdiunikmaataateritatausayaarahkankeprodia",
+      "cer": 0.0952
+    },
+    {
+      "id": "F1_L599_s0",
+      "voice": 0,
+      "text": "Jadwal pendaftaran belum ada di catatan saya. Silakan cek unikma.ac.id untuk jadwal terbaru.",
+      "heard": "jadwalpendaftaranbelumadadicatatansayasilakancekunikmaatiiduntukjadwalterbaru",
+      "cer": 0.0263
+    },
+    {
+      "id": "F1_L619_s0",
+      "voice": 0,
+      "text": "Ada Es Teh atau Anget, Kopi dan Susu, dan Minuman Instan. Mau saya sebutkan harganya?",
+      "heard": "adaestehatauangetkopidansusudanminumaninstanmausayasebutkanharganya",
+      "cer": 0.0
+    },
+    {
+      "id": "F1_L630_s0",
+      "voice": 0,
+      "text": "Ukuran besar Rp3.500 per pcs. Harga per November 2026 dan dapat berubah.",
+      "heard": "ukuranbesarrletterpletterdidululimaratusperpisieshargapernovemberduaribuduaenamdandapatberubah",
+      "cer": 0.3516
+    },
+    {
+      "id": "F1_L648_s0",
+      "voice": 0,
+      "text": "Kopi dan Susu Rp5.000 per pcs. Harga per November 2026 dan dapat berubah.",
+      "heard": "kopidansusuerpelimaribuperpistesletterhargapernovemberduaribuduaenamdandapatberubah",
+      "cer": 0.2683
+    },
+    {
+      "id": "F1_L654_s0",
+      "voice": 0,
+      "text": "Dari katalog, Cireng Crispy ukuran sedang Rp1.500 per pcs yang paling murah. Harga per November 2026 dan dapat berubah.",
+      "heard": "darikatalokcirengkrispiukuransedangessatzulimlimaratusperpisisyangpalingmurahhargapernovemberduaribudabuenamdandapatberubah",
+      "cer": 0.2109
+    },
+    {
+      "id": "M1_L596_s0",
+      "voice": 1,
+      "text": "Untuk biaya kuliah saya belum punya angkanya. Boleh dicek di unikma.ac.id, atau saya arahkan ke prodi ya.",
+      "heard": "untukbiayakuliahsayabelumpunyaangkanyabolehdicekdiunikmaataditatausayaarahkankeprodia",
+      "cer": 0.0595
+    },
+    {
+      "id": "M1_L599_s0",
+      "voice": 1,
+      "text": "Jadwal pendaftaran belum ada di catatan saya. Silakan cek unikma.ac.id untuk jadwal terbaru.",
+      "heard": "jadwalpendaftaranbelumadadicatatansayasilakancekunikmaadetruntukjadwalterbaru",
+      "cer": 0.0526
+    },
+    {
+      "id": "M1_L619_s0",
+      "voice": 1,
+      "text": "Ada Es Teh atau Anget, Kopi dan Susu, dan Minuman Instan. Mau saya sebutkan harganya?",
+      "heard": "adaestehatauangetkopidansusudanminumaninstanmausayasebutkanharganya",
+      "cer": 0.0
+    },
+    {
+      "id": "M1_L630_s0",
+      "voice": 1,
+      "text": "Ukuran besar Rp3.500 per pcs. Harga per November 2026 dan dapat berubah.",
+      "heard": "ukuranbesarrletterplettertigiriurlimaratusperpesieshargapernovemberduaribuduapuenamdandapatberubah",
+      "cer": 0.3297
+    },
+    {
+      "id": "M1_L648_s0",
+      "voice": 1,
+      "text": "Kopi dan Susu Rp5.000 per pcs. Harga per November 2026 dan dapat berubah.",
+      "heard": "kopidansusuherpetterlimaribuperpesieshargapernovemberduaribuduapuhenamdandapatberubah",
+      "cer": 0.2561
+    },
+    {
+      "id": "M1_L654_s0",
+      "voice": 1,
+      "text": "Dari katalog, Cireng Crispy ukuran sedang Rp1.500 per pcs yang paling murah. Harga per November 2026 dan dapat berubah.",
+      "heard": "daricatalogecirengkrispiukuransedangpeassaturulimaratusperpisisyangpalingmurahhargapernovemberduaribuduaenamdandapatberubah",
+      "cer": 0.2188
+    }
+  ]
+}

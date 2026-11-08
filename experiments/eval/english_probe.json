@@ -1,0 +1,25 @@
+{
+  "text": "The quick brown fox jumps over the lazy dog. This voice speaks English, and now also Indonesian.",
+  "voice_id": 0,
+  "symbols": 87,
+  "runs": [
+    {
+      "tag": "original",
+      "ckpt": "PiVo-1.4M\\checkpoints\\acoustic.pt",
+      "step": null,
+      "frames": 603,
+      "seconds": 6.03,
+      "peak": 0.593,
+      "out": "experiments\\eval\\english_original_v0.wav"
+    },
+    {
+      "tag": "v4",
+      "ckpt": "experiments\\runs\\pilot_v4_warm_reset\\best.pt",
+      "step": 5000,
+      "frames": 545,
+      "seconds": 5.45,
+      "peak": 0.286,
+      "out": "experiments\\eval\\english_v4_v0.wav"
+    }
+  ]
+}

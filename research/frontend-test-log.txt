@@ -1,0 +1,28 @@
+======================================================================
+FAIL: test_inventory_matches_pivo_count (<run_path>.TestInventory.test_inventory_matches_pivo_count)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\test\tts-test\pivo1-4m\tests\test_frontend.py", line 22, in test_inventory_matches_pivo_count
+    self.assertEqual(len(fe.SYMBOLS), 80)
+AssertionError: 79 != 80
+
+======================================================================
+FAIL: test_decimal_comma_and_dot (<run_path>.TestNormalize.test_decimal_comma_and_dot)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\test\tts-test\pivo1-4m\tests\test_frontend.py", line 79, in test_decimal_comma_and_dot
+    self.assertIn("koma", fe.normalize("Nilainya 3.14.").normalized_text)
+AssertionError: 'koma' not found in 'Nilainya tiga.empat belas.'
+
+======================================================================
+FAIL: test_unknown_acronym_SKU_rejected (<run_path>.TestNormalize.test_unknown_acronym_SKU_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\test\tts-test\pivo1-4m\tests\test_frontend.py", line 109, in test_unknown_acronym_SKU_rejected
+    with self.assertRaises(fe.FrontendError):
+AssertionError: FrontendError not raised
+
+----------------------------------------------------------------------
+Ran 43 tests in 0.006s
+
+FAILED (failures=3)

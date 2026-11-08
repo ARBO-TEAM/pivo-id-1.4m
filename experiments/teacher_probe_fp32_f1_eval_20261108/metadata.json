@@ -1,0 +1,91 @@
+{
+  "status": "evaluation only; never use for training; pending licensing and human quality approval",
+  "voice": "F1",
+  "language": "id",
+  "seed": 0,
+  "total_steps": 8,
+  "speed": 1.05,
+  "threads": 1,
+  "provider": "CPUExecutionProvider",
+  "estimator": "FP32",
+  "model_files": {
+    "dp": {
+      "path": "E:\\test\\tts-test\\split-supertonic-v3\\supertonic_work\\hf_fresh_download_20261108\\onnx\\duration_predictor.onnx",
+      "sha256": "c3eb91414d5ff8a7a239b7fe9e34e7e2bf8a8140d8375ffb14718b1c639325db"
+    },
+    "te": {
+      "path": "E:\\test\\tts-test\\split-supertonic-v3\\supertonic_work\\hf_fresh_download_20261108\\onnx\\text_encoder.onnx",
+      "sha256": "c7befd5ea8c3119769e8a6c1486c4edc6a3bc8365c67621c881bbb774b9902ff"
+    },
+    "ve": {
+      "path": "E:\\test\\tts-test\\split-supertonic-v3\\supertonic_work\\vector_estimator.onnx",
+      "sha256": "883ac868ea0275ef0e991524dc64f16b3c0376efd7c320af6b53f5b780d7c61c"
+    },
+    "voc": {
+      "path": "E:\\test\\tts-test\\split-supertonic-v3\\supertonic_work\\hf_fresh_download_20261108\\onnx\\vocoder.onnx",
+      "sha256": "085de76dd8e8d5836d6ca66826601f615939218f90e519f70ee8a36ed2a4c4ba"
+    },
+    "config": {
+      "path": "E:\\test\\tts-test\\split-supertonic-v3\\supertonic_work\\hf_fresh_download_20261108\\onnx\\tts.json",
+      "sha256": "42078d3aef1cd43ab43021f3c54f47d2d75ceb4e75f627f118890128b06a0d09"
+    },
+    "indexer": {
+      "path": "E:\\test\\tts-test\\split-supertonic-v3\\supertonic_work\\hf_fresh_download_20261108\\onnx\\unicode_indexer.json",
+      "sha256": "9bf7346e43883a81f8645c81224f786d43c5b57f3641f6e7671a7d6c493cb24f"
+    },
+    "voice_style": {
+      "path": "E:\\test\\tts-test\\split-supertonic-v3\\supertonic_work\\voice_styles\\F1.json",
+      "sha256": "bbdec6ee00231c2c742ad05483df5334cab3b52fda3ba38e6a07059c4563dbc2"
+    }
+  },
+  "input_sha256": {
+    "E:\\test\\tts-test\\pivo1-4m\\experiments\\text\\teacher_probe.txt": "751303299b3be832af018560372e7617dd8d4d4969d0b809b282f04a34c4f220"
+  },
+  "teacher_sha256": "a3f5a0f870ad19209fd4eb73b89a61f460eb0224c6a19c1f0bd6d4243a0b5ea9",
+  "samples": [
+    {
+      "id": "probe_001",
+      "split": "teacher_probe",
+      "source": "E:\\test\\tts-test\\pivo1-4m\\experiments\\text\\teacher_probe.txt",
+      "source_line": 1,
+      "text": "Pagi ini cuaca di Jakarta cerah dan udara terasa segar.",
+      "wav": "teacher_probe\\probe_001.wav",
+      "wav_sha256": "734afe46fec078728c8f5db78d12217b3982fcbe56148f20f377bf3eb1c280c7",
+      "wav_format": {
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "sample_rate": 44100,
+        "frames": 193536,
+        "compression": "NONE"
+      },
+      "duration_seconds": 4.388571428571429,
+      "signal_float_before_pcm": {
+        "rms": 0.049413477823201386,
+        "peak_abs": 0.3845102787017822,
+        "fraction_abs_ge_1": 0.0
+      }
+    },
+    {
+      "id": "probe_002",
+      "split": "teacher_probe",
+      "source": "E:\\test\\tts-test\\pivo1-4m\\experiments\\text\\teacher_probe.txt",
+      "source_line": 2,
+      "text": "Pemerintah daerah membuka perpustakaan baru untuk masyarakat.",
+      "wav": "teacher_probe\\probe_002.wav",
+      "wav_sha256": "cf647bad178770f92bb565a32a74200ea73fdaf6da9a2212da1a87c475c0a9fe",
+      "wav_format": {
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "sample_rate": 44100,
+        "frames": 199680,
+        "compression": "NONE"
+      },
+      "duration_seconds": 4.527891156462585,
+      "signal_float_before_pcm": {
+        "rms": 0.05295230018445995,
+        "peak_abs": 0.35201749205589294,
+        "fraction_abs_ge_1": 0.0
+      }
+    }
+  ]
+}

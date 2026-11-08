@@ -1,0 +1,30 @@
+# --- large / generated artifacts (rebuilt by the scripts in experiments/) ---
+models/
+experiments/models/
+experiments/data/
+experiments/runs/*/
+!experiments/runs/README.md
+experiments/eval/*.wav
+temp/
+.tmp-out/
+opus-build-fargan/
+opus-reference/
+pivo-v1-multilingual/
+PiVo-1.4M/
+
+# --- python / tooling ---
+.venv/
+.venv-tmp/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# --- stray scratch files at repo root ---
+a.npy
+b.npy
+claude_temp_list.txt
+disk_top.txt
+tree.txt
+
+experiments/eval/trained_v3/
+.claude-flow/

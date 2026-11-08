@@ -1,0 +1,125 @@
+{
+  "summary": {
+    "checkpoint": "PiVo-1.4M\\checkpoints\\acoustic.pt",
+    "step": null,
+    "lang": "en",
+    "rows": 16,
+    "mean_cer": 0.0095,
+    "mean_cer_voice_0": 0.0076,
+    "mean_cer_voice_1": 0.0114
+  },
+  "rows": [
+    {
+      "id": "F1_E041_s0",
+      "voice": 0,
+      "text": "The quick brown fox jumps over the lazy dog.",
+      "heard": "thequickbrownfoxjumpsoverthelazydog",
+      "cer": 0.0
+    },
+    {
+      "id": "F1_E042_s0",
+      "voice": 0,
+      "text": "Could you repeat that a little more slowly?",
+      "heard": "couldyourepeatthatalittlemoreslowly",
+      "cer": 0.0
+    },
+    {
+      "id": "F1_E043_s0",
+      "voice": 0,
+      "text": "The total comes to five thousand rupiah.",
+      "heard": "thetotalcomestofivethousandrapyah",
+      "cer": 0.0606
+    },
+    {
+      "id": "F1_E044_s0",
+      "voice": 0,
+      "text": "Our office is closed on public holidays.",
+      "heard": "ourofficeisclosedonpublicholidays",
+      "cer": 0.0
+    },
+    {
+      "id": "F1_E045_s0",
+      "voice": 0,
+      "text": "Please confirm your order before the end of the day.",
+      "heard": "pleaseconfirmyourorderbeforetheendoftheday",
+      "cer": 0.0
+    },
+    {
+      "id": "F1_E046_s0",
+      "voice": 0,
+      "text": "The meeting is scheduled for next Tuesday at nine in the morning.",
+      "heard": "themeetingisscheduledfornexttuesdayatnineinthemorning",
+      "cer": 0.0
+    },
+    {
+      "id": "F1_E047_s0",
+      "voice": 0,
+      "text": "I would like to know the price of the large size.",
+      "heard": "iwouldliketoknowthepriceofthelargesize",
+      "cer": 0.0
+    },
+    {
+      "id": "F1_E048_s0",
+      "voice": 0,
+      "text": "Thank you for calling, have a nice day.",
+      "heard": "thankyouforcallinghaveaniceday",
+      "cer": 0.0
+    },
+    {
+      "id": "M1_E041_s0",
+      "voice": 1,
+      "text": "The quick brown fox jumps over the lazy dog.",
+      "heard": "thequickbrownfoxjumpsoverthelazydog",
+      "cer": 0.0
+    },
+    {
+      "id": "M1_E042_s0",
+      "voice": 1,
+      "text": "Could you repeat that a little more slowly?",
+      "heard": "couldyourepeatthatalittlemoreslowly",
+      "cer": 0.0
+    },
+    {
+      "id": "M1_E043_s0",
+      "voice": 1,
+      "text": "The total comes to five thousand rupiah.",
+      "heard": "thetotalcomestofivethousandrupaya",
+      "cer": 0.0909
+    },
+    {
+      "id": "M1_E044_s0",
+      "voice": 1,
+      "text": "Our office is closed on public holidays.",
+      "heard": "ourofficeisclosedonpublicholidays",
+      "cer": 0.0
+    },
+    {
+      "id": "M1_E045_s0",
+      "voice": 1,
+      "text": "Please confirm your order before the end of the day.",
+      "heard": "pleaseconfirmyourorderbeforetheendoftheday",
+      "cer": 0.0
+    },
+    {
+      "id": "M1_E046_s0",
+      "voice": 1,
+      "text": "The meeting is scheduled for next Tuesday at nine in the morning.",
+      "heard": "themeetingisscheduledfornexttuesdayatnineinthemorning",
+      "cer": 0.0
+    },
+    {
+      "id": "M1_E047_s0",
+      "voice": 1,
+      "text": "I would like to know the price of the large size.",
+      "heard": "iwouldliketoknowthepriceofthelargesize",
+      "cer": 0.0
+    },
+    {
+      "id": "M1_E048_s0",
+      "voice": 1,
+      "text": "Thank you for calling, have a nice day.",
+      "heard": "thankyouforcallinghaveaniceday",
+      "cer": 0.0
+    }
+  ]
+}

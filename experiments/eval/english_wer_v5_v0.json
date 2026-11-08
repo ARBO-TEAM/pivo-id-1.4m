@@ -1,0 +1,110 @@
+{
+  "asr": "openai/whisper-small.en",
+  "voice_id": 0,
+  "runs": [
+    {
+      "summary": {
+        "tag": "original",
+        "ckpt": "PiVo-1.4M\\checkpoints\\acoustic.pt",
+        "step": null,
+        "sentences": 8,
+        "words": 72,
+        "wer": 0.0556
+      },
+      "rows": [
+        {
+          "text": "The quick brown fox jumps over the lazy dog.",
+          "heard": "The quick brown fox jumps over the lazy dog.",
+          "wer": 0.0
+        },
+        {
+          "text": "Please confirm your order before the end of the day.",
+          "heard": "Please confirm your order before the end of the day.",
+          "wer": 0.0
+        },
+        {
+          "text": "The meeting is scheduled for next Tuesday at nine in the morning.",
+          "heard": "The meeting is scheduled for next Tuesday at 9 in the morning.",
+          "wer": 0.0833
+        },
+        {
+          "text": "I would like to know the price of the large size.",
+          "heard": "I would like to know the price of the large size.",
+          "wer": 0.0
+        },
+        {
+          "text": "Thank you for calling, have a nice day.",
+          "heard": "Thank you for calling, have a nice day.",
+          "wer": 0.0
+        },
+        {
+          "text": "Our office is closed on public holidays.",
+          "heard": "Our office is closed on public holidays.",
+          "wer": 0.0
+        },
+        {
+          "text": "Could you repeat that a little more slowly?",
+          "heard": "Could you repeat that a little more slowly?",
+          "wer": 0.0
+        },
+        {
+          "text": "The total comes to five thousand rupiah.",
+          "heard": "The total comes to 5000 Rapaiah.",
+          "wer": 0.4286
+        }
+      ]
+    },
+    {
+      "summary": {
+        "tag": "v5",
+        "ckpt": "experiments\\runs\\pilot_v5_warm_reset_en\\best.pt",
+        "step": 6000,
+        "sentences": 8,
+        "words": 72,
+        "wer": 0.0417
+      },
+      "rows": [
+        {
+          "text": "The quick brown fox jumps over the lazy dog.",
+          "heard": "The quick brown fox jumps over the lazy dog.",
+          "wer": 0.0
+        },
+        {
+          "text": "Please confirm your order before the end of the day.",
+          "heard": "Please confirm your order before the end of the day.",
+          "wer": 0.0
+        },
+        {
+          "text": "The meeting is scheduled for next Tuesday at nine in the morning.",
+          "heard": "The meeting is scheduled for next Tuesday at 9 in the morning.",
+          "wer": 0.0833
+        },
+        {
+          "text": "I would like to know the price of the large size.",
+          "heard": "I would like to know the price of the large size.",
+          "wer": 0.0
+        },
+        {
+          "text": "Thank you for calling, have a nice day.",
+          "heard": "Thank you for calling, have a nice day.",
+          "wer": 0.0
+        },
+        {
+          "text": "Our office is closed on public holidays.",
+          "heard": "Our office is closed on public holidays.",
+          "wer": 0.0
+        },
+        {
+          "text": "Could you repeat that a little more slowly?",
+          "heard": "Could you repeat that a little more slowly?",
+          "wer": 0.0
+        },
+        {
+          "text": "The total comes to five thousand rupiah.",
+          "heard": "The total comes to 5000 Rupiah.",
+          "wer": 0.2857
+        }
+      ]
+    }
+  ]
+}

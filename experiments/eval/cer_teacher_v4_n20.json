@@ -1,0 +1,292 @@
+{
+  "summary": {
+    "checkpoint": "PiVo-1.4M\\checkpoints\\acoustic.pt",
+    "step": "teacher",
+    "rows": 40,
+    "mean_cer": 0.1398,
+    "mean_cer_voice_0": 0.1253,
+    "mean_cer_voice_1": 0.1542
+  },
+  "rows": [
+    {
+      "id": "F1_L596_s0",
+      "voice": 0,
+      "text": "Untuk biaya kuliah saya belum punya angkanya. Boleh dicek di unikma.ac.id, atau saya arahkan ke prodi ya.",
+      "heard": "untukbiayakuliahsayabelumpunyaangkanyabolehdicekdiunikmaataateritatausayaarahkankeprodia",
+      "cer": 0.0952
+    },
+    {
+      "id": "F1_L599_s0",
+      "voice": 0,
+      "text": "Jadwal pendaftaran belum ada di catatan saya. Silakan cek unikma.ac.id untuk jadwal terbaru.",
+      "heard": "jadwalpendaftaranbelumadadicatatansayasilakancekunikmaatiiduntukjadwalterbaru",
+      "cer": 0.0263
+    },
+    {
+      "id": "F1_L619_s0",
+      "voice": 0,
+      "text": "Ada Es Teh atau Anget, Kopi dan Susu, dan Minuman Instan. Mau saya sebutkan harganya?",
+      "heard": "adaestehatauangetkopidansusudanminumaninstanmausayasebutkanharganya",
+      "cer": 0.0
+    },
+    {
+      "id": "F1_L630_s0",
+      "voice": 0,
+      "text": "Ukuran besar Rp3.500 per pcs. Harga per November 2026 dan dapat berubah.",
+      "heard": "ukuranbesarrletterpletterdidululimaratusperpisieshargapernovemberduaribuduaenamdandapatberubah",
+      "cer": 0.3516
+    },
+    {
+      "id": "F1_L648_s0",
+      "voice": 0,
+      "text": "Kopi dan Susu Rp5.000 per pcs. Harga per November 2026 dan dapat berubah.",
+      "heard": "kopidansusuerpelimaribuperpistesletterhargapernovemberduaribuduaenamdandapatberubah",
+      "cer": 0.2683
+    },
+    {
+      "id": "F1_L654_s0",
+      "voice": 0,
+      "text": "Dari katalog, Cireng Crispy ukuran sedang Rp1.500 per pcs yang paling murah. Harga per November 2026 dan dapat berubah.",
+      "heard": "darikatalokcirengkrispiukuransedangessatzulimlimaratusperpisisyangpalingmurahhargapernovemberduaribudabuenamdandapatberubah",
+      "cer": 0.2109
+    },
+    {
+      "id": "F1_L657_s0",
+      "voice": 0,
+      "text": "Promo 30 pcs Cireng Crispy Rp100.000 per paket yang paling mahal, lalu Buket Bunga Snack Biru Rp90.000. Harga per November 2026 dan dapat berubah.",
+      "heard": "promotigapuluhpisiescirengkrispierpiseratusribuperpaketyangpalingmahallaluketbungasnekbiruerpisminanpuluhribuhargapernovemberduaribuduaenamdandapatberubah",
+      "cer": 0.241
+    },
+    {
+      "id": "F1_L660_s0",
+      "voice": 0,
+      "text": "Cireng Jamur Frozen dan Cireng Crispy tersedia dalam varian Pedas Normal dan Pedas Karhutla.",
+      "heard": "cirengjamurfrozeindancirengkrispitersediadalamvarianpedasnormaldanpedaskarhutla",
+      "cer": 0.0385
+    },
+    {
+      "id": "F1_L663_s0",
+      "voice": 0,
+      "text": "Pack besar isi 8 pcs, harganya Rp25.000. Harga per November 2026 dan dapat berubah.",
+      "heard": "pakbesarisidelapanpesienharganyaarpbedualulimaribuhargapernovemberduaribuduabutnamdandapatberubah",
+      "cer": 0.2524
+    },
+    {
+      "id": "F1_L685_s0",
+      "voice": 0,
+      "text": "Yang disiapkan: KTP dengan NIK aktif, NPWP, nomor WhatsApp dan email aktif untuk verifikasi, alamat lengkap lokasi usaha termasuk titik koordinat, perkiraan modal usaha di luar tanah dan bangunan, dan kode KBLI lima digit.",
+      "heard": "yangdisiapkanklettertletterplerdengannikaktifnpeterwepleternomorwatsapdanimailaktifuntukverifikasialamatlengkaplokalsjahatermasuktitikordinatperkiraanmodalusahadiluartanahdanbangunanjankodekletterbletteriletterlimadigit",
+      "cer": 0.2526
+    },
+    {
+      "id": "F1_L743_s0",
+      "voice": 0,
+      "text": "Ongkos kirim tidak saya hitung. Silakan tanyakan ke Naashop ya.",
+      "heard": "angkoskirimtidaksayahitungsilakantanyakankenashopya",
+      "cer": 0.0385
+    },
+    {
+      "id": "F1_L752_s0",
+      "voice": 0,
+      "text": "Saya hanya bisa membantu soal prodi Bisnis Digital dan produk Naashop. Mau tanya soal itu?",
+      "heard": "sayahanyabisamembantusoalprodibisnisdijitaldanproduknashopmautanyasoalitu",
+      "cer": 0.027
+    },
+    {
+      "id": "F1_L900_s0",
+      "voice": 0,
+      "text": "Hai, saya Dinda, asisten Prodi Bisnis Digital.",
+      "heard": "haisayadindaasistenprodibisnisdijital",
+      "cer": 0.027
+    },
+    {
+      "id": "F1_L905_s0",
+      "voice": 0,
+      "text": "Cireng crispy ukuran sedang seribu lima ratus rupiah per buah.",
+      "heard": "cerengkrispiukuransedangseribulimaratusrupiahperbuah",
+      "cer": 0.0577
+    },
+    {
+      "id": "F1_L906_s0",
+      "voice": 0,
+      "text": "Promo tiga puluh pcs seratus ribu rupiah per paket.",
+      "heard": "promotigapuluhpisiseratusriburupiahperpaket",
+      "cer": 0.093
+    },
+    {
+      "id": "F1_L907_s0",
+      "voice": 0,
+      "text": "Es teh empat ribu rupiah.",
+      "heard": "esteempatriburupiah",
+      "cer": 0.05
+    },
+    {
+      "id": "F1_L922_s0",
+      "voice": 0,
+      "text": "Naashop",
+      "heard": "nashop",
+      "cer": 0.1429
+    },
+    {
+      "id": "F1_L928_s0",
+      "voice": 0,
+      "text": "pack kecil",
+      "heard": "aparkecil",
+      "cer": 0.3333
+    },
+    {
+      "id": "F1_L930_s0",
+      "voice": 0,
+      "text": "OSS",
+      "heard": "oeses",
+      "cer": 0.0
+    },
+    {
+      "id": "F1_L944_s0",
+      "voice": 0,
+      "text": "prabayar",
+      "heard": "prabayar",
+      "cer": 0.0
+    },
+    {
+      "id": "M1_L596_s0",
+      "voice": 1,
+      "text": "Untuk biaya kuliah saya belum punya angkanya. Boleh dicek di unikma.ac.id, atau saya arahkan ke prodi ya.",
+      "heard": "untukbiayakuliahsayabelumpunyaangkanyabolehdicekdiunikmaataditatausayaarahkankeprodia",
+      "cer": 0.0595
+    },
+    {
+      "id": "M1_L599_s0",
+      "voice": 1,
+      "text": "Jadwal pendaftaran belum ada di catatan saya. Silakan cek unikma.ac.id untuk jadwal terbaru.",
+      "heard": "jadwalpendaftaranbelumadadicatatansayasilakancekunikmaadetruntukjadwalterbaru",
+      "cer": 0.0526
+    },
+    {
+      "id": "M1_L619_s0",
+      "voice": 1,
+      "text": "Ada Es Teh atau Anget, Kopi dan Susu, dan Minuman Instan. Mau saya sebutkan harganya?",
+      "heard": "adaestehatauangetkopidansusudanminumaninstanmausayasebutkanharganya",
+      "cer": 0.0
+    },
+    {
+      "id": "M1_L630_s0",
+      "voice": 1,
+      "text": "Ukuran besar Rp3.500 per pcs. Harga per November 2026 dan dapat berubah.",
+      "heard": "ukuranbesarrletterplettertigiriurlimaratusperpesieshargapernovemberduaribuduapuenamdandapatberubah",
+      "cer": 0.3297
+    },
+    {
+      "id": "M1_L648_s0",
+      "voice": 1,
+      "text": "Kopi dan Susu Rp5.000 per pcs. Harga per November 2026 dan dapat berubah.",
+      "heard": "kopidansusuherpetterlimaribuperpesieshargapernovemberduaribuduapuhenamdandapatberubah",
+      "cer": 0.2561
+    },
+    {
+      "id": "M1_L654_s0",
+      "voice": 1,
+      "text": "Dari katalog, Cireng Crispy ukuran sedang Rp1.500 per pcs yang paling murah. Harga per November 2026 dan dapat berubah.",
+      "heard": "daricatalogecirengkrispiukuransedangpeassaturulimaratusperpisisyangpalingmurahhargapernovemberduaribuduaenamdandapatberubah",
+      "cer": 0.2188
+    },
+    {
+      "id": "M1_L660_s0",
+      "voice": 1,
+      "text": "Cireng Jamur Frozen dan Cireng Crispy tersedia dalam varian Pedas Normal dan Pedas Karhutla.",
+      "heard": "cerengjamurfrozendansirengkrispitersediadalamvarianpedasnormaldanpedaskarhutla",
+      "cer": 0.0513
+    },
+    {
+      "id": "M1_L663_s0",
+      "voice": 1,
+      "text": "Pack besar isi 8 pcs, harganya Rp25.000. Harga per November 2026 dan dapat berubah.",
+      "heard": "pakbesarisidelapanpesisharganyaarepiduapelhlimaaribibuhargapernovemberduaribuduapuenamdandapatberubah",
+      "cer": 0.2233
+    },
+    {
+      "id": "M1_L743_s0",
+      "voice": 1,
+      "text": "Ongkos kirim tidak saya hitung. Silakan tanyakan ke Naashop ya.",
+      "heard": "ongcoskirimtidaksayahitungsilakantanyakankenarsopya",
+      "cer": 0.0577
+    },
+    {
+      "id": "M1_L752_s0",
+      "voice": 1,
+      "text": "Saya hanya bisa membantu soal prodi Bisnis Digital dan produk Naashop. Mau tanya soal itu?",
+      "heard": "sayahanyabisamembantusoalprodibisnisdijitaldanproduknashopmautanyasoalitu",
+      "cer": 0.027
+    },
+    {
+      "id": "M1_L900_s0",
+      "voice": 1,
+      "text": "Hai, saya Dinda, asisten Prodi Bisnis Digital.",
+      "heard": "haisayadindaasistenprodikbisnisdijital",
+      "cer": 0.0541
+    },
+    {
+      "id": "M1_L905_s0",
+      "voice": 1,
+      "text": "Cireng crispy ukuran sedang seribu lima ratus rupiah per buah.",
+      "heard": "cerengkrispiukuransedangseribulimaratusrupiahperbuah",
+      "cer": 0.0577
+    },
+    {
+      "id": "M1_L906_s0",
+      "voice": 1,
+      "text": "Promo tiga puluh pcs seratus ribu rupiah per paket.",
+      "heard": "promotigapuluhpisiseratusriburupiahperparket",
+      "cer": 0.1163
+    },
+    {
+      "id": "M1_L907_s0",
+      "voice": 1,
+      "text": "Es teh empat ribu rupiah.",
+      "heard": "esteempatriburupiah",
+      "cer": 0.05
+    },
+    {
+      "id": "M1_L922_s0",
+      "voice": 1,
+      "text": "Naashop",
+      "heard": "naasop",
+      "cer": 0.1429
+    },
+    {
+      "id": "M1_L928_s0",
+      "voice": 1,
+      "text": "pack kecil",
+      "heard": "takecil",
+      "cer": 0.3333
+    },
+    {
+      "id": "M1_L930_s0",
+      "voice": 1,
+      "text": "OSS",
+      "heard": "omases",
+      "cer": 0.4
+    },
+    {
+      "id": "M1_L944_s0",
+      "voice": 1,
+      "text": "prabayar",
+      "heard": "prabayar",
+      "cer": 0.0
+    },
+    {
+      "id": "M1_L953_s0",
+      "voice": 1,
+      "text": "unikma.ac.id",
+      "heard": "unikmaat",
+      "cer": 0.3
+    },
+    {
+      "id": "M1_L959_s0",
+      "voice": 1,
+      "text": "Siapkan dulu KTP, NPWP, nomor WhatsApp, dan alamat lengkap lokasi usaha.",
+      "heard": "siapkanduluklettertletterpletterenpebopepenomorwatsubdanalamatlengkaplokasiusaha",
+      "cer": 0.3538
+    }
+  ]
+}
