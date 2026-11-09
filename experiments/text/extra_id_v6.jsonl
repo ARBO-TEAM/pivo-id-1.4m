@@ -1,0 +1,215 @@
+{"id": "V001", "text": "Selamat pagi, apa kabar hari ini?", "split": "train", "kind": "greeting"}
+{"id": "V002", "text": "Selamat pagi semuanya, selamat datang di kampus.", "split": "train", "kind": "greeting"}
+{"id": "V003", "text": "Halo, apa kabar? Semoga harimu menyenangkan.", "split": "train", "kind": "greeting"}
+{"id": "V004", "text": "Kenalin, aku Dinda, asisten suara kampus.", "split": "train", "kind": "identity"}
+{"id": "V005", "text": "Kenalin PiVo, model suara dua bahasa yang sangat ringan.", "split": "train", "kind": "product"}
+{"id": "V006", "text": "PiVo adalah model suara kecil yang bisa berbahasa Indonesia dan Inggris.", "split": "train", "kind": "product"}
+{"id": "V007", "text": "Model ini mendukung bahasa Indonesia dan bahasa Inggris dalam satu paket.", "split": "train", "kind": "product"}
+{"id": "V008", "text": "Bahasa Indonesia adalah bahasa utama yang dipakai di kampus kami.", "split": "train", "kind": "product"}
+{"id": "V009", "text": "Kami melayani pertanyaan dalam bahasa Indonesia dengan jelas.", "split": "train", "kind": "service"}
+{"id": "V010", "text": "PiVo bisa berbicara bahasa Indonesia dengan suara pria dan wanita.", "split": "train", "kind": "product"}
+{"id": "V011", "text": "Ukuran modelnya sangat kecil, cuma lima koma enam megabita.", "split": "train", "kind": "product"}
+{"id": "V012", "text": "Model ini hanya satu koma empat juta parameter.", "split": "train", "kind": "product"}
+{"id": "V013", "text": "Satu koma empat juta parameter itu sangat ringan.", "split": "train", "kind": "product"}
+{"id": "V014", "text": "Model akustik dan vocoder digabung dalam satu paket.", "split": "train", "kind": "product"}
+{"id": "V015", "text": "Vocoder mengubah fitur akustik menjadi suara.", "split": "train", "kind": "product"}
+{"id": "V016", "text": "Kualitas vocoder sangat menentukan kejelasan suara.", "split": "train", "kind": "product"}
+{"id": "V017", "text": "Model akustik memprediksi fitur suara setiap sepuluh milidetik.", "split": "train", "kind": "product"}
+{"id": "V018", "text": "Eksperimen lokal ini memakai model yang ringan.", "split": "train", "kind": "product"}
+{"id": "V019", "text": "Kami menjalankan eksperimen lokal tanpa server besar.", "split": "train", "kind": "product"}
+{"id": "V020", "text": "Semua eksperimen lokal berjalan di laptop biasa.", "split": "train", "kind": "product"}
+{"id": "V021", "text": "Repositori proyek ini ada di GitHub.", "split": "train", "kind": "product"}
+{"id": "V022", "text": "Kode dan modelnya tersedia di GitHub.", "split": "train", "kind": "product"}
+{"id": "V023", "text": "Reponya ada di GitHub dan bisa diunduh gratis.", "split": "train", "kind": "product"}
+{"id": "V024", "text": "Silakan kunjungi repositori GitHub untuk keterangan lebih lanjut.", "split": "train", "kind": "product"}
+{"id": "V025", "text": "Repositori ini berisi model, kode, dan contoh penggunaan.", "split": "train", "kind": "product"}
+{"id": "V026", "text": "Model ini bisa dipakai untuk eksperimen suara di Indonesia.", "split": "train", "kind": "product"}
+{"id": "V027", "text": "Banyak kampus di Indonesia mulai memakai asisten suara.", "split": "train", "kind": "general"}
+{"id": "V028", "text": "Bahasa Indonesia dipakai oleh ratusan juta orang.", "split": "train", "kind": "general"}
+{"id": "V029", "text": "Suara bahasa Indonesia sekarang terdengar lebih jelas.", "split": "train", "kind": "product"}
+{"id": "V030", "text": "Kami ingin suara bahasa Indonesia yang halus dan jelas.", "split": "train", "kind": "product"}
+{"id": "V031", "text": "Tapi ukuran modelnya tidak boleh terlalu gede.", "split": "train", "kind": "product"}
+{"id": "V032", "text": "Modelnya kecil tapi suaranya cukup jelas.", "split": "train", "kind": "product"}
+{"id": "V033", "text": "Ukuran modelnya gede banget kalau harus memakai server.", "split": "train", "kind": "product"}
+{"id": "V034", "text": "Awalnya suaranya kurang jelas, tapi sekarang sudah bagus.", "split": "train", "kind": "product"}
+{"id": "V035", "text": "Suaranya masih kurang halus di beberapa kata.", "split": "train", "kind": "product"}
+{"id": "V036", "text": "Kata-kata bahasa Indonesia sekarang lebih jelas.", "split": "train", "kind": "product"}
+{"id": "V037", "text": "Kami ingin semua kata terbaca dengan jelas.", "split": "train", "kind": "product"}
+{"id": "V038", "text": "Ucapkan kalimat ini dengan pelan dan jelas.", "split": "train", "kind": "instruction"}
+{"id": "V039", "text": "Tolong ulangi kalimat itu sekali lagi.", "split": "train", "kind": "instruction"}
+{"id": "V040", "text": "Saya belum jelas mendengar nama Anda.", "split": "train", "kind": "service"}
+{"id": "V041", "text": "Program Studi Bisnis Digital ada di UNIKMA Cilacap.", "split": "train", "kind": "campus"}
+{"id": "V042", "text": "Bisnis Digital memadukan manajemen, pemasaran, dan teknologi.", "split": "train", "kind": "campus"}
+{"id": "V043", "text": "Program studi ini mempelajari bisnis di era digital.", "split": "train", "kind": "campus"}
+{"id": "V044", "text": "Pemasaran digital adalah salah satu fokus pembelajaran.", "split": "train", "kind": "campus"}
+{"id": "V045", "text": "Analisis data membantu pengambilan keputusan bisnis.", "split": "train", "kind": "campus"}
+{"id": "V046", "text": "Entrepreneur digital membangun usaha berbasis teknologi.", "split": "train", "kind": "campus"}
+{"id": "V047", "text": "Lulusan bisa bekerja sebagai analis data.", "split": "train", "kind": "campus"}
+{"id": "V048", "text": "Banyak lulusan bekerja di bidang pemasaran digital.", "split": "train", "kind": "campus"}
+{"id": "V049", "text": "Mahasiswa belajar membangun toko digital sendiri.", "split": "train", "kind": "campus"}
+{"id": "V050", "text": "Kuliah dimulai pukul delapan pagi.", "split": "train", "kind": "schedule"}
+{"id": "V051", "text": "Kelas sore dimulai pukul empat.", "split": "train", "kind": "schedule"}
+{"id": "V052", "text": "Pendaftaran dibuka sampai akhir bulan ini.", "split": "train", "kind": "schedule"}
+{"id": "V053", "text": "Silakan datang ke kantor administrasi besok pagi.", "split": "train", "kind": "instruction"}
+{"id": "V054", "text": "Bawa kartu identitas dan salinan ijazah.", "split": "train", "kind": "instruction"}
+{"id": "V055", "text": "Isi formulir ini lalu kembalikan ke meja depan.", "split": "train", "kind": "instruction"}
+{"id": "V056", "text": "Kami akan mengirim surel besok pagi.", "split": "train", "kind": "status"}
+{"id": "V057", "text": "Pembayaran Anda sudah kami terima.", "split": "train", "kind": "status"}
+{"id": "V058", "text": "Pesanan Anda akan dikirim hari Kamis.", "split": "train", "kind": "status"}
+{"id": "V059", "text": "Ada yang bisa saya bantu lagi?", "split": "train", "kind": "closing"}
+{"id": "V060", "text": "Terima kasih sudah menunggu.", "split": "train", "kind": "closing"}
+{"id": "V061", "text": "Terima kasih sudah berkunjung, selamat siang.", "split": "train", "kind": "closing"}
+{"id": "V062", "text": "Semoga jawaban ini membantu.", "split": "train", "kind": "closing"}
+{"id": "V063", "text": "Maaf, informasi itu belum tersedia.", "split": "train", "kind": "apology"}
+{"id": "V064", "text": "Maaf, saya tidak bisa menjawab pertanyaan itu.", "split": "train", "kind": "apology"}
+{"id": "V065", "text": "Silakan cek situs kampus untuk jadwal terbaru.", "split": "train", "kind": "service"}
+{"id": "V066", "text": "Jadwal kuliah bisa berubah setiap semester.", "split": "train", "kind": "service"}
+{"id": "V067", "text": "Perpustakaan buka setiap hari kerja.", "split": "train", "kind": "campus"}
+{"id": "V068", "text": "Ruang kelas berada di lantai dua.", "split": "train", "kind": "campus"}
+{"id": "V069", "text": "Laboratorium komputer tutup pukul delapan malam.", "split": "train", "kind": "campus"}
+{"id": "V070", "text": "Harga produk ini dua puluh lima ribu rupiah.", "split": "train", "kind": "price"}
+{"id": "V071", "text": "Harga paket besar dua puluh lima ribu per pack.", "split": "train", "kind": "price"}
+{"id": "V072", "text": "Harga paket kecil dua puluh ribu rupiah.", "split": "train", "kind": "price"}
+{"id": "V073", "text": "Harga dapat berubah kapan saja.", "split": "train", "kind": "price"}
+{"id": "V074", "text": "Harga ini berlaku bulan November dua ribu dua puluh enam.", "split": "train", "kind": "price"}
+{"id": "V075", "text": "Kami menjual cireng jamur frozen.", "split": "train", "kind": "product"}
+{"id": "V076", "text": "Cireng crispy tersedia rasa pedas normal dan pedas karhutla.", "split": "train", "kind": "product"}
+{"id": "V077", "text": "Produk lain di luar katalog tidak kami jual.", "split": "train", "kind": "rule"}
+{"id": "V078", "text": "Silakan pesan lewat halaman katalog.", "split": "train", "kind": "rule"}
+{"id": "V079", "text": "Kami tidak menerima pesanan lewat suara.", "split": "train", "kind": "rule"}
+{"id": "V080", "text": "Nomor telepon dan biaya kuliah tidak bisa saya sebutkan.", "split": "train", "kind": "rule"}
+{"id": "V081", "text": "Silakan lihat situs unikma titik ac titik id.", "split": "train", "kind": "service"}
+{"id": "V082", "text": "Beasiswa dan akreditasi dijelaskan di situs resmi.", "split": "train", "kind": "service"}
+{"id": "V083", "text": "Saya bisa membantu menjawab pertanyaan singkat.", "split": "train", "kind": "service"}
+{"id": "V084", "text": "Jawaban saya dibuat singkat supaya mudah didengar.", "split": "train", "kind": "service"}
+{"id": "V085", "text": "Suara ini dibuat oleh model kecil, bukan rekaman asli.", "split": "train", "kind": "product"}
+{"id": "V086", "text": "Model suara ini dilatih dengan suara dari Supertonic.", "split": "train", "kind": "product"}
+{"id": "V087", "text": "Kami memakai data suara bahasa Indonesia sebagai contoh.", "split": "train", "kind": "product"}
+{"id": "V088", "text": "Data latihnya berisi kalimat bahasa Indonesia dan bahasa Inggris.", "split": "train", "kind": "product"}
+{"id": "V089", "text": "Kalimat bahasa Indonesia dipakai untuk melatih suara utama.", "split": "train", "kind": "product"}
+{"id": "V090", "text": "Kalimat bahasa Inggris dipakai supaya suara Inggris tidak hilang.", "split": "train", "kind": "product"}
+{"id": "V091", "text": "Model ini tetap bisa membaca kalimat bahasa Inggris.", "split": "train", "kind": "product"}
+{"id": "V092", "text": "Kami menguji model dengan kalimat bahasa Indonesia yang baru.", "split": "train", "kind": "product"}
+{"id": "V093", "text": "Hasil pengujian dibandingkan dengan suara guru.", "split": "train", "kind": "product"}
+{"id": "V094", "text": "Suara guru memang lebih bagus karena modelnya jauh lebih besar.", "split": "train", "kind": "product"}
+{"id": "V095", "text": "Model kecil ini masih terus diperbaiki.", "split": "train", "kind": "product"}
+{"id": "V096", "text": "Kami menambahkan lebih banyak kalimat agar katanya lebih jelas.", "split": "train", "kind": "product"}
+{"id": "V097", "text": "Semua kata bahasa Indonesia sekarang masuk daftar latihan.", "split": "train", "kind": "product"}
+{"id": "V098", "text": "Daftar kalimat ini dipakai untuk mengukur kelengkapan kosakata.", "split": "train", "kind": "product"}
+{"id": "V099", "text": "Kalau ada kata yang belum jelas, tolong beri tahu kami.", "split": "train", "kind": "service"}
+{"id": "V100", "text": "Kami akan menambahkan kata itu ke data latihan berikutnya.", "split": "train", "kind": "service"}
+{"id": "V101", "text": "Indonesia adalah negara dengan bahasa yang kaya.", "split": "train", "kind": "general"}
+{"id": "V102", "text": "Bahasa Indonesia mudah dipelajari oleh siapa saja.", "split": "train", "kind": "general"}
+{"id": "V103", "text": "Saya tinggal di Indonesia sejak kecil.", "split": "train", "kind": "general"}
+{"id": "V104", "text": "Kami bekerja di Indonesia dan Inggris.", "split": "train", "kind": "general"}
+{"id": "V105", "text": "Tim kami ada di Indonesia dan juga di luar negeri.", "split": "train", "kind": "general"}
+{"id": "V106", "text": "Bahasa Inggris dipakai dalam banyak dokumen resmi.", "split": "train", "kind": "general"}
+{"id": "V107", "text": "Saya bisa berbicara bahasa Indonesia dan bahasa Inggris.", "split": "train", "kind": "general"}
+{"id": "V108", "text": "Ganti bahasa dengan tombol di layar.", "split": "train", "kind": "instruction"}
+{"id": "V109", "text": "Tulisan Indonesia dan Inggris sama-sama tersedia.", "split": "train", "kind": "general"}
+{"id": "V110", "text": "Suara pria dan suara wanita tersedia untuk kedua bahasa.", "split": "train", "kind": "product"}
+{"id": "V111", "text": "Pilih suara pria atau suara wanita sesuai kebutuhan.", "split": "train", "kind": "product"}
+{"id": "V112", "text": "Suara pria terdengar lebih berat, suara wanita lebih ringan.", "split": "train", "kind": "product"}
+{"id": "V113", "text": "Kami merekam contoh suara pria dan wanita.", "split": "train", "kind": "product"}
+{"id": "V114", "text": "Hari ini cuacanya cerah di Cilacap.", "split": "train", "kind": "general"}
+{"id": "V115", "text": "Besok pagi saya akan ke kantor.", "split": "train", "kind": "general"}
+{"id": "V116", "text": "Kemarin kami belajar tentang pemasaran digital.", "split": "train", "kind": "general"}
+{"id": "V117", "text": "Minggu depan ada ujian tengah semester.", "split": "train", "kind": "general"}
+{"id": "V118", "text": "Saya sedang membaca buku tentang bisnis digital.", "split": "train", "kind": "general"}
+{"id": "V119", "text": "Mahasiswa itu rajin dan selalu datang tepat waktu.", "split": "train", "kind": "general"}
+{"id": "V120", "text": "Dosen kami menjelaskan materi dengan sangat jelas.", "split": "train", "kind": "general"}
+{"id": "V121", "text": "Tolong kirim pesan itu lewat surel.", "split": "train", "kind": "instruction"}
+{"id": "V122", "text": "Saya akan menghubungi Anda kembali nanti.", "split": "train", "kind": "service"}
+{"id": "V123", "text": "Kami menunggu jawaban Anda sampai besok.", "split": "train", "kind": "service"}
+{"id": "V124", "text": "Silakan hubungi kantor kami pada jam kerja.", "split": "train", "kind": "service"}
+{"id": "V125", "text": "Jam kerja kami mulai pukul sembilan pagi.", "split": "train", "kind": "schedule"}
+{"id": "V126", "text": "Kantor tutup pada hari libur nasional.", "split": "train", "kind": "schedule"}
+{"id": "V127", "text": "Saya belum menerima formulir pendaftaran.", "split": "train", "kind": "status"}
+{"id": "V128", "text": "Status pendaftaran bisa dilihat di situs kampus.", "split": "train", "kind": "status"}
+{"id": "V129", "text": "Mohon kirim salinan kartu identitas Anda.", "split": "train", "kind": "instruction"}
+{"id": "V130", "text": "Berkas itu sudah kami terima dengan lengkap.", "split": "train", "kind": "status"}
+{"id": "V131", "text": "Apakah Anda ingin bertanya hal lain?", "split": "train", "kind": "question"}
+{"id": "V132", "text": "Apakah saya sudah menjelaskan dengan cukup jelas?", "split": "train", "kind": "question"}
+{"id": "V133", "text": "Bisakah Anda mengulang pertanyaannya?", "split": "train", "kind": "question"}
+{"id": "V134", "text": "Mau saya bacakan harga paket yang lain?", "split": "train", "kind": "question"}
+{"id": "V135", "text": "Sudah siap untuk mencoba suara yang baru?", "split": "train", "kind": "question"}
+{"id": "V136", "text": "PiVo siap dijalankan di laptop tanpa kartu grafis.", "split": "train", "kind": "product"}
+{"id": "V137", "text": "Model ini berjalan cepat walau tanpa kartu grafis.", "split": "train", "kind": "product"}
+{"id": "V138", "text": "Suara dihasilkan dalam waktu kurang dari satu detik.", "split": "train", "kind": "product"}
+{"id": "V139", "text": "Semua proses berjalan langsung di perangkat Anda.", "split": "train", "kind": "product"}
+{"id": "V140", "text": "Data suara tidak dikirim ke server mana pun.", "split": "train", "kind": "product"}
+{"id": "V141", "text": "Saya membantu mahasiswa memahami prosedur pendaftaran.", "split": "train", "kind": "service"}
+{"id": "V142", "text": "Saya bisa menjelaskan produk yang ada di katalog.", "split": "train", "kind": "service"}
+{"id": "V143", "text": "Saya tidak menjual produk di luar katalog.", "split": "train", "kind": "rule"}
+{"id": "V144", "text": "Saya tidak menghitung ongkos kirim.", "split": "train", "kind": "rule"}
+{"id": "V145", "text": "Saya tidak menjanjikan waktu pengiriman.", "split": "train", "kind": "rule"}
+{"id": "V146", "text": "Nama pembeli tidak pernah saya sebutkan.", "split": "train", "kind": "rule"}
+{"id": "V147", "text": "Jumlah pesanan hari ini bisa saya sebutkan.", "split": "train", "kind": "info"}
+{"id": "V148", "text": "Omzet bulan ini sedang kami hitung.", "split": "train", "kind": "info"}
+{"id": "V149", "text": "Ada tiga pesanan yang belum selesai.", "split": "train", "kind": "info"}
+{"id": "V150", "text": "Semua pertanyaan akan dijawab dengan singkat.", "split": "train", "kind": "service"}
+{"id": "V151", "text": "Teknologi modern membantu bisnis tumbuh lebih cepat.", "split": "train", "kind": "general"}
+{"id": "V152", "text": "Inovasi lahir dari keberanian mencoba hal baru.", "split": "train", "kind": "general"}
+{"id": "V153", "text": "Kreativitas dan disiplin sama-sama penting.", "split": "train", "kind": "general"}
+{"id": "V154", "text": "Pemimpin bisnis digital harus adaptif dan cepat belajar.", "split": "train", "kind": "general"}
+{"id": "V155", "text": "Brand yang kuat dibangun dengan konsistensi.", "split": "train", "kind": "general"}
+{"id": "V156", "text": "Media sosial adalah kanal promosi yang penting.", "split": "train", "kind": "general"}
+{"id": "V157", "text": "Konsumen sekarang membeli barang lewat internet.", "split": "train", "kind": "general"}
+{"id": "V158", "text": "Membaca tren pasar membantu kita mengambil keputusan.", "split": "train", "kind": "general"}
+{"id": "V159", "text": "Data penjualan menunjukkan kenaikan setiap bulan.", "split": "train", "kind": "general"}
+{"id": "V160", "text": "Toko digital kami melayani pesanan setiap hari.", "split": "train", "kind": "general"}
+{"id": "V161", "text": "Pagi ini saya minum kopi lalu berangkat kerja.", "split": "train", "kind": "general"}
+{"id": "V162", "text": "Kabar baik, proyek kita sudah selesai.", "split": "train", "kind": "general"}
+{"id": "V163", "text": "Kabar buruknya, jadwal kita mundur satu hari.", "split": "train", "kind": "general"}
+{"id": "V164", "text": "Soal ukuran, model ini jauh lebih kecil dari model lain.", "split": "train", "kind": "product"}
+{"id": "V165", "text": "Kalau soalnya kecepatan, model kecil ini sangat cepat.", "split": "train", "kind": "product"}
+{"id": "V166", "text": "Tapi jangan salah, kualitas suaranya tetap dijaga.", "split": "train", "kind": "product"}
+{"id": "V167", "text": "Dia bilang modelnya gede, padahal cuma lima megabita.", "split": "train", "kind": "general"}
+{"id": "V168", "text": "Jangan pakai model yang gede kalau perangkatnya terbatas.", "split": "train", "kind": "product"}
+{"id": "V169", "text": "Suaranya bagus banget waktu diuji di studio.", "split": "train", "kind": "general"}
+{"id": "V170", "text": "Terima kasih, itu sangat membantu sekali.", "split": "train", "kind": "closing"}
+{"id": "V171", "text": "Sampai jumpa besok pagi.", "split": "train", "kind": "closing"}
+{"id": "V172", "text": "Selamat jalan, hati-hati di perjalanan.", "split": "train", "kind": "closing"}
+{"id": "V173", "text": "Selamat pagi, selamat beraktivitas.", "split": "train", "kind": "greeting"}
+{"id": "V174", "text": "Selamat malam, semoga istirahatnya nyaman.", "split": "train", "kind": "greeting"}
+{"id": "V175", "text": "Saya minta maaf atas ketidaknyamanan ini.", "split": "train", "kind": "apology"}
+{"id": "V176", "text": "Kami mohon maaf bila ada kesalahan.", "split": "train", "kind": "apology"}
+{"id": "V177", "text": "Silakan coba lagi beberapa saat lagi.", "split": "train", "kind": "service"}
+{"id": "V178", "text": "Layanan kami sedang dalam perbaikan.", "split": "train", "kind": "status"}
+{"id": "V179", "text": "Fitur bahasa Inggris akan tetap dipertahankan.", "split": "train", "kind": "product"}
+{"id": "V180", "text": "Kalimat Indonesia sekarang lebih jelas dan halus.", "split": "train", "kind": "product"}
+{"id": "V181", "text": "Tolong dengarkan contoh suara berikut ini.", "split": "train", "kind": "instruction"}
+{"id": "V182", "text": "Contoh pertama memakai suara wanita.", "split": "train", "kind": "product"}
+{"id": "V183", "text": "Contoh kedua memakai suara pria.", "split": "train", "kind": "product"}
+{"id": "V184", "text": "Bandingkan kedua suara lalu pilih yang paling nyaman.", "split": "train", "kind": "instruction"}
+{"id": "V185", "text": "Model ini bisa dipakai untuk aplikasi kampus.", "split": "train", "kind": "product"}
+{"id": "V186", "text": "Aplikasi kampus memakai suara untuk menjawab pertanyaan.", "split": "train", "kind": "product"}
+{"id": "V187", "text": "Asisten suara membantu mahasiswa menemukan informasi.", "split": "train", "kind": "service"}
+{"id": "V188", "text": "Informasi akademik bisa ditanyakan lewat suara.", "split": "train", "kind": "service"}
+{"id": "V189", "text": "Prosedur perizinan dijelaskan satu per satu.", "split": "train", "kind": "service"}
+{"id": "V190", "text": "Syarat dan biaya tidak boleh ditambah sendiri.", "split": "train", "kind": "rule"}
+{"id": "V191", "text": "Semua jawaban harus sesuai dengan katalog resmi.", "split": "train", "kind": "rule"}
+{"id": "V192", "text": "Kalau tidak ada di katalog, berarti produk itu tidak dijual.", "split": "train", "kind": "rule"}
+{"id": "V193", "text": "Saya akan menjawab satu pertanyaan pada satu waktu.", "split": "train", "kind": "service"}
+{"id": "V194", "text": "Setelah itu saya bisa menjawab pertanyaan berikutnya.", "split": "train", "kind": "service"}
+{"id": "V195", "text": "Terima kasih sudah mendengarkan.", "split": "train", "kind": "closing"}
+{"id": "V196", "text": "Semoga hari Anda menyenangkan.", "split": "train", "kind": "closing"}
+{"id": "V197", "text": "Sampai bertemu lagi di lain kesempatan.", "split": "train", "kind": "closing"}
+{"id": "V198", "text": "PiVo, dua bahasa, Indonesia dan Inggris.", "split": "train", "kind": "product"}
+{"id": "V199", "text": "Reponya ada di GitHub, silakan dicoba.", "split": "train", "kind": "product"}
+{"id": "V200", "text": "Model akustik dan vocoder dalam satu paket ringan.", "split": "train", "kind": "product"}
+{"id": "V201", "text": "Uji coba ini memakai kalimat bahasa Indonesia.", "split": "val", "kind": "product"}
+{"id": "V202", "text": "Kami menguji suara pria dan suara wanita.", "split": "val", "kind": "product"}
+{"id": "V203", "text": "Hasilnya kami bandingkan dengan rekaman guru.", "split": "val", "kind": "product"}
+{"id": "V204", "text": "Beberapa kata masih perlu diperbaiki.", "split": "val", "kind": "product"}
+{"id": "V205", "text": "Kami mencatat semua kata yang belum jelas.", "split": "val", "kind": "product"}
+{"id": "V206", "text": "Daftar kata itu dipakai untuk latihan berikutnya.", "split": "val", "kind": "product"}
+{"id": "V207", "text": "Model baru diuji dengan kalimat yang belum pernah dilihat.", "split": "val", "kind": "product"}
+{"id": "V208", "text": "Kalimat uji tidak boleh sama dengan kalimat latihan.", "split": "val", "kind": "rule"}
+{"id": "V209", "text": "Suara bahasa Inggris juga diuji ulang.", "split": "val", "kind": "product"}
+{"id": "V210", "text": "Bahasa Inggris tidak boleh kalah dari model sebelumnya.", "split": "val", "kind": "product"}
+{"id": "V211", "text": "Kami memilih model terbaik dari hasil pengujian.", "split": "val", "kind": "product"}
+{"id": "V212", "text": "Semua pengujian dicatat dengan rapi.", "split": "val", "kind": "product"}
+{"id": "V213", "text": "Hasil akhirnya disimpan di repositori GitHub.", "split": "val", "kind": "product"}
+{"id": "V214", "text": "Ukuran berkasnya kecil sehingga mudah diunduh.", "split": "val", "kind": "product"}
+{"id": "V215", "text": "Unduhan model tersedia di halaman rilis GitHub.", "split": "val", "kind": "product"}

@@ -270,6 +270,20 @@ class TestMaskedLosses(unittest.TestCase):
         self.assertAlmostEqual(f.item(), 0.0, places=6)
         self.assertAlmostEqual(d.item(), 0.0, places=6)
 
+    def test_delta_loss_zero_for_identical_and_ignored_on_padding(self):
+        pred = torch.randn(2, 5, 20)
+        target = torch.randn(2, 5, 20)
+        flen = torch.tensor([4, 3])
+        self.assertAlmostEqual(T.masked_delta_loss(pred, pred.clone(), flen).item(), 0.0, places=6)
+        target2 = target.clone()
+        target2[0, 4] = 999.0  # padded frame and diff
+        self.assertAlmostEqual(T.masked_delta_loss(pred, target, flen).item(),
+                               T.masked_delta_loss(pred, target2, flen).item(), places=6)
+        jitter_pred = pred.clone()
+        jitter_pred[0, 1] += 10.0
+        self.assertGreater(T.masked_delta_loss(jitter_pred, target, flen).item(),
+                           T.masked_delta_loss(pred, target, flen).item())
+
 
 class TestLRAndOptimizer(unittest.TestCase):
     def _args(self, **kw):

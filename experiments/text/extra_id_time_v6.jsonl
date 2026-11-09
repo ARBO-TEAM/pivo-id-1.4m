@@ -1,0 +1,85 @@
+{"id": "T001", "text": "Kantor buka pukul 08:00 pagi.", "split": "train", "kind": "time"}
+{"id": "T002", "text": "Pendaftaran ditutup pukul 16:00 sore.", "split": "train", "kind": "time"}
+{"id": "T003", "text": "Perpustakaan tutup pukul 20:00 malam.", "split": "train", "kind": "time"}
+{"id": "T004", "text": "Kelas dimulai pukul 07:30 pagi.", "split": "train", "kind": "time"}
+{"id": "T005", "text": "Kelas selesai pukul 17:45 sore.", "split": "train", "kind": "time"}
+{"id": "T006", "text": "Kami mulai bekerja pukul 08:30 pagi.", "split": "train", "kind": "time"}
+{"id": "T007", "text": "Jam pulang kami pukul 15:00 siang.", "split": "train", "kind": "time"}
+{"id": "T008", "text": "Ruangan dibersihkan pukul 12:00 siang.", "split": "train", "kind": "time"}
+{"id": "T009", "text": "Istirahat siang dimulai pukul 11:30.", "split": "train", "kind": "time"}
+{"id": "T010", "text": "Matikan lampu pukul 21:00 malam.", "split": "train", "kind": "time"}
+{"id": "T011", "text": "Kuliah pagi dimulai pukul 08:00 tepat.", "split": "train", "kind": "time"}
+{"id": "T012", "text": "Dokter datang pukul 10:15 pagi.", "split": "train", "kind": "time"}
+{"id": "T013", "text": "Kereta berangkat pukul 06:45 pagi.", "split": "train", "kind": "time"}
+{"id": "T014", "text": "Kereta tiba pukul 13:20 siang.", "split": "train", "kind": "time"}
+{"id": "T015", "text": "Toko buka pukul 09:00 pagi.", "split": "train", "kind": "time"}
+{"id": "T016", "text": "Toko tutup pukul 22:00 malam.", "split": "train", "kind": "time"}
+{"id": "T017", "text": "Jam operasional mulai pukul 08:00 dan berakhir pukul 17:00.", "split": "train", "kind": "time"}
+{"id": "T018", "text": "Sampai pukul 08:00 orang belum datang.", "split": "train", "kind": "time"}
+{"id": "T019", "text": "Kami menunggu sampai pukul 18:30.", "split": "train", "kind": "time"}
+{"id": "T020", "text": "Waktu lokal sekarang pukul 10:05.", "split": "train", "kind": "time"}
+{"id": "T021", "text": "Tenang, sekarang pukul 11:00.", "split": "train", "kind": "time"}
+{"id": "T022", "text": "Besok saya datang pukul 08:00 pagi.", "split": "train", "kind": "time"}
+{"id": "T023", "text": "Datang sebelum pukul 09:30 pagi.", "split": "train", "kind": "time"}
+{"id": "T024", "text": "Selesaikan sebelum pukul 16:45.", "split": "train", "kind": "time"}
+{"id": "T025", "text": "Batas akhir pukul 23:59 malam.", "split": "train", "kind": "time"}
+{"id": "T026", "text": "Alarm berbunyi pukul 05:00 pagi.", "split": "train", "kind": "time"}
+{"id": "T027", "text": "Kami sarapan pukul 06:30 pagi.", "split": "train", "kind": "time"}
+{"id": "T028", "text": "Makan siang pukul 12:30 siang.", "split": "train", "kind": "time"}
+{"id": "T029", "text": "Jam pulang sekolah pukul 14:00.", "split": "train", "kind": "time"}
+{"id": "T030", "text": "Jam pulang kantor pukul 17:00 sore.", "split": "train", "kind": "time"}
+{"id": "T031", "text": "Waktu menunjukkan pukul 19:40 malam.", "split": "train", "kind": "time"}
+{"id": "T032", "text": "Buka pukul 08:00, tutup pukul 20:00.", "split": "train", "kind": "time"}
+{"id": "T033", "text": "Kelas pertama pukul 08:10 pagi.", "split": "train", "kind": "time"}
+{"id": "T034", "text": "Kelas terakhir selesai pukul 18:20.", "split": "train", "kind": "time"}
+{"id": "T035", "text": "Silakan datang pukul 08:50 pagi.", "split": "train", "kind": "time"}
+{"id": "T036", "text": "Kami buka pukul 00:00 sampai pukul 24:00.", "split": "train", "kind": "time"}
+{"id": "T037", "text": "Jam 08:00 adalah waktu buka kantor.", "split": "train", "kind": "time"}
+{"id": "T038", "text": "Jam 16:00 adalah waktu tutup pendaftaran.", "split": "train", "kind": "time"}
+{"id": "T039", "text": "Tolong catat jam 08:00 dan jam 17:00.", "split": "train", "kind": "time"}
+{"id": "T040", "text": "Besok jam 08:00 kita bertemu di kantor.", "split": "train", "kind": "time"}
+{"id": "T041", "text": "Pukul 08:00 pagi, semua orang harus sudah hadir.", "split": "train", "kind": "time"}
+{"id": "T042", "text": "Pukul 17:00 sore, kantor sudah tutup.", "split": "train", "kind": "time"}
+{"id": "T043", "text": "Titik dua itu dibaca sebagai jam.", "split": "train", "kind": "time"}
+{"id": "T044", "text": "08:00 dibaca delapan kosong nol.", "split": "train", "kind": "time"}
+{"id": "T045", "text": "Angka setelah titik dua menunjukkan menit.", "split": "train", "kind": "time"}
+{"id": "T046", "text": "Waktu itu pukul 08:15.", "split": "train", "kind": "time"}
+{"id": "T047", "text": "Waktu itu pukul 08:45.", "split": "train", "kind": "time"}
+{"id": "T048", "text": "Waktu itu pukul 09:15.", "split": "train", "kind": "time"}
+{"id": "T049", "text": "Waktu itu pukul 10:30.", "split": "train", "kind": "time"}
+{"id": "T050", "text": "Waktu itu pukul 11:45.", "split": "train", "kind": "time"}
+{"id": "T051", "text": "Waktu itu pukul 13:05.", "split": "train", "kind": "time"}
+{"id": "T052", "text": "Waktu itu pukul 14:55.", "split": "train", "kind": "time"}
+{"id": "T053", "text": "Waktu itu pukul 15:25.", "split": "train", "kind": "time"}
+{"id": "T054", "text": "Waktu itu pukul 18:40.", "split": "train", "kind": "time"}
+{"id": "T055", "text": "Waktu itu pukul 19:55.", "split": "train", "kind": "time"}
+{"id": "T056", "text": "Waktu itu pukul 21:35.", "split": "train", "kind": "time"}
+{"id": "T057", "text": "Waktu itu pukul 22:10.", "split": "train", "kind": "time"}
+{"id": "T058", "text": "Waktu itu pukul 23:50.", "split": "train", "kind": "time"}
+{"id": "T059", "text": "Kita mulai pukul 08:00 dan istirahat pukul 10:00.", "split": "train", "kind": "time"}
+{"id": "T060", "text": "Kita lanjut pukul 13:00 dan selesai pukul 15:00.", "split": "train", "kind": "time"}
+{"id": "T061", "text": "Datang pukul 08:00 atau pukul 09:00.", "split": "train", "kind": "time"}
+{"id": "T062", "text": "Pilih pukul 08:00 atau pukul 10:00.", "split": "train", "kind": "time"}
+{"id": "T063", "text": "Pukul 08:00 sampai pukul 12:00 kami buka.", "split": "train", "kind": "time"}
+{"id": "T064", "text": "Dari pukul 13:00 sampai pukul 17:00 kami melayani.", "split": "train", "kind": "time"}
+{"id": "T065", "text": "Tolong hubungi kami sebelum pukul 08:00.", "split": "train", "kind": "time"}
+{"id": "T066", "text": "Saya akan tiba pukul 19:20.", "split": "train", "kind": "time"}
+{"id": "T067", "text": "Kami menunggu Anda pukul 09:45.", "split": "train", "kind": "time"}
+{"id": "T068", "text": "Kami tutup pukul 21:30.", "split": "train", "kind": "time"}
+{"id": "T069", "text": "Lampu menyala pukul 06:00 pagi.", "split": "train", "kind": "time"}
+{"id": "T070", "text": "Selesai pukul 08:00 tepat.", "split": "train", "kind": "time"}
+{"id": "T071", "text": "Jam 08:00 artinya jam delapan pagi.", "split": "train", "kind": "time"}
+{"id": "T072", "text": "Jam 20:00 artinya jam delapan malam.", "split": "train", "kind": "time"}
+{"id": "T073", "text": "Jangan lupa, besok jam 08:00.", "split": "train", "kind": "time"}
+{"id": "T074", "text": "Sampai jam 08:00, jangan terlambat.", "split": "train", "kind": "time"}
+{"id": "T075", "text": "Jam berapa sekarang? Sekarang pukul 08:20.", "split": "train", "kind": "time"}
+{"id": "T076", "text": "Waktu tutup 17:00, waktu buka 08:00.", "split": "train", "kind": "time"}
+{"id": "T077", "text": "Senin pukul 08:00 sampai Jumat pukul 17:00.", "split": "train", "kind": "time"}
+{"id": "T078", "text": "Acara mulai pukul 09:00 dan berakhir pukul 11:00.", "split": "train", "kind": "time"}
+{"id": "T079", "text": "Rapat dimulai pukul 08:00 pagi hari ini.", "split": "train", "kind": "time"}
+{"id": "T080", "text": "Rapat selesai pukul 09:30 pagi hari ini.", "split": "train", "kind": "time"}
+{"id": "T081", "text": "Uji pukul 08:01 pagi.", "split": "val", "kind": "time"}
+{"id": "T082", "text": "Uji pukul 16:31 sore.", "split": "val", "kind": "time"}
+{"id": "T083", "text": "Uji pukul 20:05 malam.", "split": "val", "kind": "time"}
+{"id": "T084", "text": "Uji pukul 07:55 pagi.", "split": "val", "kind": "time"}
+{"id": "T085", "text": "Uji pukul 12:45 siang.", "split": "val", "kind": "time"}

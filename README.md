@@ -18,7 +18,7 @@ weights, the ONNX export and the measurements behind every claim below.
 |---|---|
 | `src_id/` | Training + inference code: `acoustic.py` (PiVo architecture), `train.py`, `frontend.py` (Indonesian G2P), `ctc_align.py` (CTC forced alignment), `teacher.py` (Supertonic driver) |
 | `experiments/` | Corpus builder, ONNX exporter, renderers, and the CER/WER evaluation scripts |
-| `experiments/text/` | Text manifests: `domain_manifest.jsonl` (Indonesian domain sentences), `english_manifest.jsonl` (English rehearsal) |
+| `experiments/text/` | Text manifests: `domain_manifest.jsonl` (Indonesian domain sentences), `english_manifest.jsonl` (English rehearsal), plus the v6 expansion `extra_id_v6.jsonl` (215 demo/domain sentences) and `extra_id_time_v6.jsonl` (85 clock-form sentences) |
 | `tests/` | 138 tests (`python -I -m pytest tests -q`) |
 | `research/` | Measured results: `training-run-report.md` (main report), `ab-warm-scratch.md`, `pivo-parity.md`, `teacher-audit.md` (license audit) |
 | `docs/superpowers/plans/` | The plan this work followed |
@@ -31,6 +31,7 @@ redistributed).
 |---|---:|---|
 | `pivo-id-1.4m-onnx.zip` | 5.6 MB | Ready-to-run PiVo-format model folder (see below) |
 | `pilot_v5c_best.pt` | 6.8 MB | Raw training checkpoint (weights + AdamW state, for resume/further training) |
+| `pivo-id-v6-onnx.zip` | 5.6 MB | v6 model folder: warm-start retrain on the expanded corpus (see Measured results) |
 
 ## The ONNX model folder
 
@@ -92,6 +93,49 @@ Long domain sentences (>60 chars) are much closer to teacher than short foreign
 phrases and numbers: v4 0.136 vs teacher 0.111; v5c 0.148 vs 0.111. Short phrases
 (≤10 chars: "OSS", "Naashop", "prabayar") are the weak spot for both student runs.
 
+#### v6 — expanded corpus retrain (demo-word coverage)
+
+v5c's weakness was unseen demo vocabulary ("Indonesia", "Inggris", "megabita",
+"vocoder", "GitHub", "pagi", "koma", "ringan", clock forms like `08:00`).
+v6 retrains from the PiVo original on a 1,857-row merged corpus: 1,569 new
+Indonesian rows (424 unique texts × 2 voices × 2 seeds, 127 rows rejected by a
+95% CTC read-back gate and duration checks) + 288 English rehearsal rows.
+9000 steps, batch 8, AdamW 1e-4 → 1e-5, delta-weight 0.15 (frame-to-frame
+smoothing loss), RTX 5060 Ti. Final val: feature 0.2016, duration 0.0923.
+
+Demo + held-out sentences (`experiments/eval/v6_listen/`, ONNX model
+`experiments/models/pivo-id-v6`, parity encoder 1.88e-06, log-durations
+2.15e-06, decoder 7.34e-05):
+
+| Sentence | CER |
+|---|---:|
+| "Selamat pagi, apa kabar?" | **0.000** |
+| "Ada sesuatu hari ini, semuanya jelas dan halus." | **0.000** |
+| "Waktu sekarang pukul 08:15 pagi." | **0.000** |
+| "PiVo adalah model suara dua bahasa, Indonesia dan Inggris." | 0.021 |
+| "Selamat pagi, apa kabar? Saya baik, terima kasih." | 0.026 |
+| "Model akustik dan vocoder dalam satu paket..." | 0.065 |
+| "Mau suara dua bahasa tapi ukuran modelnya gede banget?" | 0.089 |
+| "PiVo, bahasa Indonesia dan Inggris. Reponya ada di GitHub!" | 0.149 |
+| "Hello there, ready to run on edge!" (English, M1) | 0.154 |
+| "Buka pukul 08:00 dan tutup pukul 20:00." | 0.163 |
+| "Kenalin PiVo. Satu koma empat juta, cuma lima koma enam megabita!" | 0.269 |
+
+Weakest: spoken numbers ("lima koma enam megabita" heard as "lima konga
+kenem noumezewita") and clock digits ("nol" dropped in `h2`). Every previously
+unseen demo word is now read back correctly.
+
+#### v6-cont — 1,000 more steps (negative result)
+
+Resuming from v6 `last.pt` for +1,000 steps (batch 32, lr 3e-5 → 3e-6,
+delta-weight 0.15, same corpus) lowered train feature to 0.170 but **raised**
+val feature 0.2016 → 0.2030 at step 9,500 and 10,000 — mild overfitting.
+CER on the same 11 sentences (`experiments/eval/v6cont_listen/`) was mixed:
+`h3` improved 0.021 → 0.000, but `scene1` 0.089 → 0.133, `scene2` 0.269 →
+0.288, `h2` 0.163 → 0.233 worsened. Verdict: keep **v6 at 9,000 steps**;
+extra steps do not help at 1.4M parameters. The fixed `--resume` shell-shape
+bug (vocab taken from checkpoint config, not the dataset) is in `src_id/train.py`.
+
 ### English retention (CER, 16 held-out English rows, English CTC)
 
 | Checkpoint | CER | Note |
@@ -120,7 +164,9 @@ evaluation) agrees: PiVo original 0.0556, v4 0.0833/0.1111, v5c 0.0417 (voice 0)
 Warm-start from `PiVo-1.4M/checkpoints/acoustic.pt`, `--reset-feature-stats`
 (overwrite PiVo's English feature mean/std with Indonesian train-split statistics),
 AdamW lr 1e-4 → 1e-5 cosine, warmup 200, batch 8, grad clip 1.0, seed 42, 6000 steps,
-loss = masked SmoothL1 on normalized features + 0.1·MSE(log duration).
+loss = masked SmoothL1 on normalized features + 0.1·MSE(log duration)
+(+ optional `--delta-weight`, a frame-to-frame difference SmoothL1 that
+suppresses temporal jitter).
 
 Corpus v5c: 719 rows / 263,054 frames (2,630 s) — 431 Indonesian rows from corpus v4
 plus 288 English rows (48 sentences × 2 voices × 3 seeds) synthesised by Supertonic
@@ -132,6 +178,11 @@ python -I src_id/train.py --data experiments/data/pilot_v5c/manifest.jsonl \
   --reset-feature-stats --steps 6000 --batch-size 8 --lr 1e-4 --min-lr 1e-5 \
   --warmup 200 --seed 42
 ```
+
+Corpus v6: 1,857 rows / 551,260 frames (5,513 s) — 1,569 new Indonesian rows
+(424 texts × 2 voices × 2 seeds, parallel builder
+`experiments/build_pilot_corpus_fast.py`) + 288 English rows, merged with
+`experiments/merge_corpora.py`. Same recipe at 9,000 steps, `--delta-weight 0.15`:
 
 ## Honest limitations
 
@@ -163,8 +214,9 @@ python -I src_id/train.py --data experiments/data/pilot_v5c/manifest.jsonl \
 2. Download the CTC models used: `indonesian-nlp/wav2vec2-indonesian-javanese-sundanese`
    (alignment + Indonesian CER), `facebook/wav2vec2-base-960h` (English alignment/CER),
    `openai/whisper-small.en` (English WER).
-3. Build the corpora: `experiments/build_pilot_corpus.py` (`--lang id` / `--lang en`),
-   merge with `experiments/merge_corpora.py`, audit with `experiments/audit_corpus.py`.
+3. Build the corpora: `experiments/build_pilot_corpus.py` (`--lang id` / `--lang en`)
+   or the parallel `experiments/build_pilot_corpus_fast.py`, merge with
+   `experiments/merge_corpora.py`, audit with `experiments/audit_corpus.py`.
 4. Train with `src_id/train.py`, evaluate with `experiments/eval_cer.py`
    (`--lang id|en`) and `experiments/eval_english.py`, export and gate with
    `experiments/export_onnx.py` + `experiments/verify_onnx_release.py`.

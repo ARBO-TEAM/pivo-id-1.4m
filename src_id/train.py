@@ -332,10 +332,18 @@ def build_model(args, train_rows, val_rows):
             model.feature_std.copy_(torch.from_numpy(stats[1]))
         return model
     vocab_size = args.vocab_size or (max(max(r["tokens"]) for r in all_rows) + 1)
-    if args.width % 8:
+    width = args.width
+    if args.resume:
+        # Shell shapes must come from the checkpoint (PiVo's 128-token vocab),
+        # not the dataset (subset), or strict load_state_dict fails on shape.
+        rpath = os.path.join(args.out, "last.pt") if args.resume == "auto" else args.resume
+        ck_cfg = torch.load(rpath, map_location="cpu", weights_only=True)["config"]
+        vocab_size = ck_cfg["vocab_size"]
+        width = ck_cfg["width"]
+    if width % 8:
         raise ValueError("--width must be a multiple of 8 (4 heads, even RoPE dim)")
     model = PiVoAcoustic(
-        config={"width": args.width, "ff_width": 2 * args.width, "vocab_size": vocab_size,
+        config={"width": width, "ff_width": 2 * width, "vocab_size": vocab_size,
                 "num_voices": num_voices, "num_langs": 0, "dropout": args.dropout},
         num_voices=num_voices,
     )
@@ -369,6 +377,21 @@ def masked_losses(pred, target, frame_lengths, log_dur, durations, token_lengths
     tmask = (torch.arange(log_dur.shape[1], device=dev)[None] < token_lengths[:, None]).float()
     dur = ((log_dur - torch.log1p(durations.float())).pow(2) * tmask).sum() / tmask.sum()
     return feat, dur
+
+
+def masked_delta_loss(pred, target, frame_lengths):
+    """SmoothL1 between frame-to-frame feature differences, masked to valid pairs.
+
+    This penalizes roughness in the predicted trajectory (frame jitter), not
+    only per-frame values. Diffs ending at or after a frame length are ignored.
+    """
+    dev = pred.device
+    if pred.shape[1] < 2:
+        return torch.zeros((), device=dev)
+    fmask = (torch.arange(pred.shape[1] - 1, device=dev)[None] + 1 < frame_lengths[:, None]).float()
+    diffs = F.smooth_l1_loss(pred[:, 1:] - pred[:, :-1], target[:, 1:] - target[:, :-1], reduction="none").mean(-1)
+    count = fmask.sum()
+    return (diffs * fmask).sum() / count if count else torch.zeros((), device=dev)
 
 
 def lr_at(step, args):
@@ -478,6 +501,8 @@ def parse_args(argv=None):
     p.add_argument("--warmup", type=int, default=200)
     p.add_argument("--weight-decay", type=float, default=0.01)
     p.add_argument("--duration-weight", type=float, default=0.1)
+    p.add_argument("--delta-weight", type=float, default=0.0,
+                   help="weight for the frame-to-frame feature-difference loss (0 = original recipe)")
     p.add_argument("--grad-clip", type=float, default=1.0)
     p.add_argument("--width", type=int, default=96, help="from-scratch model width (multiple of 8)")
     p.add_argument("--vocab-size", type=int, default=None, help="from-scratch vocab (default: derived from data)")
@@ -595,7 +620,8 @@ def main(argv=None):
                                    b["durations"], b["frame_lengths"])
             f, d = masked_losses(pred.float(), b["features"], b["frame_lengths"],
                                  logd.float(), b["durations"], b["token_lengths"])
-            loss = f + args.duration_weight * d
+            loss = f + args.duration_weight * d + args.delta_weight * masked_delta_loss(
+                pred.float(), b["features"], b["frame_lengths"])
             if not torch.isfinite(loss):
                 raise RuntimeError(f"non-finite loss at step {step}: {loss.item()}")
             opt.zero_grad(set_to_none=True)

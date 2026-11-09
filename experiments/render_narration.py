@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src_id"))
 sys.path.insert(0, str(ROOT / "experiments"))
 
-from render_student import features_to_audio, write_wav16  # noqa: E402
+from render_student import clean_audio_16k, features_to_audio, write_wav16  # noqa: E402
 from verify_onnx_release import onnx_features  # noqa: E402
 
 
@@ -31,6 +31,10 @@ def main() -> int:
     ap.add_argument("--lang", choices=["id", "en"], default="id")
     ap.add_argument("--voice-id", type=int, default=0, choices=[0, 1])
     ap.add_argument("--speed", type=float, default=1.0)
+    modes = ap.add_mutually_exclusive_group()
+    modes.add_argument("--smooth", action="store_true", help="apply original feature smoothing and offline audio cleanup")
+    modes.add_argument("--selective", action="store_true", help="apply selective feature smoothing without offline DSP")
+    ap.add_argument("--deemphasis", type=float, default=0.85, help="deemphasis coefficient (default: 0.85)")
     ap.add_argument("--out", type=Path, required=True)
     a = ap.parse_args()
     if a.out.exists():
@@ -46,7 +50,11 @@ def main() -> int:
     feats = onnx_features(a.model, list(pr.token_ids), a.voice_id, a.speed)
     if not np.isfinite(feats).all():
         raise SystemExit("non-finite features")
-    pcm = np.clip(features_to_audio(a.model, feats), -1, 1)
+    pcm = features_to_audio(a.model, feats, smooth=a.smooth, selective=a.selective,
+                            deemphasis_coefficient=a.deemphasis)
+    if a.smooth:
+        pcm = clean_audio_16k(pcm)
+    pcm = np.clip(pcm, -1, 1)
     write_wav16(a.out, pcm)
     print(f"{a.out} {len(pcm) / 16000:.2f}s frames={feats.shape[0]} peak={np.abs(pcm).max():.3f}")
     return 0
