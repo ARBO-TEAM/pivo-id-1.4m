@@ -1,0 +1,135 @@
+{"id": "V8000", "text": "Pejabat teras itu duduk santai di teras rumah sambil memakan apel setelah apel pagi selesai.", "split": "train"}
+{"id": "V8001", "text": "Dia memakai kemeja abu-abu saat menghadiri rapat di gedung Kementerian.", "split": "train"}
+{"id": "V8002", "text": "Khusus hari ini, pihak syahbandar mengumumkan jadwal keberangkatan kapal laut.", "split": "train"}
+{"id": "V8003", "text": "Nyanyian burung gereja terdengar merdu di antara pepohonan yang rimbun.", "split": "train"}
+{"id": "V8004", "text": "Masyarakat ikhlas membantu evakuasi korban bencana tanah longsor.", "split": "train"}
+{"id": "V8005", "text": "Tagihan listrik pada tanggal 17 Agustus 2024 mencapai dua juta tiga ratus lima puluh ribu lima ratus rupiah, naik dua belas koma lima persen dari bulan lalu.", "split": "train"}
+{"id": "V8006", "text": "Pukul delapan empat puluh lima waktu Indonesia barat, suhu di ruangan ini tercatat dua puluh delapan koma lima derajat Celsius dengan kelembapan enam puluh persen.", "split": "train"}
+{"id": "V8007", "text": "Nomor resi pengiriman paket Anda adalah I D nol satu sembilan dua delapan tiga tujuh empat enam lima.", "split": "train"}
+{"id": "V8008", "text": "Petugas K P K dan Polri bekerja sama dengan pihak B U M N untuk memeriksa laporan P B B.", "split": "train"}
+{"id": "V8009", "text": "Pada hari rabu, dua puluh lima Oktober dua ribu dua puluh tiga pukul dua belas tiga puluh waktu Indonesia barat, Kementerian Kesehatan mengumumkan anggaran sebesar satu koma lima triliun rupiah untuk program vaksinasi massal.", "split": "val"}
+{"id": "V8010", "text": "Apakah target delapan puluh persen masyarakat sudah realistis? Tentu saja, tegas juru bicara tersebut dengan optimis di hadapan wartawan.", "split": "train"}
+{"id": "V8011", "text": "Perusahaan itu mengumumkan hasil rapat pemegang saham hari ini.", "split": "train"}
+{"id": "V8012", "text": "Perusahaan teknologi asal Bandung memproduksi perangkat elektronik untuk ekspor.", "split": "train"}
+{"id": "V8013", "text": "Karyawan perusahaan itu menerima tunjangan hari raya tahun ini.", "split": "train"}
+{"id": "V8014", "text": "Direktur perusahaan menyampaikan laporan keuangan kuartal pertama.", "split": "train"}
+{"id": "V8015", "text": "Perusahaan penerbangan itu menurunkan harga tiket ke Bali.", "split": "train"}
+{"id": "V8016", "text": "Perusahaan properti itu membangun perumahan baru di pinggiran kota.", "split": "train"}
+{"id": "V8017", "text": "Perusahaan farmasi itu memproduksi obat-obatan untuk rumah sakit.", "split": "train"}
+{"id": "V8018", "text": "Perusahaan manufaktur itu memberikan pelatihan untuk karyawan baru.", "split": "train"}
+{"id": "V8019", "text": "Perusahaan retail itu membuka gerai baru di mal kota.", "split": "val"}
+{"id": "V8020", "text": "Perusahaan jasa itu menawarkan paket wisata untuk keluarga.", "split": "train"}
+{"id": "V8021", "text": "Kantor perusahaan itu terletak di gedung tinggi pusat kota.", "split": "train"}
+{"id": "V8022", "text": "Perusahaan itu mencari mitra bisnis untuk ekspansi ke luar negeri.", "split": "train"}
+{"id": "V8023", "text": "Perusahaan leasing itu menyediakan pembiayaan untuk kendaraan bermotor.", "split": "train"}
+{"id": "V8024", "text": "Perusahaan asuransi itu memberikan polis perlindungan jiwa.", "split": "train"}
+{"id": "V8025", "text": "Perusahaan tambang itu beroperasi di Kalimantan Timur.", "split": "train"}
+{"id": "V8026", "text": "Perusahaan kopi itu mengekspor biji kopi ke Eropa.", "split": "train"}
+{"id": "V8027", "text": "Perusahaan tekstil itu memproduksi kain untuk ekspor.", "split": "train"}
+{"id": "V8028", "text": "Perusahaan logistik itu mengirim barang ke seluruh Indonesia.", "split": "train"}
+{"id": "V8029", "text": "Perusahaan makanan itu memproduksi camilan kemasan untuk anak-anak.", "split": "val"}
+{"id": "V8030", "text": "Perusahaan telekomunikasi itu meluncurkan layanan internet cepat.", "split": "train"}
+{"id": "V8031", "text": "Perusahaan perakitan itu membangun bendungan untuk irigasi sawah.", "split": "train"}
+{"id": "V8032", "text": "Perusahaan otomotif itu memproduksi mobil listrik murah.", "split": "train"}
+{"id": "V8033", "text": "Perusahaan minyak itu mengebor sumur baru di lepas pantai.", "split": "train"}
+{"id": "V8034", "text": "Perusahaan konstruksi itu membangun jembatan penghubung dua kota.", "split": "train"}
+{"id": "V8035", "text": "Perusahaan media itu menayangkan berita lokal setiap malam.", "split": "train"}
+{"id": "V8036", "text": "Perusahaan perhotelan itu membuka resort baru di lombok.", "split": "train"}
+{"id": "V8037", "text": "Perusahaan perikanan itu mengekspor ikan tuna ke Jepang.", "split": "train"}
+{"id": "V8038", "text": "Perusahaan perkebunan itu memanen sawit di Sumatera.", "split": "train"}
+{"id": "V8039", "text": "Perusahaan kertas itu memproduksi kertas daur ulang.", "split": "val"}
+{"id": "V8040", "text": "Perusahaan plastik itu mengurangi penggunaan kantong sekali pakai.", "split": "train"}
+{"id": "V8041", "text": "Perusahaan farmasi itu memproduksi vitamin untuk anak.", "split": "train"}
+{"id": "V8042", "text": "Perusahaan perhiasan itu memamerkan koleksi emas di pameran.", "split": "train"}
+{"id": "V8043", "text": "Perusahaan sepatu itu memproduksi sepatu olahraga lokal.", "split": "train"}
+{"id": "V8044", "text": "Perusahaan tas itu memproduksi tas kulit asli.", "split": "train"}
+{"id": "V8045", "text": "Perusahaan furnitur itu memproduksi meja kayu jati.", "split": "train"}
+{"id": "V8046", "text": "Perusahaan mainan itu memproduksi boneka untuk anak-anak.", "split": "train"}
+{"id": "V8047", "text": "Korupsi di perusahaan itu diselidiki oleh K P K.", "split": "train"}
+{"id": "V8048", "text": "Karyawan perusahaan B U M N itu menerima THR tahun ini.", "split": "train"}
+{"id": "V8049", "text": "Dana pensiun P B B itu dikelola oleh perusahaan asuransi.", "split": "val"}
+{"id": "V8050", "text": "Polri mengamankan kerusuhan di depan kantor perusahaan itu.", "split": "train"}
+{"id": "V8051", "text": "Perusahaan itu terdaftar di bursa efek Indonesia.", "split": "train"}
+{"id": "V8052", "text": "Perusahaan itu memenangkan tender proyek jalan tol.", "split": "train"}
+{"id": "V8053", "text": "Perusahaan itu memperluas jaringan distribusi ke Jawa Barat.", "split": "train"}
+{"id": "V8054", "text": "Perusahaan itu meluncurkan produk baru untuk pasar ASEAN.", "split": "train"}
+{"id": "V8055", "text": "Perusahaan itu mengurangi karyawan karena efisiensi biaya.", "split": "train"}
+{"id": "V8056", "text": "Perusahaan itu membuat komitmen untuk mengurangi emisi karbon.", "split": "train"}
+{"id": "V8057", "text": "Perusahaan itu mendapatkan sertifikat halal untuk produknya.", "split": "train"}
+{"id": "V8058", "text": "Perusahaan itu membuka lowongan kerja untuk lulusan baru.", "split": "train"}
+{"id": "V8059", "text": "Perusahaan itu memberikan beasiswa untuk mahasiswa berprestasi.", "split": "val"}
+{"id": "V8060", "text": "Perusahaan itu menyumbang untuk korban bencana banjir.", "split": "train"}
+{"id": "V8061", "text": "Perusahaan itu mengadakan seminar wirausaha untuk pemuda.", "split": "train"}
+{"id": "V8062", "text": "Perusahaan itu memproduksi kemasan ramah lingkungan.", "split": "train"}
+{"id": "V8063", "text": "Perusahaan itu menggunakan tenaga surya untuk pabriknya.", "split": "train"}
+{"id": "V8064", "text": "Perusahaan itu menjalin kerja sama dengan universitas lokal.", "split": "train"}
+{"id": "V8065", "text": "Perusahaan itu mendapatkan penghargaan perusahaan terbaik tahun ini.", "split": "train"}
+{"id": "V8066", "text": "Perusahaan itu berekspansi ke pasar Asia Tenggara.", "split": "train"}
+{"id": "V8067", "text": "Perusahaan itu memproduksi sari buah untuk ekspor ke Singapura.", "split": "train"}
+{"id": "V8068", "text": "Perusahaan itu membangun pabrik baru di Jawa Tengah.", "split": "train"}
+{"id": "V8069", "text": "Perusahaan itu menyediakan fasilitas kesehatan untuk karyawan.", "split": "val"}
+{"id": "V8070", "text": "Perusahaan itu mengadakan buka puasa bersama untuk karyawan.", "split": "train"}
+{"id": "V8071", "text": "Perusahaan itu merayakan ulang tahun ke dua puluh lima.", "split": "train"}
+{"id": "V8072", "text": "Perusahaan itu memproduksi jamu tradisional untuk kesehatan.", "split": "train"}
+{"id": "V8073", "text": "Perusahaan itu mengekspor rempah-rempah ke Timur Tengah.", "split": "train"}
+{"id": "V8074", "text": "Perusahaan itu memproduksi batik untuk pasar Eropa.", "split": "train"}
+{"id": "V8075", "text": "Perusahaan itu membangun sekolah untuk anak-anak karyawan.", "split": "train"}
+{"id": "V8076", "text": "Perusahaan itu memberikan tunjangan pendidikan untuk anak karyawan.", "split": "train"}
+{"id": "V8077", "text": "Perusahaan itu memproduksi susu segar untuk anak-anak.", "split": "train"}
+{"id": "V8078", "text": "Perusahaan itu membuka toko online untuk penjualan daring.", "split": "train"}
+{"id": "V8079", "text": "Perusahaan itu menggunakan platform digital untuk pemasaran.", "split": "val"}
+{"id": "V8080", "text": "Perusahaan itu mengadakan pameran produk di Jakarta.", "split": "train"}
+{"id": "V8081", "text": "Perusahaan itu memproduksi lampu LED hemat energi.", "split": "train"}
+{"id": "V8082", "text": "Perusahaan itu membangun apartemen untuk hunian karyawan.", "split": "train"}
+{"id": "V8083", "text": "Perusahaan itu menyediakan pelatihan bahasa Inggris untuk karyawan.", "split": "train"}
+{"id": "V8084", "text": "Perusahaan itu membuat aplikasi mobile untuk pelanggan.", "split": "train"}
+{"id": "V8085", "text": "Perusahaan itu mendapatkan dana investasi dari luar negeri.", "split": "train"}
+{"id": "V8086", "text": "Perusahaan itu memproduksi kerajinan tangan untuk ekspor.", "split": "train"}
+{"id": "V8087", "text": "Perusahaan itu membuka warung kopi untuk karyawan.", "split": "train"}
+{"id": "V8088", "text": "Perusahaan itu memproduksi sabun mandi untuk hotel.", "split": "train"}
+{"id": "V8089", "text": "Perusahaan itu menggunakan bahan baku lokal untuk produksi.", "split": "val"}
+{"id": "V8090", "text": "Perusahaan itu mengadakan lomba inovasi untuk karyawan.", "split": "train"}
+{"id": "V8091", "text": "Perusahaan itu memproduksi tas kresek ramah lingkungan.", "split": "train"}
+{"id": "V8092", "text": "Perusahaan itu membangun kolam ikan untuk pemberdayaan masyarakat.", "split": "train"}
+{"id": "V8093", "text": "Perusahaan itu memberikan pinjaman lunak untuk usaha kecil.", "split": "train"}
+{"id": "V8094", "text": "Perusahaan itu memproduksi minyak goreng untuk kebutuhan dalam negeri.", "split": "train"}
+{"id": "V8095", "text": "Perusahaan itu mengekspor teh ke Rusia.", "split": "train"}
+{"id": "V8096", "text": "Perusahaan itu memproduksi baju batik untuk seragam sekolah.", "split": "train"}
+{"id": "V8097", "text": "Perusahaan itu membuka klinik kesehatan untuk masyarakat sekitar.", "split": "train"}
+{"id": "V8098", "text": "Perusahaan itu memberikan bantuan untuk renovasi masjid.", "split": "train"}
+{"id": "V8099", "text": "Perusahaan itu memproduksi kecap untuk pasar nasional.", "split": "val"}
+{"id": "V8100", "text": "Perusahaan itu membangun lapangan bola untuk pemuda desa.", "split": "train"}
+{"id": "V8101", "text": "Perusahaan itu menyediakan perpustakaan untuk anak-anak.", "split": "train"}
+{"id": "V8102", "text": "Perusahaan itu memproduksi gula aren untuk ekspor.", "split": "train"}
+{"id": "V8103", "text": "Perusahaan itu mengadakan donor darah untuk karyawan.", "split": "train"}
+{"id": "V8104", "text": "Perusahaan itu memproduksi tisu untuk kebutuhan rumah tangga.", "split": "train"}
+{"id": "V8105", "text": "Perusahaan itu membuka bakery untuk menjual roti segar.", "split": "train"}
+{"id": "V8106", "text": "Perusahaan itu memproduksi deterjen cair untuk rumah tangga.", "split": "train"}
+{"id": "V8107", "text": "Perusahaan itu memberikan pelatihan keterampilan untuk ibu-ibu.", "split": "train"}
+{"id": "V8108", "text": "Perusahaan itu memproduksi kaos untuk komunitas motor.", "split": "train"}
+{"id": "V8109", "text": "Perusahaan itu membangun sumur bor untuk desa kering.", "split": "val"}
+{"id": "V8110", "text": "Perusahaan itu mengekspor jambu biji ke Malaysia.", "split": "train"}
+{"id": "V8111", "text": "Perusahaan itu memproduksi kecantikan untuk pasar remaja.", "split": "train"}
+{"id": "V8112", "text": "Perusahaan itu mengadakan festival kuliner untuk masyarakat.", "split": "train"}
+{"id": "V8113", "text": "Perusahaan itu memproduksi sampo untuk rambut rontok.", "split": "train"}
+{"id": "V8114", "text": "Perusahaan itu membuka toko buku untuk pelajar.", "split": "train"}
+{"id": "V8115", "text": "Perusahaan itu memberikan sertifikat untuk keamanan pangan.", "split": "train"}
+{"id": "V8116", "text": "Perusahaan itu memproduksi es krim untuk anak-anak.", "split": "train"}
+{"id": "V8117", "text": "Perusahaan itu membangun pusat pelatihan kerja.", "split": "train"}
+{"id": "V8118", "text": "Perusahaan itu menyediakan asuransi kesehatan untuk keluarga karyawan.", "split": "train"}
+{"id": "V8119", "text": "Perusahaan itu memproduksi pakan ternak untuk peternak.", "split": "val"}
+{"id": "V8120", "text": "Perusahaan itu mengadakan pasar murah untuk masyarakat.", "split": "train"}
+{"id": "V8121", "text": "Perusahaan itu memproduksi lilin aromaterapi untuk relaksasi.", "split": "train"}
+{"id": "V8122", "text": "Perusahaan itu membuka laundry untuk karyawan.", "split": "train"}
+{"id": "V8123", "text": "Perusahaan itu memberikan beasiswa untuk anak karyawan berprestasi.", "split": "train"}
+{"id": "V8124", "text": "Perusahaan itu memproduksi handuk untuk kebutuhan hotel.", "split": "train"}
+{"id": "V8125", "text": "Perusahaan itu membangun rumah susun untuk pekerja.", "split": "train"}
+{"id": "V8126", "text": "Perusahaan itu memproduksi bumbu instan untuk masak cepat.", "split": "train"}
+{"id": "V8127", "text": "Perusahaan itu mengadakan pelatihan digital untuk UMKM.", "split": "train"}
+{"id": "V8128", "text": "Perusahaan itu memproduksi jus buah untuk kendaraan umum.", "split": "train"}
+{"id": "V8129", "text": "Perusahaan itu memberikan pinjaman untuk petani lokal.", "split": "val"}
+{"id": "V8130", "text": "Perusahaan itu memproduksi lilin untuk acara adat.", "split": "train"}
+{"id": "V8131", "text": "Perusahaan itu membangun taman bermain untuk anak-anak.", "split": "train"}
+{"id": "V8132", "text": "Perusahaan itu memproduksi pelembut kain untuk rumah tangga.", "split": "train"}
+{"id": "V8133", "text": "Perusahaan itu mengadakan lomba masak untuk ibu-ibu.", "split": "train"}
+{"id": "V8134", "text": "Perusahaan itu memproduksi kopi bubuk untuk ekspor.", "split": "train"}

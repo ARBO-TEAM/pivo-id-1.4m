@@ -1,0 +1,131 @@
+{"id": "V9000", "text": "Tim evakuasi membawa korban banjir ke tempat pengungsian.", "split": "train"}
+{"id": "V9001", "text": "Evakuasi warga dilakukan karena banjir meluap ke rumah-rumah.", "split": "train"}
+{"id": "V9002", "text": "Petugas evakuasi mencari korban yang tertimpa reruntuhan bangunan.", "split": "train"}
+{"id": "V9003", "text": "Evakuasi udara dilakukan untuk korban gempa di pegunungan.", "split": "train"}
+{"id": "V9004", "text": "Warga yang tinggal di bantaran sungai dievakuasi ke sekolah terdekat.", "split": "train"}
+{"id": "V9005", "text": "Evakuasi korban kebakaran dilakukan oleh pemadam kebakaran.", "split": "train"}
+{"id": "V9006", "text": "Tim sar melakukan evakuasi pendaki yang terjebak di gunung.", "split": "train"}
+{"id": "V9007", "text": "Evakuasi pasien rumah sakit dilakukan karena banjir masuk ke lantai dasar.", "split": "train"}
+{"id": "V9008", "text": "Evakuasi barang berharga dilakukan sebelum banjir mencapai rumah.", "split": "train"}
+{"id": "V9009", "text": "Evakuasi penduduk desa dilakukan karena letusan gunung berapi.", "split": "val"}
+{"id": "V9010", "text": "Tim medis melakukan evakuasi korban kecelakaan di jalan tol.", "split": "train"}
+{"id": "V9011", "text": "Evakuasi anak-anak sekolah dilakukan karena atap ambruk.", "split": "train"}
+{"id": "V9012", "text": "Evakuasi warga lanjut usia dilakukan dengan kursi roda.", "split": "train"}
+{"id": "V9013", "text": "Evakuasi hewan ternak dilakukan sebelum banjir meluas.", "split": "train"}
+{"id": "V9014", "text": "Evakuasi kendaraan dilakukan dari jalan yang tergenang air.", "split": "train"}
+{"id": "V9015", "text": "Evakuasi warga di pesisir dilakukan karena ancaman tsunami.", "split": "train"}
+{"id": "V9016", "text": "Evakuasi darurat dilakukan melalui jalur alternatif karena jalan utama tertutup.", "split": "train"}
+{"id": "V9017", "text": "Evakuasi korban tenggelam dilakukan oleh tim penyelamat pantai.", "split": "train"}
+{"id": "V9018", "text": "Evakuasi warga malam hari berjalan lancar tanpa korban jiwa.", "split": "train"}
+{"id": "V9019", "text": "Makanan itu disajikan di warung dekat sekolah.", "split": "val"}
+{"id": "V9020", "text": "Minuman itu dijual di minimarket depan gang.", "split": "train"}
+{"id": "V9021", "text": "Pakaian itu dicuci di laundry langganan keluarga.", "split": "train"}
+{"id": "V9022", "text": "Kesehatan anak itu dijaga dengan makanan bergizi.", "split": "train"}
+{"id": "V9023", "text": "Pendidikan tinggi itu diperoleh dengan biaya mahal.", "split": "train"}
+{"id": "V9024", "text": "Pengiriman barang itu memakan waktu tiga hari.", "split": "train"}
+{"id": "V9025", "text": "Pembayaran tunai diterima di loket kasir.", "split": "train"}
+{"id": "V9026", "text": "Perbaikan jalan itu selesai minggu lalu.", "split": "train"}
+{"id": "V9027", "text": "Perlindungan konsumen itu diatur dalam undang-undang.", "split": "train"}
+{"id": "V9028", "text": "Penjualan online itu meningkat tajam bulan ini.", "split": "train"}
+{"id": "V9029", "text": "Persediaan stok itu habis menjelang lebaran.", "split": "val"}
+{"id": "V9030", "text": "Pengembangan produk itu memakan waktu berbulan-bulan.", "split": "train"}
+{"id": "V9031", "text": "Pelayanan publik itu semakin baik dari tahun ke tahun.", "split": "train"}
+{"id": "V9032", "text": "Pencarian kerja itu sulit bagi lulusan baru.", "split": "train"}
+{"id": "V9033", "text": "Pertumbuhan ekonomi itu stabil di kuartal pertama.", "split": "train"}
+{"id": "V9034", "text": "Pemberian beasiswa itu membantu mahasiswa kurang mampu.", "split": "train"}
+{"id": "V9035", "text": "Pemerintah desa itu membangun jalan baru untuk warga.", "split": "train"}
+{"id": "V9036", "text": "Pengaturan lalu lintas itu dijalan oleh polisi.", "split": "train"}
+{"id": "V9037", "text": "Pengelolaan sampah itu menjadi masalah di kota besar.", "split": "train"}
+{"id": "V9038", "text": "Pemanasan global itu berdampak pada cuaca ekstrem.", "split": "train"}
+{"id": "V9039", "text": "Pencemaran udara itu berbahaya bagi kesehatan pernapasan.", "split": "val"}
+{"id": "V9040", "text": "Perdagangan bebas itu membuka peluang ekspor baru.", "split": "train"}
+{"id": "V9041", "text": "Perumahan subsidi itu diperuntukkan bagi keluarga berpenghasilan rendah.", "split": "train"}
+{"id": "V9042", "text": "Peraturan baru itu mulai berlaku bulan depan.", "split": "train"}
+{"id": "V9043", "text": "Pertanian organik itu semakin diminati konsumen modern.", "split": "train"}
+{"id": "V9044", "text": "Perkebunan kelapa sawit itu menjadi sumber devisa negara.", "split": "train"}
+{"id": "V9045", "text": "Perikanan tangkap itu diatur dalam kuota tahunan.", "split": "train"}
+{"id": "V9046", "text": "Peternakan ayam itu menjadi usaha sampingan petani.", "split": "train"}
+{"id": "V9047", "text": "Pertambangan batu bara itu mempekerjakan ribuan pekerja.", "split": "train"}
+{"id": "V9048", "text": "Perindustrian kecil itu tumbuh di sekitar kawasan industri.", "split": "train"}
+{"id": "V9049", "text": "Perhotelan di Bali itu penuh musim liburan.", "split": "val"}
+{"id": "V9050", "text": "Perhubungan darat itu semakin lancar dengan tol baru.", "split": "train"}
+{"id": "V9051", "text": "Perumahan mewah itu dijual dengan harga tinggi.", "split": "train"}
+{"id": "V9052", "text": "Perawatan kesehatan itu semakin terjangkau dengan BPJS.", "split": "train"}
+{"id": "V9053", "text": "Perpustakaan umum itu menjadi tempat belajar anak-anak.", "split": "train"}
+{"id": "V9054", "text": "Perundingan dagang itu berlangsung di Jakarta.", "split": "train"}
+{"id": "V9055", "text": "Persidangan kasus itu digelar di pengadilan negeri.", "split": "train"}
+{"id": "V9056", "text": "Pertunjukan seni itu digelar di Taman Ismail Marzuki.", "split": "train"}
+{"id": "V9057", "text": "Percakapan bahasa Inggris itu semakin lancar setelah latihan.", "split": "train"}
+{"id": "V9058", "text": "Perhatian orang tua itu penting bagi perkembangan anak.", "split": "train"}
+{"id": "V9059", "text": "Perasaan sedih itu wajar setelah kehilangan orang tercinta.", "split": "val"}
+{"id": "V9060", "text": "Perkenalan baru itu membuka jaringan bisnis yang luas.", "split": "train"}
+{"id": "V9061", "text": "Perjalanan dinas itu memakan waktu seharian penuh.", "split": "train"}
+{"id": "V9062", "text": "Perjalanan wisata itu direncanakan untuk musim liburan.", "split": "train"}
+{"id": "V9063", "text": "Permintaan maaf itu disampaikan dengan tulus.", "split": "train"}
+{"id": "V9064", "text": "Permintaan barang itu diajukan ke bagian gudang.", "split": "train"}
+{"id": "V9065", "text": "Permintaan cuti itu disetujui oleh atasan.", "split": "train"}
+{"id": "V9066", "text": "Pemilihan umum itu diikuti oleh jutaan pemilih.", "split": "train"}
+{"id": "V9067", "text": "Pembangunan jembatan itu selesai tepat waktu.", "split": "train"}
+{"id": "V9068", "text": "Pemantauan harga itu dilakukan setiap pagi.", "split": "train"}
+{"id": "V9069", "text": "Pemotongan pajak itu membantu pelaku usaha kecil.", "split": "val"}
+{"id": "V9070", "text": "Pencairan dana itu tertunda karena birokrasi.", "split": "train"}
+{"id": "V9071", "text": "Pendataan warga itu dilakukan oleh perangkat desa.", "split": "train"}
+{"id": "V9072", "text": "Pengajuan kredit itu disetujui dalam seminggu.", "split": "train"}
+{"id": "V9073", "text": "Pengambilan keputusan itu membutuhkan pertimbangan matang.", "split": "train"}
+{"id": "V9074", "text": "Pengawasan proyek itu dilakukan oleh konsultan independen.", "split": "train"}
+{"id": "V9075", "text": "Pengolahan limbah itu belum memenuhi standar.", "split": "train"}
+{"id": "V9076", "text": "Pengurangan emisi itu menjadi komitmen perusahaan.", "split": "train"}
+{"id": "V9077", "text": "Penanaman pohon itu dilakukan untuk penghijauan kota.", "split": "train"}
+{"id": "V9078", "text": "Penerimaan karyawan baru itu dilakukan awal tahun.", "split": "train"}
+{"id": "V9079", "text": "Penataan kota itu menjadi prioritas pemerintah.", "split": "val"}
+{"id": "V9080", "text": "Penawaran harga itu jauh di bawah perkiraan.", "split": "train"}
+{"id": "V9081", "text": "Penembakan itu terjadi di pusat kota malam tadi.", "split": "train"}
+{"id": "V9082", "text": "Pendirian perusahaan itu dihadiri oleh banyak tamu.", "split": "train"}
+{"id": "V9083", "text": "Pengerjaan proyek itu molor dari jadwal awal.", "split": "train"}
+{"id": "V9084", "text": "Penggusuran lahan itu memicu protes warga.", "split": "train"}
+{"id": "V9085", "text": "Pengalihan dana itu dilakukan untuk keperluan darurat.", "split": "train"}
+{"id": "V9086", "text": "Penghapusan piutang itu diputuskan dalam rapat.", "split": "train"}
+{"id": "V9087", "text": "Pengungkapan kasus itu mengejutkan publik.", "split": "train"}
+{"id": "V9088", "text": "Penggunaan masker itu wajib di rumah sakit.", "split": "train"}
+{"id": "V9089", "text": "Pengembangan aplikasi itu memakan waktu tiga bulan.", "split": "val"}
+{"id": "V9090", "text": "Penggalian tanah itu dilakukan untuk fondasi bangunan.", "split": "train"}
+{"id": "V9091", "text": "Pengadaan barang itu melalui proses tender terbuka.", "split": "train"}
+{"id": "V9092", "text": "Penyediaan air bersih itu menjadi tugas PDAM.", "split": "train"}
+{"id": "V9093", "text": "Pelayanan kesehatan itu semakin membaik di puskesmas.", "split": "train"}
+{"id": "V9094", "text": "Peredaran narkoba itu diberantas oleh polisi.", "split": "train"}
+{"id": "V9095", "text": "Perintahan presiden itu disampaikan dalam upacara.", "split": "train"}
+{"id": "V9096", "text": "Pemeriksaan berkas itu memakan waktu berjam-jam.", "split": "train"}
+{"id": "V9097", "text": "Pemernakan lele itu menguntungkan bagi petani pemula.", "split": "train"}
+{"id": "V9098", "text": "Pementasan drama itu digelar di gedung kesenian.", "split": "train"}
+{"id": "V9099", "text": "Pemeliharaan jalan itu menjadi tugas dinas pekerjaan umum.", "split": "val"}
+{"id": "V9100", "text": "Pengasuhan anak itu membutuhkan kesabaran dan kelembutan.", "split": "train"}
+{"id": "V9101", "text": "Penggantian ban itu dilakukan di bengkel terdekat.", "split": "train"}
+{"id": "V9102", "text": "Penyewaan mobil itu memakan biaya harian.", "split": "train"}
+{"id": "V9103", "text": "Pengiriman uang itu memakan waktu sehari.", "split": "train"}
+{"id": "V9104", "text": "Pengisian biodata itu dilakukan secara online.", "split": "train"}
+{"id": "V9105", "text": "Penandatanganan kontrak itu dihadiri oleh kedua belah pihak.", "split": "train"}
+{"id": "V9106", "text": "Pendatang baru itu disambut dengan hangat.", "split": "train"}
+{"id": "V9107", "text": "Pengenalan lingkungan itu dilakukan pada hari pertama kerja.", "split": "train"}
+{"id": "V9108", "text": "Penyusunan laporan itu memakan waktu berhari-hari.", "split": "train"}
+{"id": "V9109", "text": "Penyerahan penghargaan itu dilakukan di aula utama.", "split": "val"}
+{"id": "V9110", "text": "Peradaban kuno itu meninggalkan banyak artefak.", "split": "train"}
+{"id": "V9111", "text": "Percobaan laboratorium itu berhasil untuk pertama kalinya.", "split": "train"}
+{"id": "V9112", "text": "Perkembangan teknologi itu mengubah cara bekerja.", "split": "train"}
+{"id": "V9113", "text": "Peruntungan nasib itu bukan ditentukan oleh ramalan.", "split": "train"}
+{"id": "V9114", "text": "Peristiwaan keagamaan itu dirayakan dengan khidmat.", "split": "train"}
+{"id": "V9115", "text": "Perhatian publik itu tertuju pada kasus korupsi terbaru.", "split": "train"}
+{"id": "V9116", "text": "Perjumpaan dengan teman lama itu menyentuh hati.", "split": "train"}
+{"id": "V9117", "text": "Perjalanan pulang kampung itu memakan waktu dua hari.", "split": "train"}
+{"id": "V9118", "text": "Perkara tanah itu diselesaikan di pengadilan.", "split": "train"}
+{"id": "V9119", "text": "Perkembangan anak itu dipantau oleh orang tua.", "split": "val"}
+{"id": "V9120", "text": "Periklanan produk itu ditayangkan di televisi nasional.", "split": "train"}
+{"id": "V9121", "text": "Perlindungan hukum itu dijamin oleh undang-undang dasar.", "split": "train"}
+{"id": "V9122", "text": "Perluasan jaringan itu mencapai daerah terpencil.", "split": "train"}
+{"id": "V9123", "text": "Pernyataan resmi itu dibacakan oleh juru bicara.", "split": "train"}
+{"id": "V9124", "text": "Permintaan data itu diajukan secara tertulis.", "split": "train"}
+{"id": "V9125", "text": "Permukiman warga itu padat dan membutuhkan penataan.", "split": "train"}
+{"id": "V9126", "text": "Permasalahan ekonomi itu menjadi perhatian pemerintah.", "split": "train"}
+{"id": "V9127", "text": "Permohonan izin itu diproses dalam waktu seminggu.", "split": "train"}
+{"id": "V9128", "text": "Peron kereta itu penuh penumpang sore ini.", "split": "train"}
+{"id": "V9129", "text": "Perpindahan kantor itu memakan waktu sepekan.", "split": "val"}
+{"id": "V9130", "text": "Perputaran uang itu cepat di pasar tradisional.", "split": "train"}
