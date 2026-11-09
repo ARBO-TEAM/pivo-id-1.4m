@@ -1,4 +1,6 @@
-"""Generate GitHub Pages TTS demo (docs/index.html) — no runtime dependency."""
+"""Generate GitHub Pages TTS demo (docs/index.html) — no runtime dependency.
+Includes interactive input: text box + voice Pi/Vo + generate in-browser via
+onnxruntime-web (frontend.js + pivo.js, models in docs/models/)."""
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -42,10 +44,10 @@ html = f"""<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PiVo-ID 1.4M — Demo TTS Bahasa Indonesia</title>
-<meta name="description" content="Indonesian TTS 1.4M-parameter ONNX demo. Listen to v11 sample WAVs.">
+<meta name="description" content="Indonesian TTS 1.4M-parameter ONNX demo. Live browser TTS: type text, generate in-browser via onnxruntime-web.">
 <style>
 :root {{ color-scheme: light dark; }}
-body {{ font-family: system-ui, sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; }}
+body {{ font-family: system-ui, sans-serif; max-width: 960px; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; }}
 .grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }}
 .card {{ border: 1px solid #8884; border-radius: 8px; padding: 1rem; }}
 .card h2 {{ font-size: 1rem; margin: 0 0 .25rem; }}
@@ -55,6 +57,19 @@ audio {{ width: 100%; }}
 table {{ border-collapse: collapse; }}
 td, th {{ border: 1px solid #8884; padding: .35rem .6rem; text-align: left; }}
 code {{ background: #8882; padding: .1rem .3rem; border-radius: 4px; }}
+.demo {{ border: 2px solid #4f8cff66; border-radius: 12px; padding: 1.25rem; margin: 1rem 0; background: #4f8cff08; }}
+.demo h2 {{ margin-top: 0; }}
+textarea {{ width: 100%; min-height: 84px; font-size: 1rem; padding: .6rem; box-sizing: border-box; border-radius: 8px; border: 1px solid #8886; }}
+.row {{ display: flex; flex-wrap: wrap; gap: .75rem; align-items: end; margin: .75rem 0; }}
+label {{ font-size: .85rem; display: flex; flex-direction: column; gap: .25rem; }}
+select, input[type=number] {{ padding: .45rem; border-radius: 8px; border: 1px solid #8886; font-size: 1rem; }}
+button {{ padding: .65rem 1.4rem; font-size: 1rem; border-radius: 8px; border: 0; background: #4f8cff; color: #fff; cursor: pointer; }}
+button:disabled {{ opacity: .5; cursor: wait; }}
+#status {{ font-size: .9rem; color: #555; min-height: 1.4em; }}
+#output audio {{ margin-top: .5rem; }}
+.err {{ color: #c0392b; }}
+#normalized {{ white-space: pre-wrap; font-size: .8rem; background: #8881; padding: .5rem; border-radius: 8px; max-height: 160px; overflow: auto; }}
+.meta {{ font-size: .85rem; color: #555; }}
 </style>
 </head>
 <body>
@@ -65,12 +80,38 @@ Bagian v6 bilingual (Indonesia + Inggris) masih tersimpan; model
 sekarang fokus Indonesia saja karena Inggris menurun saat retrained.
 Unduh dari <a href="https://github.com/ARBO-TEAM/pivo-id-1.4m/releases/tag/v1.1.0">GitHub Release v1.1.0</a>.</p>
 
-<h2>Dengarkan</h2>
+<div class="demo">
+  <h2>✍️ Coba langsung — generate di browser</h2>
+  <p>Model jalan <b>100% di browser kamu</b> via <code>onnxruntime-web</code> (4 file ONNX 5,6&nbsp;MB di <code>docs/models/</code>, tanpa server, tanpa install).
+  Ketik Bahasa Indonesia, pilih suara <b>Pi</b> (perempuan) / <b>Vo</b> (pria), klik <b>Generate</b>. Frontend = port JS dari <code>src_id/frontend.py</code> (token identik Python — teruji 10 kalimat paritas 100%).</p>
+  <textarea id="text" placeholder="Selamat pagi, apa kabar? Coba reduplikasi: Anak-anak berlari-larian mengejar layang-layang putus.">Selamat pagi, apa kabar?</textarea>
+  <div class="row">
+    <button id="generate" disabled>🔊 Generate</button>
+    <label>Suara
+      <select id="voice">
+        <option value="0" selected>Pi (perempuan)</option>
+        <option value="1">Vo (pria)</option>
+      </select>
+    </label>
+    <label>Deemphasis
+      <input id="deemph" type="number" step="0.01" min="0" max="0.99" value="0.88">
+    </label>
+  </div>
+  <div id="status">Memuat model…</div>
+  <div class="meta" id="tokens"></div>
+  <div class="meta" id="frames"></div>
+  <div class="meta" id="token-ratio"></div>
+  <div id="output"></div>
+  <details><summary>Normalisasi &amp; token (audit frontend)</summary><div id="normalized"></div></details>
+  <p style="font-size:.85rem;color:#555">Butuh teks panjang? Potong &lt; 3000 frame (≈ 150 token). Model pertama kali load ~5,6&nbsp;MB lalu cache di browser. Coba: <i>Tagihan Rp2.350.500, naik 12,5% dari bulan lalu.</i> atau <i>Pukul 08:00 WIB, suhu 28,5 derajat Celsius.</i></p>
+</div>
+
+<h2>Dengarkan (sample v11, hasil offline select+0.88)</h2>
 <div class="grid">
 {cards}
 </div>
 
-<h2>Coba sendiri (5 baris)</h2>
+<h2>Coba sendiri (Python, 5 baris)</h2>
 <pre><code>pip install -r requirements.txt
 unzip pivo-id-v11-onnx.zip
 python -I experiments/render_narration.py \\
@@ -82,10 +123,12 @@ python -I experiments/render_narration.py \\
 {rows}
 </table>
 <p>ONNX parity v11: encoder 2.21e-06, log-durations 9.54e-07,
-decoder 7.15e-05 (gate 2e-04). Model card:
+decoder 7.15e-05 (gate 2e-04). Browser frontend JS↔Python paritas token 10/10 kalimat.
+Model card:
 <a href="https://github.com/ARBO-TEAM/pivo-id-1.4m/blob/main/MODEL_CARD.md">MODEL_CARD.md</a>
 · Lisensi: <a href="https://github.com/ARBO-TEAM/pivo-id-1.4m/blob/main/LICENSE">LICENSE</a>
 (Apache-2.0; derivatif Supertonic Open RAIL-M — lihat model card).</p>
+<script type="module" src="app.js"></script>
 </body>
 </html>
 """

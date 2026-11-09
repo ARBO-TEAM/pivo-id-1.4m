@@ -45,3 +45,11 @@ experiments/eval/listen_ab_*/
 experiments/fargan_verify_pilot_20261108_a1/tmp/
 *.s16
 *.f32
+
+# GitHub Pages demo: keep docs/models + docs/assets + js in git (override broad models/ rule)
+!docs/models/
+!docs/models/*.onnx
+!docs/models/*.json
+!docs/assets/
+!docs/assets/*.wav
+!docs/*.js
