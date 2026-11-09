@@ -26,6 +26,8 @@ select, input[type=number] { padding: .45rem; border-radius: 8px; border: 1px so
 button { padding: .65rem 1.4rem; font-size: 1rem; border-radius: 8px; border: 0; background: #4f8cff; color: #fff; cursor: pointer; }
 button:disabled { opacity: .5; cursor: wait; }
 #status { font-size: .9rem; color: #555; min-height: 1.4em; }
+#bar { height: 8px; background: #8882; border-radius: 4px; overflow: hidden; margin: .5rem 0 1rem; }
+#bar-fill { height: 100%; width: 0; background: #4f8cff; transition: width .15s ease; }
 #output audio { margin-top: .5rem; }
 .err { color: #c0392b; }
 #normalized { white-space: pre-wrap; font-size: .8rem; background: #8881; padding: .5rem; border-radius: 8px; max-height: 160px; overflow: auto; }
@@ -58,6 +60,7 @@ Unduh dari <a href="https://github.com/ARBO-TEAM/pivo-id-1.4m/releases/tag/v1.1.
     </label>
   </div>
   <div id="status">Memuat model…</div>
+  <div id="bar" hidden><div id="bar-fill"></div></div>
   <div class="meta" id="tokens"></div>
   <div class="meta" id="frames"></div>
   <div class="meta" id="token-ratio"></div>

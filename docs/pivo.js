@@ -1,55 +1,99 @@
 // pivo.js — browser inference for PiVo-ID v11 (encoder + decoder + conditioning + vocoder_step)
 // Faithful port of PiVo-1.4M/pivo/runtime.py + src_id/acoustic.py phase_features.
-// No retraining; runs entirely in the browser via onnxruntime-web.
+// Runs entirely in the browser via onnxruntime-web (wasm). No server, no PyTorch.
 'use strict';
 
-import * as ort from 'https://cdn.jsdelivr.net/npm/onnxruntime-web@1.23.0/dist/ort.wasm.min.js';
+import * as ort from 'https://cdn.jsdelivr.net/npm/onnxruntime-web@1.23.0/dist/ort.wasm.min.mjs';
 
+const ORT_DIST = 'https://cdn.jsdelivr.net/npm/onnxruntime-web@1.23.0/dist/';
 const MODEL_URLS = {
-  encoder: 'models/encoder.onnx',
-  decoder: 'models/decoder.onnx',
-  conditioning: 'models/conditioning.onnx',
-  vocoder_step: 'models/vocoder_step.onnx',
+  encoder: { url: 'models/encoder.onnx', bytes: 1783481 },
+  decoder: { url: 'models/decoder.onnx', bytes: 721228 },
+  conditioning: { url: 'models/conditioning.onnx', bytes: 282407 },
+  vocoder_step: { url: 'models/vocoder_step.onnx', bytes: 3001580 },
 };
-const CHA = 16; // decoder chunk like Python chunk_frames=16; chunk value does not change math
+const TOTAL_BYTES = Object.values(MODEL_URLS).reduce((a, m) => a + m.bytes, 0);
+
 let metadata = null;
 let sessions = null;
+let loadPromise = null;
 
-async function loadModels({ onLog } = {}) {
-  if (sessions) return;
-  metadata = await (await fetch('models/metadata.json')).json();
-  ort.env.wasm.wasmPaths = 'https://cdn.jsdelivr.net/npm/onnxruntime-web@1.23.0/dist/';
-  const opts = { executionProviders: ['wasm'], intraOpNumThreads: Math.min(4, (navigator.hardwareConcurrency || 2)) };
-  const log = onLog || (() => {});
-  sessions = {};
-  for (const [name, url] of Object.entries(MODEL_URLS)) {
-    log(`Memuat ${name}…`);
-    sessions[name] = await ort.InferenceSession.create(url, opts);
+async function fetchWithProgress(url, onBytes) {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`${url}: HTTP ${res.status}`);
+  const total = Number(res.headers.get('Content-Length')) || 0;
+  if (!res.body || !total) return new Uint8Array(await res.arrayBuffer());
+  const reader = res.body.getReader();
+  const chunks = [];
+  let got = 0;
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    chunks.push(value);
+    got += value.length;
+    if (onBytes) onBytes(got, total);
   }
-  log('Model siap.');
+  const out = new Uint8Array(got);
+  let off = 0;
+  for (const c of chunks) { out.set(c, off); off += c.length; }
+  return out;
+}
+
+/** Load the four ONNX graphs. onProgress(p 0..1, label). Cached across calls. */
+export function loadModels({ onProgress, onLog } = {}) {
+  if (loadPromise) return loadPromise;
+  const log = onLog || (() => {});
+  const prog = onProgress || (() => {});
+  loadPromise = (async () => {
+    prog(0, 'Mengambil metadata…');
+    metadata = await (await fetch('models/metadata.json')).json();
+    ort.env.wasm.wasmPaths = ORT_DIST;
+    // GitHub Pages is not cross-origin isolated: threaded wasm would fail, pin 1.
+    ort.env.wasm.numThreads = 1;
+    ort.env.wasm.simd = true;
+    const opts = { executionProviders: ['wasm'], graphOptimizationLevel: 'all' };
+    let done = 0;
+    sessions = {};
+    for (const [name, m] of Object.entries(MODEL_URLS)) {
+      log(`Mengunduh ${name} (${Math.round(m.bytes / 1024)} KB)…`);
+      prog(done / TOTAL_BYTES, `Mengunduh ${name}…`);
+      const buf = await fetchWithProgress(m.url, (got, total) => {
+        const frac = Math.min(1, got / (total || m.bytes));
+        prog((done + m.bytes * frac) / TOTAL_BYTES, `Mengunduh ${name} ${Math.round(frac * 100)}%`);
+      });
+      done += m.bytes;
+      prog(done / TOTAL_BYTES, `Menyiapkan ${name}…`);
+      sessions[name] = await ort.InferenceSession.create(buf, opts);
+    }
+    prog(1, 'Model siap.');
+  })().catch((e) => { loadPromise = null; throw e; });
+  return loadPromise;
 }
 
 function periods(features) {
-  // features Float32Array [3,20] -> Int64Array [3]: 256 / 2^(clip(f18,-10,10)+1.5), clip 32..255
-  const out = [];
+  // features Float32Array [3*20] -> BigInt64Array [3]
+  const out = new BigInt64Array(3);
   for (let c = 0; c < 3; c++) {
-    let p = 256 / Math.pow(2, Math.max(-10, Math.min(10, features[c * 20 + 18])) + 1.5);
-    out.push(Math.max(32, Math.min(255, Math.round(p))));
+    const p = 256 / Math.pow(2, Math.max(-10, Math.min(10, features[c * 20 + 18])) + 1.5);
+    out[c] = BigInt(Math.max(32, Math.min(255, Math.round(p))));
   }
-  return [out.map(BigInt)];
+  return out;
 }
+
 function phaseFeatures(durations, maxTokenFrames) {
-  // durations Int32Array -> Float32Array [F,4], port of pivo/phase.py
-  const counts = [];
-  for (let i = 0; i < durations.length; i++) for (let k = 0; k < durations[i]; k++) counts.push(durations[i]);
-  const F = counts.length;
-  const starts = [];
-  for (let i = 0; i < durations.length; i++) for (let k = 0; k < durations[i]; k++) starts.push(0); // recomputed below
-  let cum = 0; const startArr = [];
-  for (let i = 0; i < durations.length; i++) { for (let k = 0; k < durations[i]; k++) startArr.push(cum); cum += durations[i]; }
+  // durations Int32Array -> Float32Array [F*4], port of PiVo-1.4M/pivo/phase.py
+  let F = 0;
+  for (let i = 0; i < durations.length; i++) F += durations[i];
+  const counts = new Float32Array(F);
+  const starts = new Float32Array(F);
+  let idx = 0;
+  for (let i = 0; i < durations.length; i++) {
+    const d = durations[i];
+    for (let k = 0; k < d; k++) { counts[idx] = d; starts[idx] = idx - k; idx++; }
+  }
   const out = new Float32Array(F * 4);
   for (let i = 0; i < F; i++) {
-    const frac = (i - startArr[i] + 0.5) / counts[i];
+    const frac = (i - starts[i] + 0.5) / counts[i];
     out[i * 4] = 2 * frac - 1;
     out[i * 4 + 1] = Math.sin(Math.PI * frac);
     out[i * 4 + 2] = Math.cos(Math.PI * frac);
@@ -57,139 +101,118 @@ function phaseFeatures(durations, maxTokenFrames) {
   }
   return out;
 }
-function deemphasisStep(x, state, coef = 0.85) {
+
+function deemphasis(x, state, coef) {
   const out = new Float32Array(x.length);
   let s = state;
   for (let i = 0; i < x.length; i++) { s = x[i] + coef * s; out[i] = s; }
   return [out, s];
 }
-function refineSelective(feats) {
-  // Port of render_student.refine_pivo_features (deemphasis 0.88 path uses selective? No — default demo = raw+0.88)
-  return feats;
-}
 
+/**
+ * tokenIds -> { pcm: Float32Array, frames, seconds }.
+ * Mirrors Runtime.iter_audio: decoder KV cache in 16-frame chunks, vocoder
+ * streaming one 10 ms frame at a time with persistent state + deemphasis.
+ */
 export async function synthesize(tokenIds, voice = 0, { speed = 1.0, deemphasisCoef = 0.88, onProgress } = {}) {
   if (!sessions) await loadModels();
   const c = metadata.config;
-  const tokens = new BigInt64Array([tokenIds.length]);
-  for (let i = 0; i < tokenIds.length; i++) tokens[i] = BigInt(tokenIds[i]);
-  const voiceArr = [BigInt(voice)];
-  const lengths = [BigInt(tokenIds.length)];
+  const T = tokenIds.length;
+  const prog = onProgress || (() => {});
 
   const enc = await sessions.encoder.run({
-    tokens: new ort.Tensor('int64', tokens, [1, tokenIds.length]),
-    voice: new ort.Tensor('int64', BigInt64Array.from(voiceArr), [1]),
-    lengths: new ort.Tensor('int64', BigInt64Array.from(lengths), [1]),
+    tokens: new ort.Tensor('int64', BigInt64Array.from(tokenIds.map(BigInt)), [1, T]),
+    voice: new ort.Tensor('int64', BigInt64Array.from([BigInt(voice)]), [1]),
+    lengths: new ort.Tensor('int64', BigInt64Array.from([BigInt(T)]), [1]),
   });
-  const encoded = enc.encoded; // Float32Tensor [1,T,96]
-  const logDur = enc.log_durations; // [1,T]
-  const T = tokenIds.length;
-  // durations: expm1(clip(log,0,log1p(200)))/speed, clip 0..200, max with (tok>=10), zero for tok<=2
+  const encoded = enc.encoded.data;  // Float32Array [T*96]
+  const logDur = enc.log_durations.data; // Float32Array [T]
+
   const dur = new Int32Array(T);
   let total = 0;
+  const maxTok = Math.log1p(c.max_token_frames);
   for (let i = 0; i < T; i++) {
-    let d = Math.expm1(Math.max(0, Math.min(Math.log1p(c.max_token_frames), logDur.data[i]))) / speed;
-    d = Math.round(d);
+    let d = Math.round(Math.expm1(Math.max(0, Math.min(maxTok, logDur[i]))) / speed);
     d = Math.max(0, Math.min(c.max_token_frames, d));
     if (tokenIds[i] >= 10) d = Math.max(d, 1);
     if (tokenIds[i] <= 2) d = 0;
-    dur[i] = d; total += d;
+    dur[i] = d;
+    total += d;
   }
-  if (total > c.max_utterance_frames) throw new Error('teks melebihi budget 3000 frame, potong jadi klausa');
-  if (total === 0) throw new Error('tidak ada frame durasi (teks kosong?)');
+  if (total > c.max_utterance_frames) throw new Error('teks melebihi batas 3000 frame — potong jadi klausa');
+  if (total === 0) throw new Error('tidak ada frame (teks kosong?)');
 
-  // expanded [1, F, 100]: repeat encoded by dur + phase
+  // expanded [1, F, 100] = encoder vector repeated by duration + 4 phase features
   const expData = new Float32Array(total * 100);
-  let write = 0;
+  let f = 0;
   for (let i = 0; i < T; i++) {
-    for (let k = 0; k < dur[i]; k++) {
-      for (let w = 0; w < 96; w++) expData[write * 100 + w] = encoded.data[i * 96 + w];
-      write++;
-    }
+    for (let k = 0; k < dur[i]; k++, f++) expData.set(encoded.subarray(i * 96, i * 96 + 96), f * 100);
   }
   const phase = phaseFeatures(dur, c.max_token_frames);
-  for (let f = 0; f < total; f++) for (let w = 0; w < 4; w++) expData[f * 100 + 96 + w] = phase[f * 4 + w];
+  for (let i = 0; i < total; i++) expData.set(phase.subarray(i * 4, i * 4 + 4), i * 100 + 96);
+
+  // decoder (causal, window 64) with KV cache
   const chunk = 16;
-  // decoder with KV cache
-  let cache = {
-    key0: new ort.Tensor('float32', new Float32Array(1 * 2 * 0 * 24), [1, 2, 0, 24]),
-    value0: new ort.Tensor('float32', new Float32Array(1 * 2 * 0 * 24), [1, 2, 0, 24]),
-    key1: new ort.Tensor('float32', new Float32Array(1 * 2 * 0 * 24), [1, 2, 0, 24]),
-    value1: new ort.Tensor('float32', new Float32Array(1 * 2 * 0 * 24), [1, 2, 0, 24]),
-  };
-  const allFeats = [];
+  const empty = () => new ort.Tensor('float32', new Float32Array(0), [1, 2, 0, 24]);
+  let cache = { key0: empty(), value0: empty(), key1: empty(), value1: empty() };
+  const feats = new Float32Array(total * 20);
   for (let pos = 0; pos < total; pos += chunk) {
-    const slice = expData.slice(pos * 100, Math.min(total, pos + chunk) * 100);
-    const nFr = Math.min(chunk, total - pos);
+    const n = Math.min(chunk, total - pos);
     const res = await sessions.decoder.run({
-      expanded: new ort.Tensor('float32', slice, [1, nFr, 100]),
+      expanded: new ort.Tensor('float32', expData.slice(pos * 100, (pos + n) * 100), [1, n, 100]),
       position: new ort.Tensor('int64', BigInt64Array.from([BigInt(pos)]), []),
       ...cache,
     });
     cache = { key0: res.key0_out, value0: res.value0_out, key1: res.key1_out, value1: res.value1_out };
-    allFeats.push(res.features.data); // Float32Array [nFr,20]
-    if (onProgress) onProgress(pos / total);
+    feats.set(res.features.data, pos * 20);
+    prog(0.35 * (pos + n) / total, 'Decoder…');
   }
-  const feats = new Float32Array(total * 20);
-  let off = 0;
-  for (const a of allFeats) { feats.set(a, off); off += a.length; }
 
-  // vocoder streaming 1 frame at a time (same as Runtime.iter_audio)
-  const pad = (n) => new Float32Array(1 * n).fill(0);
+  // vocoder: streaming 1 frame, context = [prev, cur, next] (edge-clamped)
   const state = {
-    memory: new ort.Tensor('float32', pad(256), [1, 256]),
-    gru1: new ort.Tensor('float32', pad(160), [1, 160]),
-    gru2: new ort.Tensor('float32', pad(128), [1, 128]),
-    gru3: new ort.Tensor('float32', pad(128), [1, 128]),
-    frame_state: new ort.Tensor('float32', pad(164), [1, 164]),
+    memory: new ort.Tensor('float32', new Float32Array(256), [1, 256]),
+    gru1: new ort.Tensor('float32', new Float32Array(160), [1, 160]),
+    gru2: new ort.Tensor('float32', new Float32Array(128), [1, 128]),
+    gru3: new ort.Tensor('float32', new Float32Array(128), [1, 128]),
+    frame_state: new ort.Tensor('float32', new Float32Array(164), [1, 164]),
   };
   const pcm = new Float32Array(total * 160);
   let deState = 0;
-  const queue = [];
-  for (let f = 0; f < total; f++) {
-    const frame20 = feats.slice(f * 20, f * 20 + 20);
-    queue.push(frame20);
-    // emit when queue>=2 or last frame
-    while (queue.length >= 2 || (f === total - 1 && queue.length)) {
-      const cur = queue.shift();
-      const foll = queue.length ? queue[0] : cur;
-      const prev = f === 0 && queue.length === total ? cur : (queue.length ? allFrame(feats, f - 1) : cur);
-      // simpler: previous/current/following from feats directly
-      const ctx = new Float32Array(3 * 20);
-      const idxPrev = Math.max(0, f - 1), idxCur = f, idxFol = Math.min(total - 1, f + 1);
-      ctx.set(feats.slice(idxPrev * 20, idxPrev * 20 + 20), 0);
-      ctx.set(feats.slice(idxCur * 20, idxCur * 20 + 20), 20);
-      ctx.set(feats.slice(idxFol * 20, idxFol * 20 + 20), 40);
-      const per = periods(ctx);
-      const condRes = await sessions.conditioning.run({
-        features: new ort.Tensor('float32', ctx, [1, 3, 20]),
-        periods: new ort.Tensor('int64', BigInt64Array.from(per[0]), [1, 3]),
+  const ctx = new Float32Array(60);
+  for (let i = 0; i < total; i++) {
+    const ip = Math.max(0, i - 1) * 20, ic = i * 20, ifo = Math.min(total - 1, i + 1) * 20;
+    ctx.set(feats.subarray(ip, ip + 20), 0);
+    ctx.set(feats.subarray(ic, ic + 20), 20);
+    ctx.set(feats.subarray(ifo, ifo + 20), 40);
+    const per = periods(ctx);
+    const cond = (await sessions.conditioning.run({
+      features: new ort.Tensor('float32', ctx, [1, 3, 20]),
+      periods: new ort.Tensor('int64', per, [1, 3]),
+    })).conditioning.data; // Float32Array [320]
+    const period1 = new ort.Tensor('int64', BigInt64Array.from([per[1]]), [1]);
+    const frame = new Float32Array(160);
+    for (let sub = 0; sub < 4; sub++) {
+      const r = await sessions.vocoder_step.run({
+        conditioning: new ort.Tensor('float32', cond.slice(sub * 80, (sub + 1) * 80), [1, 80]),
+        period: period1,
+        memory: state.memory, gru1: state.gru1, gru2: state.gru2, gru3: state.gru3, frame_state: state.frame_state,
       });
-      const cond = condRes.conditioning.data; // [1,1,320]
-      const period1 = per[0][1];
-      const frame160 = [];
-      for (let sub = 0; sub < 4; sub++) {
-        const c80 = cond.slice(sub * 80, (sub + 1) * 80);
-        const r = await sessions.vocoder_step.run({
-          conditioning: new ort.Tensor('float32', c80, [1, 80]),
-          period: new ort.Tensor('int64', BigInt64Array.from([period1]), [1]),
-          memory: state.memory, gru1: state.gru1, gru2: state.gru2, gru3: state.gru3, frame_state: state.frame_state,
-        });
-        state = { memory: r.memory_out, gru1: r.gru1_out, gru2: r.gru2_out, gru3: r.gru3_out, frame_state: r.frame_state_out };
-        frame160.push(r.excitation.data);
-      }
-      const concat = new Float32Array(160);
-      concat.set(frame160[0], 0); concat.set(frame160[1], 40); concat.set(frame160[2], 80); concat.set(frame160[3], 120);
-      const [dec, newState] = deemphasisStep(concat, deState, deemphasisCoef);
-      deState = newState;
-      pcm.set(dec, f * 160);
-      if (onProgress) onProgress(0.6 + 0.4 * (f / total));
+      state.memory = r.memory_out;
+      state.gru1 = r.gru1_out;
+      state.gru2 = r.gru2_out;
+      state.gru3 = r.gru3_out;
+      state.frame_state = r.frame_state_out;
+      frame.set(r.excitation.data, sub * 40);
     }
+    const [out, next] = deemphasis(frame, deState, deemphasisCoef);
+    deState = next;
+    pcm.set(out, i * 160);
+    if ((i & 15) === 0) prog(0.35 + 0.65 * i / total, 'Vocoder…');
+    await new Promise((res) => setTimeout(res, 0)); // keep UI responsive
   }
-  // clip peak like python write_wav16 does not hard-clip before write except write path clips. Keep raw, clip at encode.
-  return { pcm, frames: total };
+  prog(1, 'Selesai.');
+  return { pcm, frames: total, seconds: total / 100 };
 }
-function allFrame(feats, i) { return feats.slice(i * 20, i * 20 + 20); }
 
 export function pcmToWavBlob(pcm, sampleRate = 16000) {
   const n = pcm.length;
@@ -207,4 +230,3 @@ export function pcmToWavBlob(pcm, sampleRate = 16000) {
   }
   return new Blob([buf], { type: 'audio/wav' });
 }
-export { loadModels };
