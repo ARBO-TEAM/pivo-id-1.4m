@@ -4,21 +4,21 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "docs" / "index.html"
 
-# (wav path under repo, title, subtitle)
+# (wav path under docs/, title, subtitle)
 SAMPLES = [
-    ("experiments/eval/v11_listen/pi-id.wav", "Sapaan (Pi, v11)",
+    ("assets/pi-id.wav", "Sapaan (Pi, v11)",
      "Selamat pagi, apa kabar? — suara Pi (perempuan)."),
-    ("experiments/eval/v11_listen/t-r-2.wav", "R-trill + reduplikasi (v11)",
+    ("assets/t-r-2.wav", "R-trill + reduplikasi (v11)",
      "Rara meraba-raba ruji-ruji roda kereta yang berkarat parah."),
-    ("experiments/eval/v11_listen/t-redux-1.wav", "Reduplikasi berantai (v11)",
+    ("assets/t-redux-1.wav", "Reduplikasi berantai (v11)",
      "Anak-anak berlari-larian mengejar layang-layang putus …"),
-    ("experiments/eval/v11_listen/t-stress-1.wav", "Kalimat panjang (v11)",
+    ("assets/t-stress-1.wav", "Kalimat panjang (v11)",
      "Kakek duduk-duduk di teras belakang sambil memperhatikan …"),
-    ("experiments/eval/v11_listen/t-perusahaan.wav", "Suffix -an (v11)",
+    ("assets/t-perusahaan.wav", "Suffix -an (v11)",
      "Perusahaan itu mengumumkan hasil rapat pemegang saham hari ini."),
-    ("experiments/eval/v10_listen/t-r-2.wav", "R-trill + reduplikasi (v10)",
+    ("assets/t-r-2-v10.wav", "R-trill + reduplikasi (v10)",
      "Reduplikasi yang sama di v10 — bandingkan dengan v11 di atas."),
-    ("experiments/eval/v10_fixedfrontend/t-r-2-fixed.wav", "v10 + frontend baru",
+    ("assets/t-r-2-fixed.wav", "v10 + frontend baru",
      "Model v10 dengan frontend koma baru, tanpa retraining."),
 ]
 
