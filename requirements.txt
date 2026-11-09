@@ -1,0 +1,9 @@
+# PiVo-ID 1.4M - training & inference (tested on Windows, RTX 5060 Ti)
+# GPU (CUDA 12.8) - required for training, optional for inference
+torch==2.11.0+cu128
+# CPU-only inference alternative: torch==2.11.0 --index-url https://download.pytorch.org/whl/cpu
+onnxruntime-gpu==1.31.1
+numpy==2.4.6
+onnx==1.23.2
+transformers==5.22.2
+pytest==9.2.0

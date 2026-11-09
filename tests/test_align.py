@@ -22,7 +22,7 @@ from align import (
 )
 
 PILOT = "Hari ini saya pergi ke pasar untuk membeli sayur segar."
-WAV = "E:/test/tts-test/split-supertonic-v3/output/sample_id_f2_fp32.wav"
+WAV = "./supertonic_work/output/sample_id_f2_fp32.wav"
 MANIFEST = "experiments/text/domain_manifest.jsonl"
 
 

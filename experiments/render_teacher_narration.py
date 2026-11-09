@@ -19,7 +19,7 @@ sys.path.insert(0, str(ROOT / "src_id"))
 
 import teacher  # noqa: E402
 
-MODEL_ROOT = Path(r"E:/test/tts-test/split-supertonic-v3/supertonic_work")
+MODEL_ROOT = Path("./supertonic_work")
 ONNX = MODEL_ROOT / "hf_fresh_download_20261108" / "onnx"
 OUT = ROOT / "docs/pivo-hyperframes/assets"
 

@@ -1,0 +1,14 @@
+PiVo-ID 1.4M — Indonesian fine-tune of PiVo-1.4M
+Research code and model weights: Apache License 2.0 (LICENSE).
+PiVo original code and acoustic weights by Empero Research, Apache-2.0.
+FARGAN vocoder derived material under the retained Xiph/Opus BSD-3-Clause
+notice in LICENSES/ (see experiments/models/pivo-id-v11/LICENSES/).
+CMU pronunciation dictionary data under its retained permissive notice.
+Neuroblast by Mariusz Kurman inspired the acoustic design; no
+Neuroblast weights are used.
+
+Training audio is synthetic speech from the Supertonic v3 teacher model
+under the BigScience Open RAIL-M license; this student may therefore be a
+Derivative of that model under the teacher's terms. See MODEL_CARD.md
+and research/teacher-audit.md for the full discussion. Do not redistribute
+without reviewing those terms.

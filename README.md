@@ -1,16 +1,53 @@
-# PiVo-ID 1.4M — bilingual (Indonesian + English) PiVo fine-tune
+# PiVo-ID 1.4M — Indonesian TTS (1.4M-parameter ONNX)
 
-Experimental Indonesian fine-tune of [PiVo-1.4M](https://huggingface.co/empero-ai/PiVo-1.4M)
-that **keeps English working**. This is research, not an official PiVo release and not
-a production-ready TTS package. The original model, architecture, vocoder and English
-frontend are PiVo's; this repository contains the Indonesian pipeline, the fine-tuned
-weights, the ONNX export and the measurements behind every claim below.
+Experimental Indonesian fine-tune of [PiVo-1.4M](https://huggingface.co/empero-ai/PiVo-1.4M).
+This is research, not an official PiVo release and not a production-ready
+TTS package. The original model, architecture, vocoder and frontend are PiVo's;
+this repository contains the Indonesian pipeline, the fine-tuned weights, the
+ONNX export and the measurements behind every claim below.
 
 - **Acoustic**: 584,965 parameters (+ 816,597 unchanged FARGAN vocoder = 1,401,562 total)
 - **Audio**: mono 16 kHz, PiVo's 20-dim FARGAN features, 10 ms frames
 - **Voices**: voice 0 = **Pi** (female, teacher F1), voice 1 = **Vo** (male, teacher M1)
-- **Languages**: Indonesian and English, same 79-symbol ARPAbet inventory
-- **Training audio**: Supertonic v3 synthetic speech only (`E:/test/tts-test/split-supertonic-v3`)
+- **Languages**: Indonesian only in the current v11 weights (same 79-symbol
+  ARPAbet inventory). Bilingual v6 weights are preserved; English quality
+  regressed when retrained for Indonesian-only, so the v6 checkpoint is the
+  bilingual one.
+- **Training audio**: Supertonic v3 synthetic speech only (no real human
+  recordings). Under the teacher's Open RAIL-M license this student may be a
+  Derivative — see [`MODEL_CARD.md`](MODEL_CARD.md) and
+  [`research/teacher-audit.md`](research/teacher-audit.md) before redistributing.
+
+## Try it (5 lines)
+
+```bash
+pip install -r requirements.txt
+unzip pivo-id-v11-onnx.zip   # from the GitHub Release, 5.6 MB
+python -I experiments/render_narration.py \
+  --model pivo-id-v11 --lang id --voice-id 0 \
+  --text "Selamat pagi, apa kabar?" --out coba.wav
+ffplay coba.wav              # or open coba.wav in any player
+```
+
+`--voice-id 0` = Pi (female), `1` = Vo (male). Add `--selective
+--deemphasis 0.88` for the smoother rendering hyperparameters used in the
+sample WAVs below. Full scripts: `experiments/render_narration.py`,
+`experiments/verify_onnx_release.py`.
+
+## Listen (v11 samples)
+
+Rendered with `--selective --deemphasis 0.88`. GitHub renders WAV inline.
+
+| Sample | What it tests | Hear it |
+|---|---|---|
+| `pi-id.wav` | Greeting, both voices | [v11 pi-id](experiments/eval/v11_listen/pi-id.wav) |
+| `t-r-2.wav` | R-trill + reduplikasi ("meraba-raba, ruji-ruji") | [v11 t-r-2](experiments/eval/v11_listen/t-r-2.wav) |
+| `t-redux-1/x` | Reduplikasi chain, g2p gap | [v11 t-redux-1](experiments/eval/v11_listen/t-redux-1.wav) |
+| `t-stress-1.wav` | Long sentence stress | [v11 t-stress-1](experiments/eval/v11_listen/t-stress-1.wav) |
+| `t-perusahaan.wav` / `t-evakuasi.wav` | Suffix -an, vocabulary | [v11 perusahaan](experiments/eval/v11_listen/t-perusahaan.wav) |
+
+Older sample sets: `experiments/eval/v10_listen/`, `v10_fixedfrontend/`,
+`v9_listen/`, `v7cont4_smooth/`.
 
 ## What is in this repo
 
@@ -29,9 +66,9 @@ redistributed).
 
 | Release asset | Size | What it is |
 |---|---:|---|
+| `pivo-id-v11-onnx.zip` | 5.6 MB | **Current recommended** Indonesian-only model (v11) |
+| `pivo-id-v6-onnx.zip` | 5.6 MB | v6 bilingual model (Indonesian + English) |
 | `pivo-id-1.4m-onnx.zip` | 5.6 MB | Ready-to-run PiVo-format model folder (see below) |
-| `pilot_v5c_best.pt` | 6.8 MB | Raw training checkpoint (weights + AdamW state, for resume/further training) |
-| `pivo-id-v6-onnx.zip` | 5.6 MB | v6 model folder: warm-start retrain on the expanded corpus (see Measured results) |
 
 ## The ONNX model folder
 
@@ -251,9 +288,30 @@ listening (`--selective --deemphasis 0.88`).
    (`--lang id|en`) and `experiments/eval_english.py`, export and gate with
    `experiments/export_onnx.py` + `experiments/verify_onnx_release.py`.
 
-Paths in the scripts default to this machine's layout
-(`E:/test/tts-test/pivo1-4m/models/hf/...`); pass `--aligner-dir`/`--model-dir`
-explicitly elsewhere.
+Pass `--aligner-dir`/`--model-dir` explicitly for your local model cache
+paths; defaults in `build_pilot_corpus_fast.py` are illustrative only.
+
+## For contributors: training tip (batch size matters)
+
+For this 1.4M-parameter student **batch 8 is faster than batch 32**.
+On a single RTX 5060 Ti 16 GB, batch 8 runs at ~22–28 steps/s while
+batch 32 runs at ~0.13 steps/s — batch 32 is *much* slower per
+wall-clock for the same number of samples, so it reaches the same
+step count far later. Larger batches also consumed ~15.9/16.3 GB VRAM
+in our runs. Use:
+
+```bash
+python -I src_id/train.py --data experiments/data/pilot_v11/manifest.jsonl \
+  --out experiments/runs/pilot_v11 --init-ckpt experiments/runs/pilot_v10/best.pt \
+  --steps 3000 --batch-size 8 --lr 1e-5 --min-lr 1e-6 --warmup 100 \
+  --eval-every 500 --save-every 1000 --duration-weight 0.3 --delta-weight 0.5 \
+  --reset-feature-stats --seed 42
+```
+
+Rule of thumb for an incremental improve: warm-start from the previous
+`best.pt` (`--init-ckpt`), add only the new sentences you need
+(~100–600 rows), train ~3,000 steps at batch 8. Only start from scratch
+if you change the corpus or architecture fundamentally.
 
 ## Credits
 

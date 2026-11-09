@@ -1,0 +1,13 @@
+# Binary model and audio assets: never normalize or merge these.
+*.onnx binary
+*.wav binary
+*.npy binary
+*.pt binary
+*.s16 binary
+*.f32 binary
+*.f16 binary
+*.pyc binary
+*.zip binary
+*.png binary
+*.webp binary
+*.mp4 binary

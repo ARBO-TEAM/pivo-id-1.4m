@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pivo-id-1.4m"
+version = "1.1.0"
+description = "Indonesian fine-tune of PiVo-1.4M (1.4M-parameter ONNX TTS, 16 kHz)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "torch>=2.11",
+    "onnxruntime-gpu>=1.31",
+    "numpy>=2.4",
+    "onnx>=1.23",
+    "transformers>=5.22",
+]
+[project.optional-dependencies]
+dev = ["pytest>=9.2"]
+
+[tool.setuptools]
+py-modules = []

@@ -39,3 +39,9 @@ experiments/eval/narr_*.txt
 experiments/eval/narr_*.log
 experiments/eval/narr_current.json
 experiments/eval/listen_ab_*/
+
+# --- pytest / builder tmp artifacts (never commit tmp samples) ---
+**/tmp/
+experiments/fargan_verify_pilot_20261108_a1/tmp/
+*.s16
+*.f32

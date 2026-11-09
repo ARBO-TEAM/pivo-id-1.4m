@@ -1,8 +1,8 @@
 """Parallel pilot corpus builder (pilot_v6_id): N OS processes synth, main aligns.
 
     python -I experiments/build_pilot_corpus_fast.py --out experiments/data/pilot_v6_id \
-        --model-root E:/test/tts-test/split-supertonic-v3/supertonic_work \
-        --aligner-dir E:/.../models--indonesian.../snapshots/... \
+        --model-root ./supertonic_work \
+        --aligner-dir ./models/hf/.../wav2vec2-indonesian.../snapshots/... \
         --manifest .tmp-out/v6_manifest.jsonl --jobs 6
 """
 

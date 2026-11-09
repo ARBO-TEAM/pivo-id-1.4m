@@ -6,8 +6,8 @@ Refuses to reuse an existing output directory. Refuses to mix splits.
 
 Usage:
   python -I experiments/build_pilot_corpus.py --out experiments/data/pilot_v1 \
-      --model-root E:/test/tts-test/split-supertonic-v3/supertonic_work \
-      --aligner-dir E:/.../wav2vec2-indonesian... --voices F1:0 M1:1 \
+      --model-root ./supertonic_work \
+      --aligner-dir ./models/hf/.../wav2vec2-indonesian... --voices F1:0 M1:1 \
       --limit 40 --seed 0
 """
 
