@@ -1,0 +1,307 @@
+{"id": "REQ000", "text": "Halo", "split": "train"}
+{"id": "REQ001", "text": "Halo, selamat pagi", "split": "train"}
+{"id": "REQ002", "text": "Halo kak", "split": "train"}
+{"id": "REQ003", "text": "Selamat siang", "split": "train"}
+{"id": "REQ004", "text": "Selamat malam", "split": "train"}
+{"id": "REQ005", "text": "Pagi kak", "split": "train"}
+{"id": "REQ006", "text": "Assalamualaikum", "split": "train"}
+{"id": "REQ007", "text": "Hai", "split": "train"}
+{"id": "REQ008", "text": "Halo Dinda", "split": "train"}
+{"id": "REQ009", "text": "Halo Andi", "split": "val"}
+{"id": "REQ010", "text": "Permisi", "split": "train"}
+{"id": "REQ011", "text": "Halo, boleh tanya-tanya?", "split": "train"}
+{"id": "REQ012", "text": "Selamat sore, saya mau tanya", "split": "train"}
+{"id": "REQ013", "text": "Halo, saya mau tanya tentang kampus", "split": "train"}
+{"id": "REQ014", "text": "Halo kak, ini dengan prodi Bisnis Digital?", "split": "train"}
+{"id": "REQ015", "text": "Bisnis digital itu apa?", "split": "train"}
+{"id": "REQ016", "text": "Apa itu prodi bisnis digital?", "split": "train"}
+{"id": "REQ017", "text": "Bisnis digital belajar apa aja?", "split": "train"}
+{"id": "REQ018", "text": "Jurusan bisnis digital itu ngapain?", "split": "train"}
+{"id": "REQ019", "text": "Prodi bisnis digital UNIKMA itu seperti apa?", "split": "val"}
+{"id": "REQ020", "text": "Bisa jelaskan tentang prodi bisnis digital?", "split": "train"}
+{"id": "REQ021", "text": "Bisnis digital itu kuliahnya berapa lama?", "split": "train"}
+{"id": "REQ022", "text": "Bedanya bisnis digital sama manajemen apa?", "split": "train"}
+{"id": "REQ023", "text": "Bisnis digital itu lebih ke teknologi atau ke bisnis?", "split": "train"}
+{"id": "REQ024", "text": "Apa yang dipelajari di bisnis digital?", "split": "train"}
+{"id": "REQ025", "text": "Mata kuliahnya apa aja?", "split": "train"}
+{"id": "REQ026", "text": "Kurikulumnya seperti apa?", "split": "train"}
+{"id": "REQ027", "text": "Ada konsentrasi apa aja?", "split": "train"}
+{"id": "REQ028", "text": "Fokus belajarnya apa?", "split": "train"}
+{"id": "REQ029", "text": "Peminatan apa saja yang ada?", "split": "val"}
+{"id": "REQ030", "text": "Apa keunggulan prodi bisnis digital di UNIKMA?", "split": "train"}
+{"id": "REQ031", "text": "Fokus belajarnya apa aja?", "split": "train"}
+{"id": "REQ032", "text": "Bidang apa yang dipelajari?", "split": "train"}
+{"id": "REQ033", "text": "Ada berapa fokus pembelajaran?", "split": "train"}
+{"id": "REQ034", "text": "Manajemen bisnis digital itu apa?", "split": "train"}
+{"id": "REQ035", "text": "Pemasaran digital itu belajar apa?", "split": "train"}
+{"id": "REQ036", "text": "Analisis data itu apa?", "split": "train"}
+{"id": "REQ037", "text": "Entrepreneur digital itu seperti apa?", "split": "train"}
+{"id": "REQ038", "text": "Yang belajar data science juga?", "split": "train"}
+{"id": "REQ039", "text": "Belajar social media marketing juga nggak?", "split": "val"}
+{"id": "REQ040", "text": "Belajar branding juga?", "split": "train"}
+{"id": "REQ041", "text": "Ada belajar content marketing?", "split": "train"}
+{"id": "REQ042", "text": "Belajar bikin toko online juga?", "split": "train"}
+{"id": "REQ043", "text": "Apa itu digital marketing?", "split": "train"}
+{"id": "REQ044", "text": "Lulusannya bisa kerja apa?", "split": "train"}
+{"id": "REQ045", "text": "Prospek kerja bisnis digital apa aja?", "split": "train"}
+{"id": "REQ046", "text": "Kerja di mana nanti?", "split": "train"}
+{"id": "REQ047", "text": "Jadi apa setelah lulus?", "split": "train"}
+{"id": "REQ048", "text": "Bisa jadi digital marketing specialist?", "split": "train"}
+{"id": "REQ049", "text": "Bisa jadi social media manager?", "split": "val"}
+{"id": "REQ050", "text": "Bisa jadi data analyst?", "split": "train"}
+{"id": "REQ051", "text": "Bisa jadi startup founder?", "split": "train"}
+{"id": "REQ052", "text": "Ada prospek jadi e-commerce specialist?", "split": "train"}
+{"id": "REQ053", "text": "Peluang kerjanya besar nggak?", "split": "train"}
+{"id": "REQ054", "text": "Bisa kerja di perusahaan apa?", "split": "train"}
+{"id": "REQ055", "text": "Bisa buka usaha sendiri nggak?", "split": "train"}
+{"id": "REQ056", "text": "Lulusan bisnis digital itu banyak dicari?", "split": "train"}
+{"id": "REQ057", "text": "Gajinya berapa?", "split": "train"}
+{"id": "REQ058", "text": "Lulusannya bisa apa aja?", "split": "train"}
+{"id": "REQ059", "text": "Skill apa yang didapat?", "split": "val"}
+{"id": "REQ060", "text": "Kompetensi lulusannya apa?", "split": "train"}
+{"id": "REQ061", "text": "Mahasiswa dibekali apa?", "split": "train"}
+{"id": "REQ062", "text": "Bisa bikin brand sendiri nggak?", "split": "train"}
+{"id": "REQ063", "text": "Bisa baca data bisnis?", "split": "train"}
+{"id": "REQ064", "text": "Bisa menjalankan pemasaran online?", "split": "train"}
+{"id": "REQ065", "text": "Bisa membangun usaha berbasis teknologi?", "split": "train"}
+{"id": "REQ066", "text": "Cara daftarnya gimana?", "split": "train"}
+{"id": "REQ067", "text": "Kapan pendaftaran dibuka?", "split": "train"}
+{"id": "REQ068", "text": "Berapa biaya kuliahnya?", "split": "train"}
+{"id": "REQ069", "text": "Ada beasiswa nggak?", "split": "val"}
+{"id": "REQ070", "text": "Akreditasi prodinya apa?", "split": "train"}
+{"id": "REQ071", "text": "Alamat kampusnya di mana?", "split": "train"}
+{"id": "REQ072", "text": "Nomor telepon kampus berapa?", "split": "train"}
+{"id": "REQ073", "text": "Ada info kuota mahasiswa?", "split": "train"}
+{"id": "REQ074", "text": "Syarat masuknya apa?", "split": "train"}
+{"id": "REQ075", "text": "Jalur pendaftarannya apa aja?", "split": "train"}
+{"id": "REQ076", "text": "Ukt-nya berapa?", "split": "train"}
+{"id": "REQ077", "text": "Ada diskon atau keringanan?", "split": "train"}
+{"id": "REQ078", "text": "Kelasnya online atau offline?", "split": "train"}
+{"id": "REQ079", "text": "Jual apa saja?", "split": "val"}
+{"id": "REQ080", "text": "Ada produk apa saja?", "split": "train"}
+{"id": "REQ081", "text": "Produkna apa aja?", "split": "train"}
+{"id": "REQ082", "text": "Naashop jual apa?", "split": "train"}
+{"id": "REQ083", "text": "Yang dijual apa saja?", "split": "train"}
+{"id": "REQ084", "text": "Ada berapa produk?", "split": "train"}
+{"id": "REQ085", "text": "Bisa sebutkan produknya?", "split": "train"}
+{"id": "REQ086", "text": "Dagangan apa ini?", "split": "train"}
+{"id": "REQ087", "text": "Ada cireng juga?", "split": "train"}
+{"id": "REQ088", "text": "Jualan tas ada?", "split": "train"}
+{"id": "REQ089", "text": "Ada jaket?", "split": "val"}
+{"id": "REQ090", "text": "Ada minuman apa aja?", "split": "train"}
+{"id": "REQ091", "text": "Ada buket bunga?", "split": "train"}
+{"id": "REQ092", "text": "Harga cireng crispy berapa?", "split": "train"}
+{"id": "REQ093", "text": "Cireng jamur harganya berapa?", "split": "train"}
+{"id": "REQ094", "text": "Cireng crispy ukuran besar berapa?", "split": "train"}
+{"id": "REQ095", "text": "Cireng crispy yang sedang berapa?", "split": "train"}
+{"id": "REQ096", "text": "Harga promo tiga puluh pcs berapa?", "split": "train"}
+{"id": "REQ097", "text": "Pack besar cireng jamur isinya berapa?", "split": "train"}
+{"id": "REQ098", "text": "Tas Doraemon harganya berapa?", "split": "train"}
+{"id": "REQ099", "text": "Jaket rajut knit zip up berapa?", "split": "val"}
+{"id": "REQ100", "text": "Jaket rajut warna marun harganya?", "split": "train"}
+{"id": "REQ101", "text": "Inner kaos polos berapa?", "split": "train"}
+{"id": "REQ102", "text": "Manset kaos harganya berapa?", "split": "train"}
+{"id": "REQ103", "text": "Buket bunga snack biru berapa?", "split": "train"}
+{"id": "REQ104", "text": "Es teh berapa?", "split": "train"}
+{"id": "REQ105", "text": "Kopi dan susu berapa?", "split": "train"}
+{"id": "REQ106", "text": "Minuman instan berapa?", "split": "train"}
+{"id": "REQ107", "text": "Harga es teh anget berapa?", "split": "train"}
+{"id": "REQ108", "text": "Cireng jamur pack kecil berapa?", "split": "train"}
+{"id": "REQ109", "text": "Yang paling murah yang mana?", "split": "val"}
+{"id": "REQ110", "text": "Yang paling mahal apa?", "split": "train"}
+{"id": "REQ111", "text": "Ada paket hemat nggak?", "split": "train"}
+{"id": "REQ112", "text": "Cirengnya pedas nggak?", "split": "train"}
+{"id": "REQ113", "text": "Ada varian karhutla?", "split": "train"}
+{"id": "REQ114", "text": "Varian pedas normal ada?", "split": "train"}
+{"id": "REQ115", "text": "Bisa pilih varian apa aja?", "split": "train"}
+{"id": "REQ116", "text": "Cireng jamur isinya berapa biji?", "split": "train"}
+{"id": "REQ117", "text": "Tas Doraemon modelnya apa?", "split": "train"}
+{"id": "REQ118", "text": "Ada ukuran lain?", "split": "train"}
+{"id": "REQ119", "text": "Bisa beli satuan?", "split": "val"}
+{"id": "REQ120", "text": "Harganya masih sama?", "split": "train"}
+{"id": "REQ121", "text": "Cara bikin NIB gimana?", "split": "train"}
+{"id": "REQ122", "text": "Gimana cara urus NIB?", "split": "train"}
+{"id": "REQ123", "text": "NIB itu apa?", "split": "train"}
+{"id": "REQ124", "text": "Apa itu OSS?", "split": "train"}
+{"id": "REQ125", "text": "Mau bikin usaha kecil, perizinannya bagaimana?", "split": "train"}
+{"id": "REQ126", "text": "Syarat bikin NIB apa aja?", "split": "train"}
+{"id": "REQ127", "text": "Bikin NIB di mana?", "split": "train"}
+{"id": "REQ128", "text": "OSS-RBA itu apa?", "split": "train"}
+{"id": "REQ129", "text": "Apa itu NIB untuk usaha mikro?", "split": "val"}
+{"id": "REQ130", "text": "NIB bisa jadi izin operasional nggak?", "split": "train"}
+{"id": "REQ131", "text": "Kode KBLI itu apa?", "split": "train"}
+{"id": "REQ132", "text": "Perlu NPWP buat bikin NIB?", "split": "train"}
+{"id": "REQ133", "text": "NIB keluar berapa lama?", "split": "train"}
+{"id": "REQ134", "text": "Setelah NIB terbit, terus ngapain?", "split": "train"}
+{"id": "REQ135", "text": "Apakah NIB harus diperpanjang?", "split": "train"}
+{"id": "REQ136", "text": "Bisnis digital bantu urus NIB juga?", "split": "train"}
+{"id": "REQ137", "text": "Cara pindah ke tarif listrik bisnis gimana?", "split": "train"}
+{"id": "REQ138", "text": "Tarif bisnis PLN itu apa?", "split": "train"}
+{"id": "REQ139", "text": "Golongan B-1 itu berapa daya?", "split": "val"}
+{"id": "REQ140", "text": "Golongan B-2 itu berapa daya?", "split": "train"}
+{"id": "REQ141", "text": "Syarat pindah tarif listrik bisnis?", "split": "train"}
+{"id": "REQ142", "text": "Bisa lewat PLN Mobile?", "split": "train"}
+{"id": "REQ143", "text": "Listrik dagangan mau diubah ke bisnis, caranya?", "split": "train"}
+{"id": "REQ144", "text": "Biaya penyesuaiannya berapa?", "split": "train"}
+{"id": "REQ145", "text": "Virtual accountnya dikirim ke mana?", "split": "train"}
+{"id": "REQ146", "text": "Berapa lama sampai tarifnya berubah?", "split": "train"}
+{"id": "REQ147", "text": "Apakah harus disurvei PLN?", "split": "train"}
+{"id": "REQ148", "text": "Kalau cuma ruko kecil bisa tarif bisnis?", "split": "train"}
+{"id": "REQ149", "text": "Berapa yang belanja hari ini?", "split": "val"}
+{"id": "REQ150", "text": "Ada berapa pesanan hari ini?", "split": "train"}
+{"id": "REQ151", "text": "Omzet hari ini berapa?", "split": "train"}
+{"id": "REQ152", "text": "Kemarin ada berapa pesanan?", "split": "train"}
+{"id": "REQ153", "text": "Omzet kemarin berapa?", "split": "train"}
+{"id": "REQ154", "text": "Minggu ini total penjualan berapa?", "split": "train"}
+{"id": "REQ155", "text": "Bulan ini totalnya berapa?", "split": "train"}
+{"id": "REQ156", "text": "Ada pesanan baru masuk?", "split": "train"}
+{"id": "REQ157", "text": "Berapa pesanan yang belum selesai?", "split": "train"}
+{"id": "REQ158", "text": "Total omzet dari tanggal satu sampai tujuh berapa?", "split": "train"}
+{"id": "REQ159", "text": "Penjualan tanggal dua puluh November berapa?", "split": "val"}
+{"id": "REQ160", "text": "Ada yang perlu diproses nggak hari ini?", "split": "train"}
+{"id": "REQ161", "text": "Saya mau pesan cireng satu pack", "split": "train"}
+{"id": "REQ162", "text": "Bisa kirim ke Jakarta?", "split": "train"}
+{"id": "REQ163", "text": "Ongkos kirimnya berapa?", "split": "train"}
+{"id": "REQ164", "text": "Bisa bayar pakai OVO?", "split": "train"}
+{"id": "REQ165", "text": "Kapan barangnya sampai?", "split": "train"}
+{"id": "REQ166", "text": "Tolong buatkan pesanan ya", "split": "train"}
+{"id": "REQ167", "text": "Bisa minta nomor HP pemilik toko?", "split": "train"}
+{"id": "REQ168", "text": "Siapa yang beli hari ini?", "split": "train"}
+{"id": "REQ169", "text": "Berapa nomor telepon pembeli terakhir?", "split": "val"}
+{"id": "REQ170", "text": "Alamat pembeli kemarin di mana?", "split": "train"}
+{"id": "REQ171", "text": "Ada diskon buat saya nggak?", "split": "train"}
+{"id": "REQ172", "text": "Boleh nego nggak?", "split": "train"}
+{"id": "REQ173", "text": "Bisa pinjam uang?", "split": "train"}
+{"id": "REQ174", "text": "Kasih rekomendasi saham dong", "split": "train"}
+{"id": "REQ175", "text": "Bantu buatkan skripsi", "split": "train"}
+{"id": "REQ176", "text": "Siapa presiden sekarang?", "split": "train"}
+{"id": "REQ177", "text": "eh halo kak mau tanya", "split": "train"}
+{"id": "REQ178", "text": "anu kak, bisnis digital itu apa ya", "split": "train"}
+{"id": "REQ179", "text": "kak, itu, prodi bisnis digital, belajarnya apa aja ya", "split": "val"}
+{"id": "REQ180", "text": "halo, saya mau tanya, hmm, tentang karier lulusannya", "split": "train"}
+{"id": "REQ181", "text": "jadi begini kak, saya mau tanya soal pendaftaran", "split": "train"}
+{"id": "REQ182", "text": "halo kak, maaf ganggu, mau tanya", "split": "train"}
+{"id": "REQ183", "text": "kak saya, ehm, mau tanya harga cireng", "split": "train"}
+{"id": "REQ184", "text": "itu, apa namanya, cireng jamur, harganya berapa", "split": "train"}
+{"id": "REQ185", "text": "kak mau tanya, eee, cara bikin NIB itu gimana", "split": "train"}
+{"id": "REQ186", "text": "saya tadi mau tanya tapi lupa, prodi bisnis digital itu apa ya", "split": "train"}
+{"id": "REQ187", "text": "halo kak, numpang tanya", "split": "train"}
+{"id": "REQ188", "text": "harga cireng berapa harga cireng crispy berapa", "split": "train"}
+{"id": "REQ189", "text": "cara bikin NIB gimana cara bikin NIB", "split": "val"}
+{"id": "REQ190", "text": "bisnis digital itu apa bisnis digital itu jurusan apa", "split": "train"}
+{"id": "REQ191", "text": "lulusannya kerja apa lulusannya bisa kerja di mana", "split": "train"}
+{"id": "REQ192", "text": "harga harganya jaket rajut berapa kak", "split": "train"}
+{"id": "REQ193", "text": "NIB NIB itu apa ya kak", "split": "train"}
+{"id": "REQ194", "text": "bisnis digital study programnya kayak gimana?", "split": "train"}
+{"id": "REQ195", "text": "digital marketing itu belajar apa aja kak?", "split": "train"}
+{"id": "REQ196", "text": "ada product apa aja di Naashop?", "split": "train"}
+{"id": "REQ197", "text": "harga cireng crispy-nya berapa?", "split": "train"}
+{"id": "REQ198", "text": "aku mau tanya soal business development", "split": "train"}
+{"id": "REQ199", "text": "data analyst itu kerjanya ngapain?", "split": "val"}
+{"id": "REQ200", "text": "ada social media manager juga?", "split": "train"}
+{"id": "REQ201", "text": "entrepreneurship-nya diajarin nggak?", "split": "train"}
+{"id": "REQ202", "text": "kak, e-commerce specialist itu apa?", "split": "train"}
+{"id": "REQ203", "text": "content strategist kerjanya apa?", "split": "train"}
+{"id": "REQ204", "text": "startup founder itu apa ya?", "split": "train"}
+{"id": "REQ205", "text": "brand consultant itu ngapain?", "split": "train"}
+{"id": "REQ206", "text": "harga cireng krispi berapa", "split": "train"}
+{"id": "REQ207", "text": "harga cireng jamor berapa", "split": "train"}
+{"id": "REQ208", "text": "cireng pedas karhutla ada nggak", "split": "train"}
+{"id": "REQ209", "text": "harganya tas dora emon berapa", "split": "val"}
+{"id": "REQ210", "text": "jaket rajut knit zipap berapa", "split": "train"}
+{"id": "REQ211", "text": "inner manset kaos polos berapa", "split": "train"}
+{"id": "REQ212", "text": "buket bunga snack biru berapa", "split": "train"}
+{"id": "REQ213", "text": "harga es teh anget berapa", "split": "train"}
+{"id": "REQ214", "text": "kopi susu berapa", "split": "train"}
+{"id": "REQ215", "text": "minuman instan berapa", "split": "train"}
+{"id": "REQ216", "text": "cara bikin nib gimana", "split": "train"}
+{"id": "REQ217", "text": "oss di oss dot go dot id itu apa", "split": "train"}
+{"id": "REQ218", "text": "kbli itu apa kak", "split": "train"}
+{"id": "REQ219", "text": "cara pindah tarif listrik bisnis di pln mobile", "split": "val"}
+{"id": "REQ220", "text": "golongan b satu itu berapa dayanya", "split": "train"}
+{"id": "REQ221", "text": "nasop jual apa aja", "split": "train"}
+{"id": "REQ222", "text": "na shop harganya berapa", "split": "train"}
+{"id": "REQ223", "text": "naashop punya cireng nggak", "split": "train"}
+{"id": "REQ224", "text": "unikma itu di mana", "split": "train"}
+{"id": "REQ225", "text": "unikma cilacap prodi bisnis digital", "split": "train"}
+{"id": "REQ226", "text": "halo kak mau tanya harga cireng crispy terus cara urus NIB juga gimana", "split": "train"}
+{"id": "REQ227", "text": "bisnis digital itu belajar apa aja dan lulusannya kerja apa", "split": "train"}
+{"id": "REQ228", "text": "harga pack besar berapa sama pack kecil berapa", "split": "train"}
+{"id": "REQ229", "text": "cara pindah tarif listrik bisnis syaratnya apa aja", "split": "val"}
+{"id": "REQ230", "text": "ada produk apa aja dan harganya berapa semua", "split": "train"}
+{"id": "REQ231", "text": "halo mau tanya harga cireng crispy berapa", "split": "train"}
+{"id": "REQ232", "text": "cara urus nib lewat oss gimana", "split": "train"}
+{"id": "REQ233", "text": "apa itu bisnis digital", "split": "train"}
+{"id": "REQ234", "text": "lulusan bisnis digital kerja apa", "split": "train"}
+{"id": "REQ235", "text": "jual apa aja di naashop", "split": "train"}
+{"id": "REQ236", "text": "tarif listrik bisnis syaratnya apa", "split": "train"}
+{"id": "REQ237", "text": "kalau yang sedang berapa?", "split": "train"}
+{"id": "REQ238", "text": "kalau yang besar?", "split": "train"}
+{"id": "REQ239", "text": "yang promosi itu berapa?", "split": "val"}
+{"id": "REQ240", "text": "terus kalau mau pindah tarif gimana?", "split": "train"}
+{"id": "REQ241", "text": "setelahn NIB terbit ngapain?", "split": "train"}
+{"id": "REQ242", "text": "kalau varian karhutla ada?", "split": "train"}
+{"id": "REQ243", "text": "yang minuman apa aja?", "split": "train"}
+{"id": "REQ244", "text": "kalau yang murah ada nggak?", "split": "train"}
+{"id": "REQ245", "text": "berarti harus survei dulu ya?", "split": "train"}
+{"id": "REQ246", "text": "kalau ditolak gimana?", "split": "train"}
+{"id": "REQ247", "text": "terus berapa lama?", "split": "train"}
+{"id": "REQ248", "text": "Selamat pagi kak", "split": "train"}
+{"id": "REQ249", "text": "Pagi, mau tanya dong", "split": "val"}
+{"id": "REQ250", "text": "Siang kak", "split": "train"}
+{"id": "REQ251", "text": "Sore kak", "split": "train"}
+{"id": "REQ252", "text": "Malam kak, masih buka?", "split": "train"}
+{"id": "REQ253", "text": "Halo, saya calon mahasiswa", "split": "train"}
+{"id": "REQ254", "text": "Halo, saya mahasiswa sini", "split": "train"}
+{"id": "REQ255", "text": "Halo, saya orang tua mahasiswa", "split": "train"}
+{"id": "REQ256", "text": "Halo kak, saya alumni", "split": "train"}
+{"id": "REQ257", "text": "Halo, saya mau tanya sebagai pembeli", "split": "train"}
+{"id": "REQ258", "text": "Permisi kak, mau tanya sebentar", "split": "train"}
+{"id": "REQ259", "text": "Assalamualaikum warahmatullah", "split": "val"}
+{"id": "REQ260", "text": "Waalaikumsalam", "split": "train"}
+{"id": "REQ261", "text": "Halo Dinda, apa kabar?", "split": "train"}
+{"id": "REQ262", "text": "Halo Andi, bisa bantu?", "split": "train"}
+{"id": "REQ263", "text": "Halo min", "split": "train"}
+{"id": "REQ264", "text": "Halo admin", "split": "train"}
+{"id": "REQ265", "text": "Halo kak, maaf kalau mengganggu", "split": "train"}
+{"id": "REQ266", "text": "Pagi, ada yang bisa saya bantu?", "split": "train"}
+{"id": "REQ267", "text": "Cireng jamur pack besar harganya dua puluh lima ribu rupiah.", "split": "train"}
+{"id": "REQ268", "text": "Kopi dan susu lima ribu rupiah.", "split": "train"}
+{"id": "REQ269", "text": "Buket bunga snack sembilan puluh ribu rupiah.", "split": "val"}
+{"id": "REQ270", "text": "Ada dua pesanan yang belum selesai.", "split": "train"}
+{"id": "REQ271", "text": "knit zip-up", "split": "train"}
+{"id": "REQ272", "text": "NPWP", "split": "train"}
+{"id": "REQ273", "text": "PLN", "split": "train"}
+{"id": "REQ274", "text": "pascabayar", "split": "train"}
+{"id": "REQ275", "text": "kVA", "split": "train"}
+{"id": "REQ276", "text": "kilowatt-jam", "split": "train"}
+{"id": "REQ277", "text": "Cireng crispy ukuran besar Rp3.500, sedang Rp1.500.", "split": "train"}
+{"id": "REQ278", "text": "Promo 30 pcs Rp100.000.", "split": "train"}
+{"id": "REQ279", "text": "Cireng jamur pack besar 8 pcs Rp25.000.", "split": "val"}
+{"id": "REQ280", "text": "Cireng jamur pack kecil 15 pcs Rp20.000.", "split": "train"}
+{"id": "REQ281", "text": "Tas Doraemon Rp25.000.", "split": "train"}
+{"id": "REQ282", "text": "Jaket rajut Rp85.000.", "split": "train"}
+{"id": "REQ283", "text": "Inner kaos Rp25.000.", "split": "train"}
+{"id": "REQ284", "text": "Buket bunga snack Rp90.000.", "split": "train"}
+{"id": "REQ285", "text": "Es teh Rp4.000, kopi susu Rp5.000, minuman instan Rp6.000.", "split": "train"}
+{"id": "REQ286", "text": "Golongan B-1 daya 450 sampai 2.200 volt ampere.", "split": "train"}
+{"id": "REQ287", "text": "Golongan B-2 daya 3.500 volt ampere sampai 200 kilovolt ampere.", "split": "train"}
+{"id": "REQ288", "text": "Hari ini ada {jumlah} pesanan dengan omzet {omzet}.", "split": "train"}
+{"id": "REQ289", "text": "Bulan ini ada {jumlah} pesanan dengan omzet {omzet}.", "split": "val"}
+{"id": "REQ290", "text": "Halo, selamat datang! Ada yang bisa saya bantu?", "split": "train"}
+{"id": "REQ291", "text": "Maaf, produk itu belum tersedia di katalog kami.", "split": "train"}
+{"id": "REQ292", "text": "Saya cek dulu ya.", "split": "train"}
+{"id": "REQ293", "text": "Wah, pertanyaan itu di luar yang bisa saya bantu.", "split": "train"}
+{"id": "REQ294", "text": "Boleh, saya jawab satu dulu ya.", "split": "train"}
+{"id": "REQ295", "text": "Berikutnya tinggal unggah berkas NIB, KTP, dan foto aktivitas usaha.", "split": "train"}
+{"id": "REQ296", "text": "Hati-hati, pastikan lokasinya memang dipakai usaha ya.", "split": "train"}
+{"id": "REQ297", "text": "Terima kasih, semoga membantu!", "split": "train"}
+{"id": "REQ298", "text": "Siap, saya cek dulu.", "split": "train"}
+{"id": "REQ299", "text": "Belum ada.", "split": "val"}
+{"id": "REQ300", "text": "Bisa.", "split": "train"}
+{"id": "REQ301", "text": "Baik.", "split": "train"}
+{"id": "REQ302", "text": "Mau saya bantu jelaskan langkah berikutnya?", "split": "train"}
+{"id": "REQ303", "text": "Kalau sudah, terima kasih ya.", "split": "train"}
+{"id": "REQ304", "text": "Semoga informasinya berguna.", "split": "train"}
+{"id": "REQ305", "text": "Silakan tanya lagi kalau butuh yang lain.", "split": "train"}
+{"id": "REQ306", "text": "Saya di sini kalau mau tanya soal produk.", "split": "train"}

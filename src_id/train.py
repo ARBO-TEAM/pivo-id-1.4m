@@ -333,6 +333,11 @@ def build_model(args, train_rows, val_rows):
         return model
     vocab_size = args.vocab_size or (max(max(r["tokens"]) for r in all_rows) + 1)
     width = args.width
+    if args.init_ckpt:
+        # Same shell-shape fix as --resume: vocab from checkpoint config
+        ck_cfg = torch.load(args.init_ckpt, map_location="cpu", weights_only=True)["config"]
+        vocab_size = ck_cfg["vocab_size"]
+        width = ck_cfg["width"]
     if args.resume:
         # Shell shapes must come from the checkpoint (PiVo's 128-token vocab),
         # not the dataset (subset), or strict load_state_dict fails on shape.

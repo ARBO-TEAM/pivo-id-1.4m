@@ -1,0 +1,33 @@
+{
+  "format": "pivo-model-manifest-v1",
+  "model_name": "PiVo-ID-v7-cont4",
+  "total_inference_parameters": 1401562,
+  "sample_rate": 16000,
+  "files": [
+    {
+      "path": "onnx/conditioning.onnx",
+      "bytes": 282407,
+      "sha256": "b184d45ce06e6d9caec94430b6e07e5f7315ecd584c5c3980290a9b5286d2998"
+    },
+    {
+      "path": "onnx/decoder.onnx",
+      "bytes": 721228,
+      "sha256": "dc0d5fbe6f0d29a79a904eb1bff3a9f85c6760664c1e752b1ba458815afe8718"
+    },
+    {
+      "path": "onnx/encoder.onnx",
+      "bytes": 1783481,
+      "sha256": "6acb76beb2fd684aefe3a5afc857a55876c06d5db3285707daef3bd5bed01fa5"
+    },
+    {
+      "path": "onnx/metadata.json",
+      "bytes": 3307,
+      "sha256": "7348976c670c22052cef6f51b61c0376d52e451c7842ef478ad0d0f559461baf"
+    },
+    {
+      "path": "onnx/vocoder_step.onnx",
+      "bytes": 3001580,
+      "sha256": "6f8ea48ebadbc7b737e5999ce7393619d7aa33b5b643ff48c5ebbcc3bc62b611"
+    }
+  ]
+}
