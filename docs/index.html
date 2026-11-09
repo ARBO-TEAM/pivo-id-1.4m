@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PiVo-ID 1.4M — Demo TTS Bahasa Indonesia</title>
+<meta name="description" content="Indonesian TTS 1.4M-parameter ONNX demo. Listen to v11 sample WAVs.">
+<style>
+:root { color-scheme: light dark; }
+body { font-family: system-ui, sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }
+.card { border: 1px solid #8884; border-radius: 8px; padding: 1rem; }
+.card h2 { font-size: 1rem; margin: 0 0 .25rem; }
+.sub { color: #666; font-size: .9rem; margin: 0 0 .5rem; }
+.src { font-size: .75rem; overflow-wrap: anywhere; }
+audio { width: 100%; }
+table { border-collapse: collapse; }
+td, th { border: 1px solid #8884; padding: .35rem .6rem; text-align: left; }
+code { background: #8882; padding: .1rem .3rem; border-radius: 4px; }
+</style>
+</head>
+<body>
+<h1>PiVo-ID 1.4M — Demo TTS Bahasa Indonesia</h1>
+<p>Fine-tune 1.4M parameter <a href="https://huggingface.co/empero-ai/PiVo-1.4M">PiVo-1.4M</a>
+untuk Bahasa Indonesia (16&nbsp;kHz mono, ONNX 5,6&nbsp;MB, suara Pi &amp; Vo).
+Bagian v6 bilingual (Indonesia + Inggris) masih tersimpan; model
+sekarang fokus Indonesia saja karena Inggris menurun saat retrained.
+Unduh dari <a href="https://github.com/ARBO-TEAM/pivo-id-1.4m/releases/tag/v1.1.0">GitHub Release v1.1.0</a>.</p>
+
+<h2>Dengarkan</h2>
+<div class="grid">
+    <div class="card"><h2>Sapaan (Pi, v11)</h2><p class="sub">Selamat pagi, apa kabar? — suara Pi (perempuan).</p><audio controls preload="none" src="experiments/eval/v11_listen/pi-id.wav"></audio><p class="src"><a href="experiments/eval/v11_listen/pi-id.wav">experiments/eval/v11_listen/pi-id.wav</a></p></div>
+    <div class="card"><h2>R-trill + reduplikasi (v11)</h2><p class="sub">Rara meraba-raba ruji-ruji roda kereta yang berkarat parah.</p><audio controls preload="none" src="experiments/eval/v11_listen/t-r-2.wav"></audio><p class="src"><a href="experiments/eval/v11_listen/t-r-2.wav">experiments/eval/v11_listen/t-r-2.wav</a></p></div>
+    <div class="card"><h2>Reduplikasi berantai (v11)</h2><p class="sub">Anak-anak berlari-larian mengejar layang-layang putus …</p><audio controls preload="none" src="experiments/eval/v11_listen/t-redux-1.wav"></audio><p class="src"><a href="experiments/eval/v11_listen/t-redux-1.wav">experiments/eval/v11_listen/t-redux-1.wav</a></p></div>
+    <div class="card"><h2>Kalimat panjang (v11)</h2><p class="sub">Kakek duduk-duduk di teras belakang sambil memperhatikan …</p><audio controls preload="none" src="experiments/eval/v11_listen/t-stress-1.wav"></audio><p class="src"><a href="experiments/eval/v11_listen/t-stress-1.wav">experiments/eval/v11_listen/t-stress-1.wav</a></p></div>
+    <div class="card"><h2>Suffix -an (v11)</h2><p class="sub">Perusahaan itu mengumumkan hasil rapat pemegang saham hari ini.</p><audio controls preload="none" src="experiments/eval/v11_listen/t-perusahaan.wav"></audio><p class="src"><a href="experiments/eval/v11_listen/t-perusahaan.wav">experiments/eval/v11_listen/t-perusahaan.wav</a></p></div>
+    <div class="card"><h2>R-trill + reduplikasi (v10)</h2><p class="sub">Reduplikasi yang sama di v10 — bandingkan dengan v11 di atas.</p><audio controls preload="none" src="experiments/eval/v10_listen/t-r-2.wav"></audio><p class="src"><a href="experiments/eval/v10_listen/t-r-2.wav">experiments/eval/v10_listen/t-r-2.wav</a></p></div>
+    <div class="card"><h2>v10 + frontend baru</h2><p class="sub">Model v10 dengan frontend koma baru, tanpa retraining.</p><audio controls preload="none" src="experiments/eval/v10_fixedfrontend/t-r-2-fixed.wav"></audio><p class="src"><a href="experiments/eval/v10_fixedfrontend/t-r-2-fixed.wav">experiments/eval/v10_fixedfrontend/t-r-2-fixed.wav</a></p></div>
+</div>
+
+<h2>Coba sendiri (5 baris)</h2>
+<pre><code>pip install -r requirements.txt
+unzip pivo-id-v11-onnx.zip
+python -I experiments/render_narration.py \
+  --model pivo-id-v11 --lang id --voice-id 0 \
+  --text "Selamat pagi, apa kabar?" --out coba.wav</code></pre>
+
+<h2>Hasil ukur (validasi)</h2>
+<table><tr><th>Run</th><th>Korpus</th><th>Val feature / duration</th></tr>
+      <tr><td>v7</td><td>2,732 rows (ID-only, from v6)</td><td>0.2016 / 0.0960</td></tr>
+      <tr><td>v8–v10</td><td>incremental vocabulary</td><td>0.1924 → 0.1904</td></tr>
+      <tr><td>v11</td><td>4,386 rows, comma-fixed reduplikasi</td><td>0.1884 / 0.0747</td></tr>
+</table>
+<p>ONNX parity v11: encoder 2.21e-06, log-durations 9.54e-07,
+decoder 7.15e-05 (gate 2e-04). Model card:
+<a href="https://github.com/ARBO-TEAM/pivo-id-1.4m/blob/main/MODEL_CARD.md">MODEL_CARD.md</a>
+· Lisensi: <a href="https://github.com/ARBO-TEAM/pivo-id-1.4m/blob/main/LICENSE">LICENSE</a>
+(Apache-2.0; derivatif Supertonic Open RAIL-M — lihat model card).</p>
+</body>
+</html>
