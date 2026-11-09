@@ -82,6 +82,33 @@ class TestHyphenAcronymRegression(unittest.TestCase):
         self.assertEqual(fe.normalize("OSS").normalized_text, "o es es")
 
 
+class TestReduplikasiHyphenRegression(unittest.TestCase):
+    def test_reduplikasi_hyphen_becomes_comma(self):
+        # Regression: blanket hyphen-acronym spelling turned
+        # 'meraba-raba' into letter names ('em e er a be a'), garbling
+        # reduplikasi and letting the duration predictor run too fast.
+        # Reduplikasi must expand to full copies with a comma micro-pause.
+        self.assertEqual(
+            fe.normalize("anak-anak").normalized_text, "anak, anak")
+        self.assertEqual(
+            fe.normalize("meraba-raba").normalized_text, "meraba, raba")
+        self.assertEqual(
+            fe.normalize("berlari-larian").normalized_text, "berlari, larian")
+        self.assertEqual(
+            fe.normalize(
+                "Rara meraba-raba ruji-ruji roda kereta yang berkarat parah."
+            ).normalized_text,
+            "Rara meraba, raba ruji, ruji roda kereta yang berkarat parah.")
+
+    def test_acronym_and_compound_hyphen_unchanged(self):
+        self.assertEqual(fe.normalize("OSS-RBA").normalized_text, "o es es er be a")
+        self.assertEqual(fe.normalize("oss-rba").normalized_text, "o es es er be a")
+        self.assertEqual(
+            fe.normalize("kilowatt-jam").normalized_text, "kilowatt jam")
+        self.assertEqual(
+            fe.normalize("e-commerce").normalized_text, "e commerce")
+
+
 class TestNonObjectJsonRowRegression(unittest.TestCase):
     def test_non_dict_rows_raise_valueerror_not_attributeerror(self):
         for bad in (["x", 1], 42, "just a string", None, 3.14):

@@ -351,14 +351,57 @@ def normalize(text: str) -> NormalizationResult:
         new = re.sub(rf"\b{acr}\b", _acronym_logged, text, flags=re.I)
         if new != text:
             text = new
-    # Hyphenated acronyms (OSS-RBA -> o es es er be a) and any other
-    # all-caps token: spell letter by letter, never silently guess.
-    # Case-insensitive so 'oss-rba' is spelled too (it would otherwise fall
-    # through to hyphen-as-space). Must run BEFORE the known-acronym list:
-    # 'OSS' must not be consumed first, leaving a dangling 'es-RBA'.
-    text = re.sub(r"\b[A-Za-z]+(?:-[A-Za-z]+)+\b",
-                  lambda m: (log.append(f"acronym: {m[0]!r} -> {_spell(m.group(0))!r}"),
-                             _spell(m.group(0)))[1], text)
+    # Reduplikasi hyphen -> ", " so each copy is pronounced in full with a
+    # micro-pause. The previous blanket "hyphenated acronym" spelling turned
+    # "meraba-raba" into letter names ("em e er a be a"), garbling the
+    # repeated syllables and letting the duration predictor run too fast.
+    # Indonesian reduplikasi ("anak-anak", "ruji-ruji", "bolak-balik",
+    # "berlari-larian") repeats with a pause; a comma token carries that
+    # pause in both teacher alignment and student prediction. True hyphenated
+    # acronyms ("OSS-RBA", "oss-rba") stay spelled below.
+    def _is_reduplikasi(token: str) -> bool:
+        parts = [p.lower() for p in token.split("-")]
+        if len(parts) < 2:
+            return False
+        if parts[-1] == "nya":  # possessive clitic (crispy-nya, Ukt-nya)
+            return False
+        if any(len(p) == 1 for p in parts):  # e-commerce prefix
+            return False
+        if token.isupper():  # OSS-RBA etc. are acronyms, not reduplikasi
+            return False
+        if len(set(parts)) == 1:  # anak-anak, ruji-ruji
+            return True
+        for a in parts:
+            for b in parts:
+                if a != b and (b in a or a in b):  # meraba/raba, perlahan/lahan
+                    return True
+        for i, a in enumerate(parts):
+            for b in parts[i + 1:]:  # berlari/larian: suffix/prefix overlap
+                for k in range(min(len(a), len(b)), 3, -1):
+                    if a[-k:] == b[:k] or b[-k:] == a[:k]:
+                        return True
+        return all(len(p) >= 4 for p in parts)  # bolak-balik, gerak-gerik
+
+    def _hyphen_repl(m: re.Match) -> str:
+        tok = m.group(0)
+        if _is_reduplikasi(tok):
+            # Multi-hyphen chains ("berdesakan-desakan-asalan") do not occur in
+            # Indonesian; treat every hyphen as a comma for uniformity.
+            out = tok.replace("-", ", ")
+            log.append(f"reduplikasi: {tok!r} -> {out!r}")
+            return out
+        parts = [p for p in tok.split("-")]
+        if tok.isupper() or all(len(p) <= 4 for p in parts):
+            out = _spell(tok)
+            log.append(f"acronym: {tok!r} -> {out!r}")
+            return out
+        # Clitics ("-nya"), prefixes ("e-commerce") and compounds
+        # ("kilowatt-jam") become ordinary words.
+        out = tok.replace("-", " ")
+        log.append(f"hyphen-word: {tok!r} -> {out!r}")
+        return out
+
+    text = re.sub(r"\b[A-Za-z]+(?:-[A-Za-z]+)+\b", _hyphen_repl, text)
     text = re.sub(r"\b[A-Z]{2,}\b", _acronym_logged, text)
 
     def _ord_logged(match: re.Match) -> str:

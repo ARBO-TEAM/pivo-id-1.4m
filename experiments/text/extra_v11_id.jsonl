@@ -1,0 +1,147 @@
+{"id": "V11001", "text": "Ada prospek jadi e commerce specialist?", "split": "train"}
+{"id": "V11002", "text": "Anak itu berloncat, loncat di kasur.", "split": "train"}
+{"id": "V11003", "text": "Anak itu makan lahap, lahap sampai habis.", "split": "train"}
+{"id": "V11004", "text": "Anak itu melompat, lompat girang kegirangan.", "split": "train"}
+{"id": "V11005", "text": "Anak itu memukul, mukul meja karena kesal.", "split": "train"}
+{"id": "V11006", "text": "Anak itu menangis meraung, raung minta jajan.", "split": "train"}
+{"id": "V11007", "text": "Anak itu mengangguk, angguk tanda setuju.", "split": "train"}
+{"id": "V11008", "text": "Anak itu mengedip, ngedip menahan kantuk.", "split": "train"}
+{"id": "V11009", "text": "Anak itu merangkak, rangkak belajar berjalan.", "split": "train"}
+{"id": "V11010", "text": "Anak itu merangkak, rangkak merayap ke arah pintu.", "split": "val"}
+{"id": "V11011", "text": "Anak itu merengek, rengek minta dibelikan mainan.", "split": "train"}
+{"id": "V11012", "text": "Anak, anak berlari, larian mengejar layang, layang putus di lapangan yang berumput tebal.", "split": "train"}
+{"id": "V11013", "text": "Anak, anak bermain bola di lapangan sore ini.", "split": "train"}
+{"id": "V11014", "text": "Anak, anak itu belajar berenang di kolam renang sekolah.", "split": "train"}
+{"id": "V11015", "text": "Anak, anak itu bermain layangan, layang di sawah.", "split": "train"}
+{"id": "V11016", "text": "Anak, anak itu menonton film kartun di rumah tetangga.", "split": "train"}
+{"id": "V11017", "text": "Anak, anak makan siang bersama di kantin sekolah.", "split": "train"}
+{"id": "V11018", "text": "Angin itu sepoi, sepoi bertiup lembut sore ini.", "split": "train"}
+{"id": "V11019", "text": "Awan itu abu, abu gelap menandakan hujan.", "split": "train"}
+{"id": "V11020", "text": "Awan itu putih, putih berarak perlahan.", "split": "val"}
+{"id": "V11021", "text": "B-1", "split": "train"}
+{"id": "V11022", "text": "B-2", "split": "train"}
+{"id": "V11023", "text": "Baju itu biru, biru cerah dipakai sore ini.", "split": "train"}
+{"id": "V11024", "text": "Baju, baju itu dicuci di laundry langganan.", "split": "train"}
+{"id": "V11025", "text": "Bapak membaca koran berulang, ulang setiap pagi.", "split": "train"}
+{"id": "V11026", "text": "Barang, barang itu dikemas dengan aman.", "split": "train"}
+{"id": "V11027", "text": "Berkasnya: e KTP pemilik atau penanggung jawab, berkas NIB dari OSS, NPWP bila ada, nomor ID pelanggan atau nomor meter, foto tampak depan lokasi yang memperlihatkan plang atau aktivitas usaha, foto bagian dalam, dan foto meteran.", "split": "train"}
+{"id": "V11028", "text": "Bintang itu berkelip, kelip di langit malam.", "split": "train"}
+{"id": "V11029", "text": "Buku, buku itu ditata rapi di rak perpustakaan.", "split": "train"}
+{"id": "V11030", "text": "Bunga itu merah, merah mekar di taman.", "split": "val"}
+{"id": "V11031", "text": "Bunga, bunga itu mekar indah di taman kota.", "split": "train"}
+{"id": "V11032", "text": "Burung, burung itu berkicau di pagi hari.", "split": "train"}
+{"id": "V11033", "text": "Daun itu hijau, hijau rimbun menaungi jalan.", "split": "train"}
+{"id": "V11034", "text": "Daun, daun itu hijau, hijau segar setelah hujan.", "split": "train"}
+{"id": "V11035", "text": "Daun, daun kering itu tampak melayang, layang tertiup angin sore yang sepoi, sepoi.", "split": "train"}
+{"id": "V11036", "text": "Dia berbisik, bisik membicarakan rahasia.", "split": "train"}
+{"id": "V11037", "text": "Dia berjalan pelan, pelan menaiki tangga.", "split": "train"}
+{"id": "V11038", "text": "Dia memakai kemeja abu, abu saat menghadiri rapat di gedung Kementerian.", "split": "train"}
+{"id": "V11039", "text": "Dia membisik, bisik pesan rahasia ke telinga temannya.", "split": "train"}
+{"id": "V11040", "text": "Dia memeluk erat, erat adiknya yang ketakutan.", "split": "val"}
+{"id": "V11041", "text": "Dia memeluk erat, erat ibunya yang menangis.", "split": "train"}
+{"id": "V11042", "text": "Dia menepuk, nepuk tangan semangat untuk tim.", "split": "train"}
+{"id": "V11043", "text": "Dia mengangguk, angguk setuju dengan usulan itu.", "split": "train"}
+{"id": "V11044", "text": "Dia mengangguk, angguk tanda mengerti.", "split": "train"}
+{"id": "V11045", "text": "Dia menggosok, gosok mata karena lelah.", "split": "train"}
+{"id": "V11046", "text": "Dia mengintip, ngintip dari balik jendela.", "split": "train"}
+{"id": "V11047", "text": "Dia mengusap, usap kepala anak itu dengan lembut.", "split": "train"}
+{"id": "V11048", "text": "Dia mondar, mandir di depan pintu menunggu tamu.", "split": "train"}
+{"id": "V11049", "text": "Evakuasi anak, anak sekolah dilakukan karena atap ambruk.", "split": "train"}
+{"id": "V11050", "text": "Evakuasi warga dilakukan karena banjir meluap ke rumah, rumah.", "split": "val"}
+{"id": "V11051", "text": "Gerak bolak, balik bebek di tepi selokan itu membuat anak kecil itu tertawa terbahak, bahak.", "split": "train"}
+{"id": "V11052", "text": "Gerak, gerik orang tak dikenal itu mencurigakan saat mondar, mandir di depan gang.", "split": "train"}
+{"id": "V11053", "text": "Golongan B-1 daya 450 sampai 2.200 volt ampere.", "split": "train"}
+{"id": "V11054", "text": "Golongan B-1 itu berapa daya?", "split": "train"}
+{"id": "V11055", "text": "Golongan B-2 daya 3.500 volt ampere sampai 200 kilovolt ampere.", "split": "train"}
+{"id": "V11056", "text": "Golongan B-2 itu berapa daya?", "split": "train"}
+{"id": "V11057", "text": "Halo, boleh tanya, tanya?", "split": "train"}
+{"id": "V11058", "text": "Hati, hati, pastikan lokasinya memang dipakai usaha ya.", "split": "train"}
+{"id": "V11059", "text": "Hujan itu rintik, rintik membasahi bumi.", "split": "train"}
+{"id": "V11060", "text": "Ibu berteriak, teriak meminta tolong agar kompor dimatikan.", "split": "val"}
+{"id": "V11061", "text": "Ibu berteriak, teriak meminta tolong agar kompor minyak tanah segera dimatikan sebelum apinya merambat ke bilik bambu.", "split": "train"}
+{"id": "V11062", "text": "Ibu memasak gulai dengan mengaduk, aduk bumbu secara perlahan, lahan agar santannya tidak pecah.", "split": "train"}
+{"id": "V11063", "text": "Ibu menyanyi lirih, lirih sambil menidurkan bayi.", "split": "train"}
+{"id": "V11064", "text": "Ikan, ikan itu berenang di akuarium besar.", "split": "train"}
+{"id": "V11065", "text": "Jaket Rajut Knit Zip Up warna marun Rp85.000 per pcs. Harga per November 2026 dan dapat berubah.", "split": "train"}
+{"id": "V11066", "text": "Jendela, jendela itu dibuka untuk sirkulasi udara.", "split": "train"}
+{"id": "V11067", "text": "Kabut itu tebal, tebal menyelimuti pegunungan.", "split": "train"}
+{"id": "V11068", "text": "Kakek duduk, duduk di teras belakang sambil memperhatikan gerak, gerik katak yang melompat, lompat di atas petak sawah.", "split": "train"}
+{"id": "V11069", "text": "Kakek duduk, duduk di teras sambil memperhatikan katak.", "split": "train"}
+{"id": "V11070", "text": "Kata, kata bahasa Indonesia sekarang lebih jelas.", "split": "val"}
+{"id": "V11071", "text": "Kreativitas dan disiplin sama, sama penting.", "split": "train"}
+{"id": "V11072", "text": "Kunci, kunci itu disimpan di laci meja.", "split": "train"}
+{"id": "V11073", "text": "Kursi, kursi itu disusun mengelilingi meja.", "split": "train"}
+{"id": "V11074", "text": "Lampu itu redup, redup temaram di sudut ruangan.", "split": "train"}
+{"id": "V11075", "text": "Lampu, lampu itu menyala terang di ruang tamu.", "split": "train"}
+{"id": "V11076", "text": "Langit sore itu merah, merah keemasan.", "split": "train"}
+{"id": "V11077", "text": "Matahari itu kekuning, kuningan menjelang senja.", "split": "train"}
+{"id": "V11078", "text": "Meja, meja itu ditata untuk acara rapat.", "split": "train"}
+{"id": "V11079", "text": "Mereka berbaris rapi, rapi menunggu giliran.", "split": "train"}
+{"id": "V11080", "text": "Mereka berbicara pelan, pelan agar tidak didengar orang.", "split": "val"}
+{"id": "V11081", "text": "Mereka berbondong, bondong datang ke acara.", "split": "train"}
+{"id": "V11082", "text": "Mereka berdesakan, desakan masuk ke dalam bus.", "split": "train"}
+{"id": "V11083", "text": "Mereka berdesis, desus membicarakan gosip terbaru.", "split": "train"}
+{"id": "V11084", "text": "Mereka beriring, iringan pulang dari masjid.", "split": "train"}
+{"id": "V11085", "text": "Mereka berlari, larian di taman setiap pagi.", "split": "train"}
+{"id": "V11086", "text": "Mereka berpegangan erat, erat melewati jembatan goyang.", "split": "train"}
+{"id": "V11087", "text": "Mereka berpegangan tangan erat, erat saat menyeberang.", "split": "train"}
+{"id": "V11088", "text": "Mereka berpelukan erat, erat melepas kangen.", "split": "train"}
+{"id": "V11089", "text": "Mereka berpelukan erat, erat melepas rindu.", "split": "train"}
+{"id": "V11090", "text": "Mereka berteriak, teriak memanggil teman.", "split": "val"}
+{"id": "V11091", "text": "Mereka bolak, balik ke pasar membeli kebutuhan.", "split": "train"}
+{"id": "V11092", "text": "Mereka melambai, lambai tangan pada pesawat yang lepas landas.", "split": "train"}
+{"id": "V11093", "text": "Mereka melambai, lambai tangan saat perpisahan.", "split": "train"}
+{"id": "V11094", "text": "Mereka menari, nari mengelilingi api unggun.", "split": "train"}
+{"id": "V11095", "text": "Mereka menari, nari mengikuti irama musik.", "split": "train"}
+{"id": "V11096", "text": "Mereka menepuk, nepuk tangan merayakan kemenangan.", "split": "train"}
+{"id": "V11097", "text": "Mereka menggeleng, geleng tidak percaya cerita itu.", "split": "train"}
+{"id": "V11098", "text": "Mereka menggeleng, geleng tidak percaya.", "split": "train"}
+{"id": "V11099", "text": "Mereka mengobrol, ngobrol santai di teras rumah.", "split": "train"}
+{"id": "V11100", "text": "Mereka tertawa terbahak, bahak mendengar lelucon itu.", "split": "val"}
+{"id": "V11101", "text": "Mobil, mobil itu parkir rapi di tempat parkir mal.", "split": "train"}
+{"id": "V11102", "text": "Motor, motor itu melaju kencang di jalan tol.", "split": "train"}
+{"id": "V11103", "text": "OSS RBA", "split": "train"}
+{"id": "V11104", "text": "OSS RBA itu apa?", "split": "train"}
+{"id": "V11105", "text": "Ombak itu besar, besar menghantam pantai.", "split": "train"}
+{"id": "V11106", "text": "Orang, orang itu berkumpul di alun, alun kota.", "split": "train"}
+{"id": "V11107", "text": "Pemeriksaan berkas itu memakan waktu berjam, jam.", "split": "train"}
+{"id": "V11108", "text": "Pencuri itu berlari tergesa, gesa menyusuri lorong pasar yang ramai pembeli.", "split": "train"}
+{"id": "V11109", "text": "Pengembangan produk itu memakan waktu berbulan, bulan.", "split": "train"}
+{"id": "V11110", "text": "Penyusunan laporan itu memakan waktu berhari, hari.", "split": "val"}
+{"id": "V11111", "text": "Perlindungan hukum itu dijamin oleh undang, undang dasar.", "split": "train"}
+{"id": "V11112", "text": "Perlindungan konsumen itu diatur dalam undang, undang.", "split": "train"}
+{"id": "V11113", "text": "Perpustakaan umum itu menjadi tempat belajar anak, anak.", "split": "train"}
+{"id": "V11114", "text": "Perusahaan farmasi itu memproduksi obat, obatan untuk rumah sakit.", "split": "train"}
+{"id": "V11115", "text": "Perusahaan itu membangun sekolah untuk anak, anak karyawan.", "split": "train"}
+{"id": "V11116", "text": "Perusahaan itu membangun taman bermain untuk anak, anak.", "split": "train"}
+{"id": "V11117", "text": "Perusahaan itu memberikan pelatihan keterampilan untuk ibu, ibu.", "split": "train"}
+{"id": "V11118", "text": "Perusahaan itu memproduksi es krim untuk anak, anak.", "split": "train"}
+{"id": "V11119", "text": "Perusahaan itu memproduksi susu segar untuk anak, anak.", "split": "train"}
+{"id": "V11120", "text": "Perusahaan itu mengadakan lomba masak untuk ibu, ibu.", "split": "val"}
+{"id": "V11121", "text": "Perusahaan itu mengekspor rempah, rempah ke Timur Tengah.", "split": "train"}
+{"id": "V11122", "text": "Perusahaan itu menyediakan perpustakaan untuk anak, anak.", "split": "train"}
+{"id": "V11123", "text": "Perusahaan mainan itu memproduksi boneka untuk anak, anak.", "split": "train"}
+{"id": "V11124", "text": "Perusahaan makanan itu memproduksi camilan kemasan untuk anak, anak.", "split": "train"}
+{"id": "V11125", "text": "Pintu, pintu itu dicat ulang kemarin.", "split": "train"}
+{"id": "V11126", "text": "Pohon, pohon itu ditanam sepanjang jalan desa.", "split": "train"}
+{"id": "V11127", "text": "Rara meraba, raba ruji, ruji roda kereta yang berkarat parah.", "split": "train"}
+{"id": "V11128", "text": "Rudi mengajar anak, anak membaca di rumah.", "split": "train"}
+{"id": "V11129", "text": "Rudi merapikan rak, rak buku di ruang tamu.", "split": "train"}
+{"id": "V11130", "text": "Rudi merobohkan pohon, pohon kering di kebunnya.", "split": "val"}
+{"id": "V11131", "text": "Rumah, rumah itu dibangun dengan gaya modern.", "split": "train"}
+{"id": "V11132", "text": "Salju itu turun lebat, lebat menutupi tanah.", "split": "train"}
+{"id": "V11133", "text": "Selamat jalan, hati, hati di perjalanan.", "split": "train"}
+{"id": "V11134", "text": "Sepatu itu hitam, hitam mengkilap baru dibeli.", "split": "train"}
+{"id": "V11135", "text": "Sepatu, sepatu itu dijual murah di pasar.", "split": "train"}
+{"id": "V11136", "text": "Tangis itu meraung, raung membuat ibu khawatir.", "split": "train"}
+{"id": "V11137", "text": "Tarif golongan Bisnis memang lebih murah per kilowatt jam, tetapi hanya diberikan untuk tempat yang benar, benar dipakai usaha.", "split": "train"}
+{"id": "V11138", "text": "Tas, tas itu terbuat dari kulit asli.", "split": "train"}
+{"id": "V11139", "text": "Tawa itu terbahak, bahak memecah keheningan.", "split": "train"}
+{"id": "V11140", "text": "Topi, topi itu dipakai untuk melindungi dari panas.", "split": "val"}
+{"id": "V11141", "text": "Tulisan Indonesia dan Inggris sama, sama tersedia.", "split": "train"}
+{"id": "V11142", "text": "Ukt nya berapa?", "split": "train"}
+{"id": "V11143", "text": "Warga berduyun, duyun mengantre di TPS.", "split": "train"}
+{"id": "V11144", "text": "e KTP", "split": "train"}
+{"id": "V11145", "text": "entrepreneurship nya diajarin nggak?", "split": "train"}
+{"id": "V11146", "text": "harga cireng crispy nya berapa?", "split": "train"}
+{"id": "V11147", "text": "kak, e commerce specialist itu apa?", "split": "train"}

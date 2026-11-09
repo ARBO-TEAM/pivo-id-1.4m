@@ -182,7 +182,37 @@ python -I src_id/train.py --data experiments/data/pilot_v5c/manifest.jsonl \
 Corpus v6: 1,857 rows / 551,260 frames (5,513 s) — 1,569 new Indonesian rows
 (424 texts × 2 voices × 2 seeds, parallel builder
 `experiments/build_pilot_corpus_fast.py`) + 288 English rows, merged with
-`experiments/merge_corpora.py`. Same recipe at 9,000 steps, `--delta-weight 0.15`:
+`experiments/merge_corpora.py`. Same recipe at 9,000 steps, `--delta-weight 0.15`.
+
+## Indonesian-only fine-tune (v7–v11)
+
+All later runs keep English out of the Indonesian models (the bilingual v6
+checkpoint above is preserved untouched). Each run warm-starts from the previous
+`best.pt` with `--init-ckpt`, lr 1e-5 → 1e-6, batch 8, 3,000 steps unless noted,
+`--duration-weight 0.3` and `--delta-weight 0.5`. Crucially, `src_id/frontend.py`
+was fixed: previously **every** hyphenated token was spelled letter-by-letter
+("meraba-raba" → "em e er a be a"), which garbled reduplikasi, removed the
+micro-pause, and let the duration predictor run too fast. Now Indonesian
+reduplikasi becomes a comma micro-pause ("meraba, raba"), true acronyms stay
+spelled ("OSS-RBA" → "o es es er be a"), and compounds become ordinary words
+("kilowatt-jam" → "kilowatt jam"). Corpus rows whose teacher text still contained
+a hyphen from the old frontend were filtered out (`experiments/filter_hyphen.py`,
+553 rows dropped).
+
+| Run | Corpus | Val feature / duration |
+|---|---|---|
+| v7 | 2,732 rows (ID-only, from v6) | 0.2016 / 0.0960 |
+| v7-cont2/3/4 | same (steps only) | 0.1963 → 0.1949 → 0.1943 |
+| v8 | +v8 (perusahaan, evakuasi) | 0.1924 / 0.0854 |
+| v9 | +v9 (suffix -an, evakuasi) | 0.1911 / 0.0798 |
+| v10 | +v10 (reduplikasi, R-trill, stress) | 0.1904 / 0.0786 |
+| v11 | v10 minus 553 hyphen-garbage + v11 (147 comma-fixed reduplikasi) | **0.1884 / 0.0747** |
+
+ONNX parity (v11): encoder 2.21e-06, log-durations 9.54e-07, decoder 7.15e-05
+(gate 2e-04). Model folders `experiments/models/pivo-id-v10` and
+`pivo-id-v11` are git-ignored build artifacts, like the checkpoints; the
+eval WAVs in `experiments/eval/v10_listen/` and `v11_listen/` are committed for
+listening (`--selective --deemphasis 0.88`).
 
 ## Honest limitations
 
