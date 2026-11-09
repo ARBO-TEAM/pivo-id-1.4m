@@ -19,6 +19,7 @@ async function load() {
     els.btn.disabled = false;
   } catch (e) {
     els.status.textContent = 'Gagal memuat model: ' + e.message + ' — coba refresh (model di-load dari docs/models).';
+    console.error('[PiVo] model load failed', e);
     els.output.innerHTML = '<p class="err">Tidak bisa load ONNX. Pastikan online (CDN onnxruntime-web) + file di <code>docs/models/</code>.</p>';
   }
 }

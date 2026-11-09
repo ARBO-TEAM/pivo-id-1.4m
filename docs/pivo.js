@@ -3,7 +3,7 @@
 // No retraining; runs entirely in the browser via onnxruntime-web.
 'use strict';
 
-import * as ort from 'https://cdn.jsdelivr.net/npm/onnxruntime-web@1.24.0/dist/ort.wasm.min.js';
+import * as ort from 'https://cdn.jsdelivr.net/npm/onnxruntime-web@1.23.0/dist/ort.wasm.min.js';
 
 const MODEL_URLS = {
   encoder: 'models/encoder.onnx',
@@ -18,7 +18,7 @@ let sessions = null;
 async function loadModels({ onLog } = {}) {
   if (sessions) return;
   metadata = await (await fetch('models/metadata.json')).json();
-  ort.env.wasm.wasmPaths = 'https://cdn.jsdelivr.net/npm/onnxruntime-web@1.24.0/dist/';
+  ort.env.wasm.wasmPaths = 'https://cdn.jsdelivr.net/npm/onnxruntime-web@1.23.0/dist/';
   const opts = { executionProviders: ['wasm'], intraOpNumThreads: Math.min(4, (navigator.hardwareConcurrency || 2)) };
   const log = onLog || (() => {});
   sessions = {};
